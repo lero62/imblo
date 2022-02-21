@@ -1,0 +1,764 @@
+/* Elements ============ */
+
+/* Tabs */
+._tab__navitem
+	&._active
+		color: red
+._tab__item
+	display: none
+	&._active
+		display: block
+
+/* Accoordion */
+._ac__navitem
+	&._active
+		color: red
+._ac__item
+	display: none
+	&._active
+		display: block
+
+/* Crumbs */
+
+.breadcrumbs
+	margin: 2.5rem 0 4rem
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	
+	&__back 
+		margin-bottom: 1rem
+		flex: none
+		white-space: nowrap
+		color: #7d7d7d
+		font-size: 1.2rem
+		font-weight: 500
+		text-decoration: none
+		position: relative
+		padding-left: 1.6rem
+		margin-right: 3.4rem
+		&:after, &:before 
+			+arr(.4rem, .7rem, #fa4242, l)
+			content: ''
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translate(0,-50%)
+		&:after 
+			left: .6rem
+		
+	&__list 
+		font-size: 0
+		li 
+			margin-bottom: 1rem
+			display: inline-block
+			vertical-align: top
+			position: relative
+			padding-right: 1rem
+			margin-right: .4rem
+			&:not(:last-child):after
+				+arr(.4rem, .7rem, #fa4242, r)
+				content: ''
+				position: absolute
+				top: 50%
+				right: 0
+				transform: translate(0,-50%)
+			
+		a
+			font-size: 1.2rem
+			font-weight: 500
+			color: #7d7d7d
+			
+			@media (any-hover: hover) 
+				&:hover 
+					
+					color: $color-danger
+		span 
+			font-weight: 700
+			font-size: 1.2rem
+			color: #7d7d7d
+
+/* toltipe */ 
+/* ===================================================================================================================== */
+
+// [data-toltipe]
+// 	position: relative
+// 	+min($ipad + 1)
+// 		@media (any-hover: hover) 
+// 			&:hover 
+// 				.toltipe 
+// 					display: block
+
+// 	+max($ipad)
+// 		&._open 
+// 			.toltipe
+// 				display: block
+
+
+.tooltipster-box 
+	font-size: .9rem
+	font-weight: 400
+	color: #7D7D7D
+	cursor: default
+	text-align: center
+	width: 28rem
+	line-height: 1.5
+	padding: .5rem 1.3rem
+	background: #E1E1E1
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 1.8rem
+	white-space: normal
+
+	// &:after 
+	// 	content: ''
+	// 	display: block
+	// 	position: absolute
+	// 	+arr(.8rem, .5rem, #E1E1E1, b)
+	// 	top: 100%
+	// 	left: 50%
+	// 	margin-left: -0.4rem
+
+	// &--bottom 
+	// 	transform: translate(-50%, 1rem)
+	// 	bottom: auto 
+	// 	top: 100%
+	// 	&:after
+	// 		+arr(.8rem, .5rem, #E1E1E1, t)
+	// 		top: auto 
+	// 		bottom: 100%
+			
+
+	// &--right 
+	// 	text-align: left
+	// 	transform: translate(1rem, -50%)
+	// 	left: 100%
+	// 	bottom: auto 
+	// 	top: 50%
+	// 	&:after 
+	// 		+arr(.5rem, 1rem, #E1E1E1, l)
+	// 		top: 50%
+	// 		left: auto
+	// 		right: 100%
+	// 		margin-right: -.1rem
+	// 		margin-top: -0.5rem
+
+	// &--left 
+	// 	text-align: right
+	// 	transform: translate(-1rem, -50%)
+	// 	right: 100%
+	// 	left: auto
+	// 	bottom: auto 
+	// 	top: 50%
+	// 	&:after 
+	// 		+arr(.5rem, 1rem, #E1E1E1, r)
+	// 		top: 50%
+	// 		left: 100%
+	// 		margin-left: -.1rem
+	// 		margin-top: -0.5rem
+
+	// &--top-right 
+	// 	text-align: left
+	// 	transform: translate(0, -1rem)
+	// 	left: -1rem
+	
+	// 	&:after 
+			
+	// 		left: 1.4rem
+	// 		margin-left: 0
+
+	// &--top-left 
+	// 	text-align: right
+	// 	transform: translate(0, -1rem)
+	// 	left: auto
+	// 	right: -1rem
+	
+	// 	&:after 
+	// 		left: auto 
+	// 		right: 1.4rem
+	// 		margin-left: 0
+			
+
+	// &--w-auto 
+	// 	width: auto 
+	// 	white-space: nowrap
+	
+.tooltipster-arrow,
+.tooltipster-arrow::before 
+	position: absolute
+	width: 6px
+	height: 6px
+	background: #E1E1E1
+
+
+
+.tooltipster-arrow 
+	visibility: hidden
+
+
+
+.tooltipster-arrow::before 
+	visibility: visible
+	content: ''
+	transform: rotate(45deg)
+	
+
+
+.tooltip[data-popper-placement^='top'] > .tooltipster-arrow,
+.tooltipster-top > .tooltipster-arrow
+	bottom: -3px
+	margin-left: -0.3rem
+	&:before 
+		border-bottom: .1rem solid rgba(0, 0, 0, 0.05) 
+		border-left: .1rem solid rgba(0, 0, 0, 0.02)
+
+
+.tooltip[data-popper-placement^='bottom'] > .tooltipster-arrow 
+	top: -3px
+
+
+.tooltip[data-popper-placement^='left'] > .tooltipster-arrow 
+	right: -3px
+
+
+.tooltip[data-popper-placement^='right'] > .tooltipster-arrow,
+.tooltipster-right > .tooltipster-arrow
+	left: -3px
+	margin-top: -0.3rem
+	top: 50% !important 
+	&:before 
+		border-bottom: .1rem solid rgba(0, 0, 0, 0.05) 
+		border-left: .1rem solid rgba(0, 0, 0, 0.02)
+
+
+.toltipe-symbol
+	width: 1.6rem
+	height: 1.6rem
+	flex: none
+	border-radius: 50%
+	display: inline-block
+	vertical-align: top
+	text-align: center
+	margin-left: .5rem
+	font-size: 1rem
+	color: #7D7D7D
+	text-align: center
+	line-height: 1.8rem
+	font-weight: 700
+	background: #E9EDF0
+	cursor: pointer
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
+
+	
+	&:hover 
+		box-shadow: inset -2px -2px 3px #FFFFFF, inset 2px 2px 3px #7E7E7E
+
+			
+// +max($ipad)
+// 	.toltipe 
+// 		width: 18rem
+// 		border-radius: 1rem
+// 	[data-toltipe-ipad="center"]
+// 		.toltipe 
+// 			left: 50%
+// 			bottom: 100%
+// 			top: auto
+// 			right: auto
+// 			transform: translate(-50%, -1rem)
+// 			text-align: center
+// 			&:after 
+// 				+arr(.8rem, .5rem, #E1E1E1, b)
+// 				top: 100%
+// 				left: 50%
+// 				right: auto
+// 				bottom: auto
+// 				margin-left: -0.4rem
+// 				margin-right: auto
+// 				margin-top: auto
+// 				margin-bottom: auto
+
+// 	[data-toltipe-ipad="top-left"]
+// 		.toltipe 
+// 			text-align: right
+// 			transform: translate(0, -1rem)
+// 			left: auto
+// 			right: -1rem
+// 			bottom: 100% 
+// 			top: auto
+// 			&:after 
+// 				left: auto 
+// 				right: 1.4rem
+// 				margin-left: 0
+// 				top: 100%
+// 				+arr(.8rem, .5rem, #E1E1E1, b)
+// 				margin-top: 0
+
+/* Dots */
+.swiper-prev, .swiper-next 
+	position: absolute
+	top: 50%
+	margin-top: -1.5rem
+	cursor: pointer
+	padding: 0
+	height: 3rem
+	width: 2rem
+	background-color: transparent
+	text-indent: -999px
+	overflow: hidden
+	z-index: 10
+	display: flex 
+	align-items: center
+	justify-content: center
+
+.swiper-prev 
+	left: 0
+	&:after
+		+arr(1rem, 2rem, #fa4242, l)
+		content: 'prev'
+		display: block
+		
+		font-variant: initial
+.swiper-next 
+	right: 0
+	&:after
+		+arr(1rem, 2rem, #fa4242, r)
+		content: 'next'
+		display: block
+		font-variant: initial
+
+.swiper-controls 
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 2rem
+	margin-bottom: 0.3rem
+	z-index: 4
+		
+	.swiper-button-prev, .swiper-button-next 
+		cursor: pointer
+		padding: 0
+		height: 1.3rem
+		width: .6rem
+		margin: 0 .8rem
+		margin-top: .2rem
+		background-color: transparent
+		text-indent: -999px
+		overflow: hidden
+		z-index: 10
+		
+	.swiper-button-prev 
+		
+		position: relative
+		
+		&:after
+			+arr(.7rem, 1.3rem, #fa4242, l)
+			content: 'prev'
+			display: block
+			
+			font-variant: initial
+	.swiper-button-next 
+		
+		position: relative
+		
+		&:after
+			+arr(.7rem, 1.3rem, #fa4242, r)
+			content: 'next'
+			display: block
+			font-variant: initial
+			
+	
+
+	&--blue 
+		.swiper-button-prev
+			&:after
+				border-right-color: #35a0d2
+		.swiper-button-next
+			&:after 
+				border-left-color: #35a0d2
+.swiper-pagination 
+	list-style: none
+	font-size: 0
+	&-bullet
+		margin: 0 .7rem !important
+		
+
+		width: 1.3rem !important
+		height: 1.3rem !important
+		
+		background-color: #e9edf0 !important
+		border-radius: 50% !important
+		box-shadow: .2rem .2rem .2rem rgba(#393939, 0.6), -.2rem -.2rem .2rem #fff !important
+		
+		&-active
+			
+			box-shadow: inset -0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.31) !important
+			background-color: #e9edf0 !important
+.swiper-button-lock
+	display: none
+		
+/* Pagination */
+.box-paging
+	margin-top: 1rem
+.paging-list
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&__item 
+		margin-right: 1.2rem
+		&:last-child 
+			margin-right: 0
+		&.paging-prev
+			.paging-list__link
+				display: flex
+				align-items: center
+				justify-content: center
+				&:after, &:before 
+					+arr(.4rem, .7rem, #fa4242, l)
+					content: ''
+					display: inline-block
+					vertical-align: middle
+		&.paging-next
+			.paging-list__link
+				display: flex
+				align-items: center
+				justify-content: center
+				&:after, &:before 
+					+arr(.4rem, .7rem, #fa4242, r)
+					content: ''
+					display: inline-block
+					vertical-align: middle
+					
+	&__link 
+		height: 2.1rem
+		min-width: 2.1rem
+		text-align: center
+		line-height: 2.1rem
+		font-size: 1rem
+		border-radius: 2.1rem
+		display: inline-block
+		vertical-align: middle
+		font-weight: 500
+		&.is-active
+			box-shadow: .1rem .1rem .2rem rgba(#393939, 0.6), -.1rem -.1rem .2rem #fff
+		&:active 
+			box-shadow: inset 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
+		&:hover 
+			text-decoration: none
+
+		@media (any-hover: hover) 
+			&:hover 
+				color: $color
+				box-shadow: .1rem .1rem .2rem rgba(#393939, 0.6), -.1rem -.1rem .2rem #fff
+
+	+max($iphone)
+		justify-content: center
+
+.hidden
+	display: none
+
+
+.social
+
+	&__btn 
+		display: inline-flex
+		vertical-align: middle
+		margin-right: .2rem
+		align-items: center
+		justify-content: center
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+		border-radius: 0.5rem
+		background-color: #e9edf0
+		width: 2rem
+		height: 2rem
+		margin-bottom: .2rem
+		&:last-child 
+			margin-right: 0
+		
+		@media (any-hover: hover) 
+			&:hover 
+				box-shadow: inset 0.2rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
+		.icon 
+			display: block
+			font-size: 1.2rem
+			color: $color-danger
+
+	&__icon
+		display: inline-block
+		vertical-align: middle
+		margin-right: .2rem
+		margin-bottom: .2rem
+		&:last-child 
+			margin-right: 0
+		.icon 
+			display: block
+			font-size: 1.5rem
+			color: $color-info
+
+	&__link 
+		margin-right: 2rem
+		
+		display: inline-block
+		vertical-align: middle
+		.icon 
+			font-size: 2.5rem
+			color: $color-info
+			&-telegram2
+				fill: none
+				stroke-width: .2rem
+
+		&:last-child 
+			margin-right: 0
+
+	&--inline 
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		top: -.2rem
+		
+	&--xl 
+		.social__btn
+			width: 4.5rem
+			height: 4.5rem
+			margin-right: 2.4rem
+			margin-bottom: 1.5rem
+			.icon 
+				font-size: 2.6rem
+			+max($laptop)
+				margin-right: 1.6rem
+
+	&--lg 
+		.social__btn
+			width: 2.5rem
+			height: 2.5rem
+			margin-right: .7rem
+			margin-bottom: .7rem
+			.icon 
+				font-size: 1.6rem
+
+		.social__link 
+			margin-right: 3rem
+			.icon 
+				font-size: 3.7rem
+				&-vk 
+					font-size: 5rem
+
+/* Range  */
+.range
+	&__row 
+		
+		display: flex
+		margin-left: -1rem
+		margin-right: -1rem
+		align-items: center
+	&__item
+		width: 8.8rem
+		padding-left: 1rem
+		padding-right: 1rem
+		margin-bottom: 2rem
+		input
+			height: 3.3rem
+			border-radius: 1rem
+			background-color: #e9edf0
+			border: none
+			font-size: 1.4rem
+			font-weight: 300
+			color: #7d7d7d
+			font-family: $font-family
+			text-align: center
+			box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+			padding: 0 1rem
+			width: 100%
+	&__devider 
+
+		width: 0.7rem
+		height: 0.1rem
+		margin: 0 .1rem 2rem
+		background: $color
+.range-scroll
+	margin: 0 7px 10px 7px
+	background-color: #c9cecf
+	height: .2rem
+	position: relative
+	max-width: 16.2rem
+	.ui-slider-range
+		background-color: #fa4242
+		height: .2rem
+		position: relative
+
+	.ui-slider-handle
+		width: 1.3rem
+		height: 1.3rem
+		
+		background-color: #fa4242
+		display: block
+		position: absolute
+		top: -6px
+		border-radius: 50%
+		margin-left: -7px
+		cursor: pointer
+		span
+			position: absolute
+			bottom: -18px
+			left: 50%
+			width: 50px
+			text-align: center
+			font-size: 10px
+			margin-left: -25px
+			font-weight: 500
+			color: #94a6aa
+
+
+/* Rating */
+.rating
+	display: flex
+	align-items: center
+	&__stars
+		white-space: nowrap
+		font-size: 0
+		.icon 
+			font-size: 1.2rem
+			color: #34a1d3
+			margin-right: .4rem
+
+
+	&__value 
+		font-size: 1rem
+		color: #7d7d7d
+		font-weight: 500
+		margin-left: .5rem
+		padding-top: .1rem
+
+/* Counter */
+.counter
+	display: flex
+	align-items: center
+	&__btn 
+		width: 1.4rem
+		height: 1.4rem
+		display: inline-block
+		vertical-align: middle
+		text-align: center
+		line-height: 1.4rem
+		border-radius: 0.2rem
+		background-color: #e9edf0
+		border: none
+		padding: 0 
+		margin: 0
+		font-size: 1.2rem
+		
+		font-weight: 500
+		box-shadow: .1rem .1rem .2rem rgba(#393939, 0.6), -.1rem -.1rem .2rem #fff
+		
+		@media (any-hover: hover) 
+			&:hover 
+				
+				box-shadow: inset 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
+	&--lg 
+		.counter__btn 
+			width: 2.1rem
+			height: 2.1rem
+			line-height: 2.1rem
+			font-size: 1.8rem
+		.counter__input 
+			font-size: 1.6rem
+			font-weight: 500
+
+
+	&__input 
+		margin: 0 1.3rem
+
+
+._text-collapse
+	.more-wrap 
+		display: none
+	&._full 
+		.more-wrap
+			display: block
+
+._text-collapse-block
+	overflow: hidden
+	position: relative
+
+	&._short 
+		&:after 
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 2rem
+			width: 100%
+			right: 0
+			background: linear-gradient(to bottom, rgba(#fbfbfb, 0), rgba(#fbfbfb, 1) )
+	&._full
+		max-height: none
+		&:after 
+			display: none
+
+
+/* loader */
+.loaded .main-wrapper
+	visibility: hidden
+	opacity: 0
+	transition: opacity 0.3s
+.loaded .icon-load 
+	display: flex
+.icon-load
+	position: fixed
+	top: 0
+	left: 0
+	right: 0 
+	bottom: 0
+	z-index: 1045
+	display: none
+	justify-content: center
+	align-items: center
+	width: auto
+	background: #fff
+ 
+.ball
+	width: 3rem
+	height: 3rem
+	border-radius: 1.5rem
+	background: white
+	opacity: 0.3
+
+.a
+	margin-right: 1rem
+	animation: ball-a 0.7s ease-out 0s infinite alternate
+
+.b
+	margin-right: 1rem
+	animation: ball-b 0.7s ease-out 0.2s infinite alternate
+.c
+	animation: ball-c 0.7s ease-out 0.4s infinite alternate
+
+@keyframes ball-a 
+	from
+		height: 2rem
+		opacity: 0.3
+		background: #fff
+	to
+		height: 7rem
+		opacity: 1
+		background: rgba(#929FB2, 0.2)
+
+@keyframes ball-b 
+	from
+		height: 2rem
+		opacity: 0.3
+		background: #fff
+	to
+		height: 6.5rem
+		opacity: 1
+		background: #929FB2
+
+@keyframes ball-c 
+	from
+		height: 2rem
+		opacity: 0.3
+		background: #fff
+	to
+		height: 6rem
+		opacity: 1
+		background: darken(#1C466C, 6%)
+

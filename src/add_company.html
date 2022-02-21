@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Добавьте вашу компанию в каталог"
+})
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О городе</a></li>
+						<li><span>Отзывы</span></li>
+					</ul>
+				</div>
+				<div class="main-content">
+					<div class="main-content__head">
+						<h1 class="title">Добавьте вашу компанию в каталог</h1>
+					</div>
+					<div class="main-content__body">
+
+						<form action="#" class="main-content__add-form add-form">
+							<div class="row">
+
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field">
+										<label class="form-label">
+											Название компании <span class="star">*</span>
+											<span class="toltipe-symbol" data-toltipe data-toltipe-ipad="center">
+												?
+												<div class="toltipe toltipe--right">Если вы - частное лицо, напишите ваше имя</div>
+											</span>
+										</label>
+										<input type="text" class="form-input form-input--radius" placeholder="Введите название ">
+									</div>
+								</div>
+								<div class="col-lg-7 col-md-6 offset-lg-1 ">
+									<div class="form-field">
+										<label class="form-label">Расскажите немного о своем магазине <span class="star">*</span></label>
+										<textarea rows="4" class="form-input form-input--radius" placeholder="Максимальное количество символов 200 "></textarea>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field">
+										<label class="form-label">
+											Район <span class="star">*</span>
+											<span class="toltipe-symbol" data-toltipe>
+												?
+												<div class="toltipe toltipe--right">укажите район, в котором вы оказываете услугу, например по всему Пафосу или Хлорака</div>
+											</span>
+										</label>
+										<input type="text" class="form-input form-input--radius" placeholder="Введите район">
+									</div>
+								</div>
+								<div class="col-lg-7 col-md-6 offset-lg-1">
+									<div class="row">
+										<div class="col-lg-8 col-md-7">
+											<div class="form-field check-list">
+												<label class="form-label ">Укажите ваш телефон <span class="star">*</span></label>
+												<input type="tel" class="form-input form-input--radius tel" placeholder="Введите телефон">
+
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-5 ">
+											<div class="form-field check-list">
+												<label class="checkbox ">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text">
+														WhatsApp
+
+													</span>
+												</label>
+												<label class="checkbox ">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text">
+														Viber
+
+													</span>
+												</label>
+												<label class="checkbox ">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text">
+														Telegram
+
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field check-list">
+										<label class="form-label ">На каких языках говорят в вашей компании? <span class="star">*</span></label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Русский
+
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Анлийский
+
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Греческий
+
+											</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="col-lg-4 col-md-6  offset-lg-1">
+									<div class="form-field">
+										<label class="form-label">Загрузите фото <span class="star">*</span></label>
+
+										<div class="upload">
+											<label class="upload__input form-input">
+												<span class="placeholder">Добавить файл из своих документов</span>
+												<svg class="icon icon-upload">
+													<use xlink:href="img/sprite.svg#upload"></use>
+												</svg>
+												<input type="file" class="form-input form-input--radius addImage" placeholder="Добавить файл из своих документов">
+											</label>
+
+											<ul class="upload-images uploadImagesList">
+												<div class="upload-images__item template">
+													<div class="upload-images__preview">
+														<img src="" alt="">
+													</div>
+													<div class="upload-images__remove">удалить</div>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-4 col-md-6">
+									<div class="form-field">
+										<label class="form-label">Добавьте тэги (нажмите enter после каждого тэга) <span class="star">*</span></label>
+										<input type="text" class="form-input form-input--radius" placeholder="Природа, достопримечательность, лето">
+
+									</div>
+									<div class="data-da-alert"></div>
+									<div class="add-button-wrap text-center">
+										<button type="submit" class="btn btn--danger btn--radius btn--tt">добавить компанию</button>
+										<div class="form-text form-text--lg"><strong>Эта услуга бесплатна!</strong></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6  offset-lg-1">
+									<div class="alert text-center" data-da="data-da-alert, 1,767">
+										<div class="alert__title">Хотите получать больше клиентов и пользоваться расширенным функционалом? </div>
+										<div class="alert__text">Получите премиум доступ</div>
+										<div class="alert__button">
+											<a href="#" class="btn btn--radius btn--info">подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

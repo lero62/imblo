@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Новости"
+})
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><span>Общая информация</span></li>
+					</ul>
+				</div>
+				<div class="main-content info-page">
+					<div class="main-content__head">
+						<h1 class="title">Общая информация</h1>
+					</div>
+					<div class="main-content__side"></div>
+					<div class="row">
+						<!-- BEGIN CONTENT -->
+						<div class="col-xl-9 col-lg-8 ">
+							<article class="page-article article">
+								<div class="article-img-left"><img src="img/article-img-10.png" alt=""></div>
+
+								<p>Пафос – это город-курорт, расположенный в юго-западной части острова Кипр. Является центром одноименного района, одного из 6 районов Кипра. По преданию, согласно мифологии в окрестностях города была рождена греческая богиня любви и красоты Афродита, за что остров Кипр получил неофициальное название «остров Афродиты». Условно, город делится на две больших части. В верхней части – Пано Пафосе, располагается центр города и основные административные городские здания. В нижней его части – Като Пафосе, вдоль побережья находятся основные отели, кафе, бары, рестораны, множество сувенирных магазинов, а также главные исторические и культурные достопримечательности города.</p>
+
+								<div class="clear"></div>
+
+								<h3>Население</h3>
+
+								<p>Население города Пафос порядка 36 тысяч человек. Порядка 80% населения составляют греко-киприоты, которые говоря на греческом языке - государственном языке Кипра. Остальную часть жителей образует достаточно смешанный этнический состав: турки, англичане, русские, грузины, армяне, сирийцы и т.д. Английский язык очень распространен ввиду большой английской диаспоры и огромного числа туристов, некоторые работники и служащие также знают и русский язык.</p>
+
+								<h3>Климат, погода</h3>
+
+								<p>Город Пафос обладает типичным средиземноморским субтропическим климатом с жарким сухим летом и прохладной дождливой зимой. Основные осадки в виде дождя выпадают в период с декабря по март, осадков в виде снега не бывает, но зимой во время ливневых дождей иногда идет град. Летом дождей практически нет, максимальная температура воздуха достигает 35-38 °C, температура воды около 27 °C. Зимняя температура воздуха и воды в дневные часы примерно одинаковы и составляют 13-15°C.</p>
+
+								<h3>Площадь</h3>
+
+								<p>Площадь города составляет приблизительно 18 кв.км., это, к примеру, сопоставимо с площадью подмосковного города Можайск.</p>
+
+							</article>
+
+							<div id="content-map" class="page-map"></div>
+						</div>
+						<!-- CONTENT EOF   -->
+
+						<!-- BEGIN SIDEBAR -->
+						<div class="col-xl-3 col-lg-4 sidebar">
+
+							<div class="widjet-block hidden-ipad">
+								<div class="article-details a-details" data-da="main-content__side, 2, 991">
+									<p>
+										<b>Географическое положение</b>
+										<br>
+										юго-западное побережье острова Кипр в Средиземном море
+									</p>
+									<p>
+										<b>GPS - координаты</b>
+										<br>
+										34.774593, 32.422716
+									</p>
+									<p>
+										<b>Площадь</b>
+										<br>
+										18 кв.км
+									</p>
+									<p>
+										<b>Население</b>
+										<br>
+										36 000 человек
+									</p>
+									<p>
+										<b>Климат</b>
+										<br>
+										субтропический
+									</p>
+								</div>
+
+							</div>
+
+							<div class="banner-cards-wrap">
+								<div class="row">
+									<div class="col-lg-12 col-sm-6">
+										<div class="banner-card">
+											<div class="banner-card__img">
+												<a href="#"><img src="img/banner-card-img-1.jpg" alt=""></a>
+												<span class="banner-card__sticker">Реклама</span>
+											</div>
+											<div class="banner-card__title"><a href="#">Аренда авто в Пафосе</a></div>
+											<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-sm-6">
+										<div class="banner-card">
+											<div class="banner-card__img">
+												<a href="#"><img src="img/banner-card-img-2.jpg" alt=""></a>
+												<span class="banner-card__sticker">Реклама</span>
+											</div>
+											<div class="banner-card__title"><a href="#">Экскурсии по Кипру</a></div>
+											<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- SIDEBAR EOF   -->
+					</div>
+
+					<!-- BEGIN NEWS -->
+					<section class="section">
+						<div class="section__head">
+							<h2 class="section__title">Другие мероприятия</h2>
+						</div>
+
+
+						<div class="row bl-list">
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Археологический парк Пафоса</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Гробницы королей</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Церковь Святой Параскевы</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Монастырь Св. Неофита Затворника</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Катакомбы святой Соломонии</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Развалины Хрисополитисса </a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Средневековая крепость на набережной </a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Катакомбы святой Соломонии</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Бухта и пляж Корал Бей</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Храм Афродиты</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Камень Афродиты</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Купальня Афродиты</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Ущелье Avakas</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Заповедник Akamas</a></h6>
+								</div>
+							</div>
+							<div class="col-xl-4 col-sm-6 bl-list__item">
+								<div class="tour-inner">
+									<div class="tour-inner__img">
+										<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+									</div>
+									<h6 class="tour-inner__title"><a href="#">Черепаший пляж</a></h6>
+								</div>
+							</div>
+						</div>
+
+					</section>
+					<!-- NEWS EOF   -->
+
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling@1.2.2/dist/leaflet-gesture-handling.min.css" />
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet-gesture-handling@1.2.2/dist/leaflet-gesture-handling.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(function () {
+
+			// подключение карты
+			var coordinates = [34.774593, 32.422716]
+			var mymap = L.map('content-map', {
+				trackResize: true,
+				dragging: false,
+				gestureHandling: true
+			}).setView(coordinates, 10);
+
+			// стиль карты
+			L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=ZO5rH8dFKxFTpxDpMRxR', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(mymap);
+
+
+			// var myIcon = L.divIcon({
+			// 	html: '<div class="map-marker"><img src="" alt=""> <span>город Пафос</span></div>'
+			// });
+
+			var marker = L.marker(coordinates, {});
+
+			mymap.addLayer(marker);
+
+		})
+	</script>
+
+</body>
+
+</html>

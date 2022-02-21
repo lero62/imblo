@@ -1,0 +1,301 @@
+.header
+	width: 100%
+	min-width: 32rem
+	text-align: left
+	flex-shrink: 0
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 9
+	box-shadow: 0.1rem 0.3rem 1rem 0.1rem rgba(0, 0, 0, 0.15)
+	background-color: #e9edf0
+	& > .container
+		display: flex
+		align-items: center
+		height: 5.5rem
+	&__logo
+		flex: none
+
+.logo
+	white-space: nowrap
+	.icon
+		font-size: 2.7rem
+		color: #fa4242
+		margin: 0 .5rem
+		vertical-align: middle
+		top: -.2rem
+	&__text
+		font-weight: 900
+		font-size: 1.8rem
+
+	&:hover
+		text-decoration: none
+
+.lang
+	margin-left: 3rem
+	position: relative
+
+	&:hover
+		.lang__list
+			display: block
+			position: absolute
+			top: 100%
+			left: 0
+			width: 100%
+		.lang__button
+			border-radius: 1rem 1rem 0 0
+			box-shadow: inset 0.2rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
+	&__button
+		border-radius: 1rem
+		background-color: #e9edf0
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		font-family: $font-family
+		border: none
+		height: 3.3rem
+		line-height: normal
+		padding: 0 1.8rem 0 1rem
+		white-space: nowrap
+		flex: none
+		font-size: 1.2rem
+		font-weight: 500
+		position: relative
+
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			right: .8rem
+			margin-right: -.2rem
+			+arr(.7rem, .4rem, #7d7d7d, b)
+		img
+			margin-right: .4rem
+
+	&__list
+		display: none
+		background: $bgcolor
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		border-radius: 0px 0px 10px 10px
+		padding: .5rem 0
+		overflow: hidden
+
+		a
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: .5rem 1.8rem .5rem 1rem
+			font-size: 1.2rem
+			font-weight: 500
+
+			img
+				margin-right: .4rem
+				width: 1.9rem
+				flex: none
+			&:hover
+				background: $color-danger
+				color: #fff
+				text-decoration: none
+
+.search-int
+	margin-left: 3rem
+	height: 2.5rem
+	width: 2.5rem
+	position: relative
+	overflow: hidden
+	&.is-open
+		overflow: visible
+		.search-int__block
+			opacity: 1
+	&__block
+		+tr
+		opacity: 0
+		position: absolute
+		top: -.8rem
+		right: -1.5rem
+		z-index: 3
+
+	&__input
+		background: #E9EDF0
+		width: 28.3rem
+		box-shadow: -4px -4px 4px #FFFFFF, 0px 4px 4px rgba(0, 0, 0, 0.25)
+		border-radius: 10px
+		border: none
+		height: 4rem
+
+		font-family: $font-family
+		font-weight: 400
+		font-size: 1.2rem
+		color: $color
+		padding: 0 6rem 0 2.4rem
+
+		+placeholder
+			color: #7D7D7D
+
+.search-button
+	position: relative
+	z-index: 4
+	padding: 0
+	border: none
+	height: 2.5rem
+	width: 2.5rem
+	font-size: 0
+	line-height: normal
+	background: transparent
+	.icon
+		font-size: 2.5rem
+		color: #fa4242
+
+	@media (any-hover: hover)
+		&:hover
+
+			.icon
+				color: #B31D00
+
+.main-menu
+	list-style: none
+
+	padding: 0
+	display: flex
+	&__item
+		margin-left: 2.5rem
+	&__link
+		color: #393939
+		font-size: 1.2rem
+		font-weight: 700
+		display: block
+		white-space: nowrap
+
+		@media (any-hover: hover)
+			&:hover
+
+				color: #393939
+
+.mm-item
+	position: relative
+
+	& > a
+		position: relative
+		padding-right: 1.2rem
+		&:after
+			position: absolute
+			content: ''
+			display: block
+			top: 50%
+			right: 0
+			margin-top: -.1rem
+			+arr(.7rem, .4rem, $color-info, b)
+	+min($ipad + 1)
+		&:hover
+
+			& > a
+
+				&:after
+					border-top-color: $color-default
+			& > ul
+				display: block
+
+.mm-menu
+	position: absolute
+	top: 100%
+	left: 0
+	z-index: 5
+	background: $bgcolor
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 0px 0px 10px 10px
+	min-width: 20rem
+	padding: .5rem 0
+	display: none
+	overflow: hidden
+
+	a
+		display: block
+		padding: 1rem 2.5rem
+		font-size: 1.2rem
+		font-weight: 400
+		color: $color-default
+
+		@media (any-hover: hover)
+			&:hover
+
+				background: $color-danger
+				color: #fff
+				text-decoration: none
+
+.fix-menu
+	box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2)
+	background-color: #e9edf0
+	padding: 1rem 0
+	position: fixed
+	top: 5.5rem
+	left: 0
+	width: 100%
+	z-index: 8
+	display: none
+
+	&__button
+
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+.fix-nav, .fix-filter
+	max-height: calc(100vh - 10rem)
+	overflow: hidden
+	overflow-y: auto
+
+/*  Burger button */
+.burger
+	height: 3.1rem
+	width: 3.1rem
+	cursor: pointer
+	position: relative
+	display: none
+	background-color: #e9edf0
+	border-radius: .5rem
+	box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+	padding: 0
+	margin-right: 1.4rem
+	&__icon
+		height: .2rem
+		width: 1.4rem
+		position: absolute
+		top: 50%
+		left: 50%
+		height: 0.2rem
+		border-radius: 0.1rem
+		background-color: #fa4242
+		transform: translate(-50%,-50%) rotate(0deg)
+		transition: all ease 0.5s
+		&:before,&:after
+			content: ""
+			position: absolute
+			height: inherit
+			border-radius: .1rem
+			background-color: #fa4242
+			margin: auto
+			width: 100%
+			transition: all ease 0.5s
+
+		&:before
+			top: -.5rem
+			left: 0
+			transform-origin: left
+
+		&:after
+			bottom: -.5rem
+			right: 0
+			transform-origin: right
+	&.is-active
+		box-shadow: inset 0.2rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
+
+$mm-color: $color
+$mm-bg: $bgcolor /* Фон меню */
+$mm-sub-color: #fa4242 /* Дополнительный цвет */
+
+.mobile-navbar
+	margin: 0 auto

@@ -1,0 +1,225 @@
+
+.popup, .mfp-figure-info
+	background-color: #e9edf0
+	max-width: 100rem
+	margin: 0 auto
+	padding: 4rem !important
+	position: relative
+
+.popup
+	&__head
+		margin-bottom: 2.4rem
+	&__title
+		font-weight: 700
+		font-size: 2.4rem
+		margin-bottom: 1rem
+
+	&__description
+		font-size: 1.8rem
+		font-weight: 400
+
+.p-gallery-info
+	display: none
+
+.mfp-figure
+	background-color: #e9edf0
+	padding: 3.8rem 2rem 2rem
+
+.mfp-image-holder .mfp-content
+	margin: 0 9rem
+
+.mfp-figure-info
+	line-height: 1.3 !important
+
+.mfp-bg
+	background: $color !important
+
+.mfp-close
+	color: $color-danger !important
+	font-size: 3.8rem !important
+	padding: 0 !important
+	line-height: 3rem
+	width: 3.8rem !important
+	height: 3.8rem !important
+
+.mfp-arrow-right:before, .mfp-arrow-left:before
+	display: none !important
+.mfp-arrow-right:after
+	border-left: 1.5rem solid $color-danger !important
+.mfp-arrow-left:after
+	border-right: 1.5rem solid $color-danger !important
+
+.mfp-gallery .mfp-image-holder .mfp-figure
+	cursor: default !important
+.mfp-img
+
+	padding: 0 !important
+
+.mfp-bottom-bar
+	position: static !important
+
+	margin-top: 1.5rem !important
+
+.mfp-counter
+	position: static !important
+	color: $color !important
+
+.popup-gallery
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	&__img
+		flex: 0 1 auto
+		img
+			margin: 0 !important
+			padding: 0 !important
+			max-width: 100%
+	&__info
+		margin-left: 3rem
+		width: 23rem
+		flex: none
+
+.pg-top
+	display: flex
+	align-items: center
+	margin-bottom: 2rem
+	&__like
+		margin-right: 1rem
+		cursor: pointer
+		.icon
+			color: $color-danger
+			font-size: 2.4rem
+			&-heart
+				display: none
+		&._active
+			.icon
+				fill: currentColor
+				&-heart
+					display: block
+				&-heart-alt
+					display: none
+	&__share
+		margin-right: 2rem
+		cursor: pointer
+		.icon
+			color: $color-info
+			font-size: 2.4rem
+
+	&__date
+		color: #7D7D7D
+		font-size: 1.2rem
+		font-weight: 400
+
+.pg-block
+	margin-bottom: 4rem
+	font-size: 1.4rem
+	&:last-child
+		margin-bottom: 0
+	&__title
+		font-size: 1.4rem
+		font-weight: 700
+		position: relative
+		padding-left: 3rem
+		margin-bottom: 1.4rem
+
+		.icon
+			position: absolute
+			left: 0
+			top: -.2rem
+			color: $color-info
+			font-size: 2.2rem
+	&__name
+		font-weight: 700
+		color: #7D7D7D
+		padding-left: 3rem
+		margin-bottom: 1rem
+		font-size: 1.2rem
+
+	&__text
+		font-size: 1.2rem
+		font-weight: 400
+		color: #7D7D7D
+		margin-bottom: 1rem
+
+	&__social
+		padding-left: 3rem
+		.social__link
+			margin-right: .6rem
+			.icon
+				color: $color-danger
+
+	.link
+		color: $color-info
+		font-weight: 700
+		text-decoration: underline
+		margin-top: .6rem
+		display: inline-block
+		&:hover
+			text-decoration: none
+
+._share
+	position: relative
+	z-index: 1
+
+.dropdown-share
+	position: absolute
+	top: 100%
+	left: -2rem
+	display: none
+	margin-top: 1rem
+	z-index: 2
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
+	border-radius: 2rem
+	&__inner
+		padding: 2rem
+		background: #E9EDF0
+		border-radius: 2rem
+		position: relative
+		z-index: 2
+		min-width: 19rem
+
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		z-index: 1
+		height: 1.6rem
+		width: 1.2rem
+		background: #E9EDF0
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
+		transform: rotate(45deg)
+		top: -.8rem
+		left: 2.4rem
+	&__title
+		font-weight: 700
+		font-size: 1.4rem
+		color: #000
+		margin-bottom: 0.5rem
+
+	ul
+		margin-left: -2rem
+		margin-right: -2rem
+		a
+			display: block
+			padding: .5rem 2rem
+			font-size: 1.4rem
+			font-weight: 400
+			color: #000
+
+			@media (any-hover: hover)
+				&:hover
+
+					color: $color-info
+
+#popup-subscribe
+	max-width: 40rem
+
+#popup-questions
+	max-width: 52rem
+
++max($iphone)
+	.popup
+		&__title
+			font-size: 2rem
+		&__description
+			font-size: 1.4rem

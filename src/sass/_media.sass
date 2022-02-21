@@ -1,0 +1,630 @@
+
+/* laptop =========================*/
++min($laptop + 1)
+	.visible-laptop
+		display: none !important
++max($laptop)
+	.hidden-laptop
+		display: none !important
+
+	.hidden-lg
+		display: none !important
+
+	.main-menu__item, .search-int, .lang
+		margin-left: 2rem
+
+	.poster-list li
+		margin-bottom: 2rem
+
+	.poster-list
+		&__info
+			.date
+				display: block
+
+			.price
+				display: block
+	.shop-block
+		columns: auto
+		margin-top: 0
+		.category-inner
+			width: 50%
+			padding-right: 2rem
+			margin: .7rem -.4rem .7rem 0
+		.shop-inner
+			margin-bottom: 1rem
+			margin-top: 0
+			display: block
+
+	.ct-sidebar
+		margin-right: 4rem
+	.ct-content__right
+		margin-left: 4rem
+
+/* Ipad ===========================*/
++min($ipad + 1)
+	.visible-ipad
+		display: none !important
++max($ipad)
+	.hidden-ipad
+		display: none !important
+
+	.page-catalog
+		.main-wrapper
+			padding-top: 10.6rem
+		.fix-menu
+			display: block
+
+	/* Header */
+
+	.main-menu
+		display: block
+		.mm-item
+			&.is-active
+				& > a
+
+					&:after
+						border-top-color: $color-default
+				& > ul
+					display: block
+		&__item
+			margin: 0
+		&__link
+			padding: 1.5rem
+			font-size: 1.6rem
+			color: $mm-color
+			font-weight: 700
+			&:hover
+				text-decoration: none
+
+	.mm-menu
+		position: static
+		box-shadow: none
+		padding: 0
+		width: auto
+		border-radius: 0
+		a
+			&:hover
+				background-color: transparent
+				color: $color
+
+	.header__logo
+		margin: 0 auto
+	.burger
+		display: block
+
+	/* begin Mobile Menu */
+
+	.mobile-navbar
+		position: fixed
+		left: 0
+		top: 0
+		bottom: 0
+
+		&__container
+			background: $mm-bg
+			width: 28rem
+			position: absolute
+			left: 0
+			top: 0
+			height: 100%
+			z-index: 100
+			max-height: 100%
+			+tr
+			transform: translateX(-100%)
+			overflow: hidden
+			overflow-y: auto
+
+		&__header
+			height: 5.5rem
+			padding: .5rem 1.5rem
+			border-bottom: .1rem solid rgba($color, 0.3)
+			display: flex
+			align-items: center
+
+		&__main
+			padding: 3.5rem 1.5rem
+
+		&__footer
+			padding: 3.5rem 1.5rem
+			border-top: .1rem solid rgba($color, 0.3)
+			text-align: center
+
+		&__close
+			margin-left: auto
+
+			position: relative
+			cursor: pointer
+			height: 3.1rem
+			width: 3.1rem
+			background-color: #e9edf0
+			border-radius: .5rem
+			box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+			padding: 0
+			&:after, &:before
+				content: ''
+				display: block
+				width: 1.4rem
+				height: .2rem
+				background: $mm-sub-color
+				position: absolute
+				left: .8rem
+				top: 47%
+
+			&:after
+				transform: rotate(-45deg)
+			&:before
+				transform: rotate(45deg)
+		&__overlay
+			background: rgba($mm-bg, 0.5)
+			+coverdiv
+			z-index: 99
+			opacity: 0
+			transform: translateX(-100%)
+			transition: opacity .2s ease-in-out, transform .1ms ease-in-out .2s
+
+		&.is-open
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			height: 100vh
+			height: 100%
+			z-index: 9999
+			.mobile-navbar__container
+				transform: translateX(0)
+				box-shadow: 2px 0 6px rgba(51,51,51,.26)
+
+			.mobile-navbar__overlay
+				opacity: 1
+				transform: translateX(0)
+				transition: opacity .2s ease-in-out
+
+	/* end Mobile Menu */
+
+	/* Main */
+	.main-content
+		margin-top: 3rem
+		&__side
+			margin-bottom: 3rem
+
+	.section
+		&--sm
+			margin-top: 6rem
+			margin-bottom: 6rem
+	.sidebar
+		margin-top: 4rem
+
+	.sidebar-sm
+		margin-left: 0
+		width: auto
+
+	.sidebar-ch
+		margin-bottom: 4rem
+
+	.banner-cards-wrap
+		margin-bottom: -4rem
+		margin-top: 0
+
+	.promo__text
+		max-width: none
+
+	.ct-content__wrap, .card-wrap
+		display: block
+
+	.ct-content__right
+		width: auto
+		margin: 0
+		display: none
+
+	.sd-list
+		display: block
+
+	.poster-list__info .date, .poster-list__info .price
+		display: inline-block
+
+	.shop-block
+
+		.category-inner
+			width: auto
+			display: flex
+
+			padding-right: 0
+			margin: 1.3rem -0
+
+	/* Weeks */
+	.card-horizontal__img,.interesting-inner__img, .banner-card-horizontal .banner-card__img
+		width: 12rem
+
+	.card-gallery-content
+		padding: 1.5rem
+
+	.sidebar-sm
+		.tags
+			margin-bottom: 2.4rem
+
+	.fix-nav, .fix-filter
+		display: none
+		padding: 2rem 0
+
+	/* UI */ 
+	.social--lg
+		.social__link
+			margin-right: 2rem
+			.icon
+				font-size: 2.8rem
+				&-vk
+					font-size: 3.2rem
+/* Mobile =========================*/
++min($iphone + 1)
+	.visible-iphone
+		display: none !important
++max($iphone)
+	.hidden-iphone, .i-hidden-iphone
+		display: none !important
+	.h1, h1
+		font-size: 2.4rem
+	.h2, h2
+		font-size: 2rem
+	.main-wrapper
+		padding-top: 4.2rem
+	.page-catalog .main-wrapper
+		padding-top: 9.4rem
+
+	.header>.container
+		height: 4.2rem
+
+	.logo
+		&__text
+			font-size: 1.5rem
+		.icon
+			font-size: 2rem
+			top: 0
+
+	.search-int
+		order: 1
+		margin-left: 1.5rem
+
+	.search-button
+		.icon
+			font-size: 1.8rem
+
+	.header .lang
+		margin-left: .7rem
+		margin-right: .7rem
+		&__button
+			height: 2.5rem
+			border-radius: .5rem
+			font-size: .9rem
+			padding: 0 .7rem 0 .7rem
+			box-shadow: .2rem .2rem .3rem rgba(#393939, 0.6), -.2rem -.2rem .3rem #fff
+			img
+				width: 1.7rem
+				margin-right: 0
+			span, &:after
+				display: none
+		&__list
+			a
+				padding-left: .7rem
+				padding-right: .7rem
+			span
+				display: none
+			img
+				width: 1.7rem
+				margin-right: 0
+
+	.lang:hover .lang__button
+		border-radius: .5rem .5rem 0 0
+
+	.lang__list
+		border-radius: 0 0 .5rem .5rem
+		a
+			padding: .5rem 1.4rem .5rem .7rem
+			font-size: .9rem
+			img
+				width: 1.2rem
+
+	.burger
+		height: 2.5rem
+		width: 2.5rem
+		box-shadow: .2rem .2rem .3rem rgba(#393939, 0.6), -.2rem -.2rem .3rem #fff
+
+	.mobile-navbar
+		&__header
+			height: 4.2rem
+		&__close
+
+			height: 2.5rem
+			width: 2.5rem
+			&:after, &:before
+				left: .6rem
+
+	.fix-menu
+		top: 4.2rem
+
+	/* Main */
+
+	.main-content
+		margin-top: 2rem
+
+	.section
+		margin: 6.5rem 0
+		&__head
+			margin-bottom: 2.5rem
+		&__title
+			font-size: 2.3rem
+
+	.news-wrapper-head .title
+		font-size: 2.4rem
+
+	.rw
+		margin-bottom: -6rem
+		&__item
+			margin-bottom: 6rem
+
+	.search-block
+		display: block
+		&__info
+			margin-left: 0
+			width: auto
+
+	.promo-wrap
+		margin-bottom: 5rem
+	.promo__title
+		font-size: 2.8rem
+
+	.icons-grid
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		&__item
+			max-width: 33.33%
+			width: auto
+
+		&__text
+			font-size: 1.4rem
+			margin-left: 1.2rem
+
+	.promo-grid__item, .category-grid__item
+		border-radius: .5rem .5rem 0 0
+
+	.ct-main
+		display: block
+	.ct-sidebar
+		width: auto
+		margin-bottom: 6rem
+		margin-right: 0
+
+	.box-banner-inner
+		height: 30rem
+	.box-gallery-inner__img
+		height: 11.6rem
+
+	.card-horizontal__img, .interesting-inner__img
+		width: 16.4rem
+
+	.interesting-wrap__item
+		width: 25rem
+
+	.reviews-slider-nav, .promo-grid-nav, .category-grid-nav
+		margin-top: 1rem
+
+	.interesting-inner__body
+		display: block
+	.interesting-inner__img
+		margin-right: 0
+		width: auto
+
+		margin-bottom: 1.5rem
+		img
+			width: 100%
+
+	.banner-card-horizontal
+		display: block
+		.banner-card__img
+			margin-bottom: 1rem
+		.banner-card__img
+			width: auto
+
+	.grid-item, .grid-sizer
+		width: calc(50% - 1.4rem)
+
+	/* Page article */
+	.comment-form__wrap
+		display: block
+
+	/* Footer */
+	.footer__top
+		padding-top: 3rem
+		padding-bottom: 3rem
+	.footer__item
+		margin: 1.7rem 0
+
+	.footer__subscribe
+		margin-bottom: 3rem
+	.up
+		top: -4.5rem
+
+	/*UI*/ 
+	.slick-nav__wrap
+		position: static
+		margin-top: 2rem
+
+	.swiper-pagination
+
+		&-bullet
+			margin: 0 .4rem !important
+
+			width: 1rem !important
+			height: 1rem !important
+
+	/* Popup */
+
+	.popup-gallery
+		display: block
+
+		&__info
+			margin-left: 0
+			width: auto
+			margin-top: 1.6rem
+
+/* Mobile sm ======================*/
++min($iphone_sm + 1)
+	.visible-iphone-sm
+		display: none !important
++max($iphone_sm)
+	.hidden-iphone-sm
+		display: none !important
+
+	.i-hidden-xs
+		display: none
+
+	.main__button
+		.btn
+			width: 100%
+			display: flex
+	.icons-grid
+		&__text
+			margin-left: .9rem
+		&__icon
+			height: 3rem
+			width: 3rem
+			border-radius: .5rem
+
+			.icon
+				font-size: 1.7rem
+
+	.promo-grid.slick-slider .slick-list,
+	.category-grid .slick-list
+		margin: 0 -.8rem
+	.promo-grid.slick-slider .promo-grid__item,
+	.category-grid .category-grid__item
+		margin: 1rem .8rem
+	.promo-grid__item
+		padding: 2rem 1.5rem
+	.promo-grid__title
+		font-size: 1.4rem
+
+	.ct-head__icon
+		display: none
+
+	.poster-list
+		&__title
+			flex: 1
+			width: auto
+
+		&__info
+
+			padding-left: 1rem
+			width: auto
+			flex: none
+			.date
+				display: block
+				margin-right: 0
+			.price
+				display: block
+	.category-list
+		margin-bottom: -2rem
+		margin-top: -.7rem
+		.slick-slide
+
+			margin-top: .7rem
+		&__item
+			margin-bottom: 2rem
+
+	.category-grid__item
+		padding-left: .7rem
+		padding-right: .7rem
+		padding-top: 4rem
+		padding-bottom: 4rem
+
+	.category-grid__title
+		font-size: 1.4rem
+
+	.box-banner-inner
+		height: auto
+		padding-top: 100%
+
+	.box-gallery-inner__img
+		height: auto
+		padding-top: 43.5%
+
+	.sorting-nav__item
+		display: block
+
+	.dropdown-button
+		font-size: 1.4rem
+		&:after
+			top: .7rem
+
+	.subscribe-form
+		max-width: none
+		padding: 0 .5rem
+	.subscribe-form__input
+		max-width: none
+
+	.interesting-wrap
+		margin-bottom: 0
+		.swiper-wrapper
+			width: 100%
+		.row
+			flex-wrap: nowrap
+			margin-left: 0
+			margin-right: 0
+		.swiper-slide
+			padding-left: 0
+			padding-right: 0
+			margin-bottom: 0
+
+	.interesting-inner__list
+		columns: 2
+		column-gap: 2rem
+		li
+			font-size: 1.4rem
+			display: inline-block
+			vertical-align: top
+			width: 100%
+
+	/* Popup */
+
+	.popup
+		padding: 3.8rem 2rem 2rem !important
+
+	.mfp-close
+		top: 0 !important
+		right: 0 !important
+
+	.pg-block
+		font-size: 1.2rem
+
+	.mfp-image-holder .mfp-content
+		margin: 0 auto
+
+/* Mobile xs ======================*/
++min($iphone_xs + 1)
+	.visible-iphone-xs
+		display: none !important
++max($iphone_xs)
+	.hidden-iphone-xs
+		display: none !important
+
+	.card-horizontal
+		display: block
+		&__img
+			margin-right: 0
+			margin-bottom: 1.2rem
+			width: auto
+
+			img
+				width: 100%
+
+	.interesting-inner__list
+		columns: auto
+		li
+			display: block
+
+	.cards-week
+		margin-left: -1.5rem
+		margin-right: -1.5rem
+		padding: 0 1.5rem
+		.slick-slide
+			width: 25rem !important

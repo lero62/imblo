@@ -1,0 +1,200 @@
+
+/* Gallery Events ===================================================================================================*/
+/* =========================================================================================================*/
+
+.events-page, .gallery-page
+	.main-content__head
+		display: flex
+		align-items: flex-end
+		flex-wrap: wrap
+		justify-content: space-between
+	.title
+		flex: none
+		margin-right: 1.5rem
+	.sorting
+		margin-bottom: 1.7rem
+/* Rental ===================================================================================================*/
+/* =========================================================================================================*/
+
+.rental
+	margin-bottom: 2rem
+	&__img
+		margin-bottom: 3rem
+		img
+			border-radius: 1rem 1rem 0 0
+			width: 100%
+
+.question-list
+	border-top: .2rem solid #34A1D3
+	border-bottom: .2rem solid #34A1D3
+	padding: 5rem 0
+	margin-bottom: 5rem
+	&__item
+		margin-bottom: 4rem
+		&:last-child
+			margin-bottom: 0
+	&__title
+		position: relative
+		padding-left: 3.5rem
+		font-size: 1.8rem
+		font-weight: 700
+		margin-bottom: 1.5rem
+	&__symbol
+		position: absolute
+		left: 0
+		top: -.2rem
+		width: 2.5rem
+		height: 2.5rem
+		background: #34A1D3
+		border-radius: 50%
+		text-align: center
+		line-height: 2.5rem
+		color: #fff
+		font-size: 1.8rem
+		font-weight: 700
+	&__text
+		font-size: 1.6rem
+		font-weight: 400
+
+.rental-about
+	font-size: 1.4rem
+	font-weight: 400
+	margin-bottom: 5rem
+
+.det-list
+
+	columns: 2
+	column-gap: 3rem
+	li
+		padding-left: 2.5rem
+		break-inside: avoid
+		position: relative
+		font-weight: 700
+		font-size: 1.6rem
+		margin-bottom: 2rem
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: .2rem
+			width: 1.5rem
+			height: 1.5rem
+			border-radius: 50%
+			background: $color-danger
+
+.rental-widjet
+	background: #EAEDF0
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
+	border-radius: 10px 10px 0px 0px
+
+	&__img
+		img
+			width: 100%
+	&__body
+		padding: 2rem
+
+/* Hisrory ===================================================================================================*/
+/* =========================================================================================================*/
+
+.a-boxes
+	box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+	background: $bgcolor
+	border-radius: 1rem 1rem 0 0
+	padding: 2.2rem 2rem
+.facts-list
+	ul
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: -2.5rem
+		li
+			width: calc(50% - 4rem)
+			font-size: 1.2rem
+			font-weight: 700
+			position: relative
+			line-height: 150%
+			padding-left: 4rem
+			margin-bottom: 2.5rem
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: -.2rem
+				left: 0
+				width: 2.1rem
+				height: 2.1rem
+				border-radius: 50%
+				background: #E43C3C
+
+/* Info ===================================================================================================*/
+/* =========================================================================================================*/
+
+.page-map
+	margin-top: 3rem
+
++max($ipad)
+	/* Gallery Events ========== */ 
+	.events-page, .gallery-page
+		.main-content__head
+			display: block
+		.title
+			margin-right: 0
+		.sorting-nav
+			margin-bottom: 0
+	/* Rental ========== */ 
+	.det-list
+		li
+			font-size: 1.4rem
+
+	/* History ========== */ 
+	.facts-list ul
+		li
+			width: calc(50% - 1.5rem)
+			padding-left: 3rem
+			&:before
+				top: 0
+				width: 1.6rem
+				height: 1.6rem
+
+/* About ===================================================================================================*/
+/* =========================================================================================================*/
+.about-page
+	.banner-cards-wrap
+		margin-top: 0
+
++max($iphone)
+	/* Rental ========== */ 
+	.rental
+		margin-bottom: 3rem
+
+	.question-list
+		padding: 3rem 0
+		margin-bottom: 3rem
+		&__item
+			margin-bottom: 2.5rem
+		&__title
+			font-size: 1.6rem
+		&__symbol
+			font-size: 1.6rem
+			top: -.4rem
+		&__text
+			font-size: 1.2rem
+
+	.rental-about
+		font-size: 1.2rem
+		margin-bottom: 3rem
+
+	.det-list
+		columns: auto
+		li
+			font-size: 1.2rem
+			&:before
+				top: 0
+
+	/* History ========== */ 
+	.facts-list ul
+		display: block
+		li
+			width: auto
+			margin-bottom: 1.6rem

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "О проекте"
+})
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+
+						<li><span>О проекте</span></li>
+					</ul>
+				</div>
+				<div class="main-content about-page">
+					<div class="main-content__head">
+						<h1 class="title">О проекте</h1>
+					</div>
+					<div class="main-content__body">
+						<div class="row">
+							<!-- BEGIN CONTENT -->
+							<div class="col-xl-9 col-lg-8 ">
+								<article class="page-article article">
+									<p>I Love Paphos – русскоязычный информационный онлайн-портал для местных жителей и туристов Пафоса.</p>
+
+									<p>Все о переезде, жизни и отдыхе: о компаниях, услугах и многом другом. Мы расскажем вам о самых интересных мероприятиях и последних новостях. Туристы часто задаются вопросами: какие места лучше посетить, как построить маршрут, какой отель выбрать, где лучше забронировать машину, в каком ресторане приятно провести время и другое.</p>
+
+									<p>На этом сайте собраны ответы на все эти вопросы.</p>
+								</article>
+
+								<div class="main-content__about-grid about-grid row">
+									<div class="about-grid__item col-sm-6">
+										<div class="about-box">
+											<div class="about-box__title">Общение</div>
+											<div class="about-box__text">В этих группах вы можете задать вопрос или поделиться полезной информацией с участниками: жителями и туристами Пафоса.</div>
+											<div class="about-box__button">
+												<a href="#" class="btn btn--radius btn--tt btn--info">
+													<svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg> Группа в Facebook
+												</a>
+												<a href="#" class="btn btn--radius btn--tt btn--info">
+													<svg class="icon icon-telegram">
+														<use xlink:href="img/sprite.svg#telegram"></use>
+													</svg> Канал в Telegram
+												</a>
+											</div>
+
+										</div>
+									</div>
+									<div class="about-grid__item col-sm-6">
+										<div class="about-box">
+											<div class="about-box__title">Отзывы и замечания</div>
+											<div class="about-box__text">Мы будем благодарны вам за любой отклик: для нас важно ваше мнение: понравился ли вам сайт, какую информацию еще нужно добавить, какие найдены неточности, какие сервисы вы хотели бы еще видеть.</div>
+											<div class="about-box__button">
+												<a href="#" class="btn btn--radius btn--tt ">Оставить отзыв</a>
+											</div>
+
+										</div>
+									</div>
+									<div class="about-grid__item col-sm-6">
+
+										<div class="about-box">
+											<div class="about-box__title">Авторам</div>
+											<div class="about-box__text">Вы любите Пафос и вам есть что рассказать нашим читателям на страницах этого ресурса, напишите нам.</div>
+											<div class="about-box__button">
+												<a href="#popup-questions" class="btn btn--radius btn--tt open-popup">Написать нам</a>
+											</div>
+
+										</div>
+									</div>
+									<div class="about-grid__item col-sm-6">
+										<div class="about-box">
+											<div class="about-box__title">Фотографам</div>
+											<div class="about-box__text">Приглашаем к сотрудничеству фотографов на бартерных условиях.</div>
+											<div class="about-box__button">
+												<a href="#" class="btn btn--radius btn--tt btn--info">Узнать условия</a>
+											</div>
+
+										</div>
+									</div>
+									<div class="about-grid__item col-sm-6">
+										<div class="about-box">
+											<div class="about-box__title">Рекламодателям</div>
+											<div class="about-box__text">Свяжитесь с нами по вопросам размещения рекламы: расскажите о вашем бизнесе и рекламных целях. Обсудим с вами все возможные варианты рекламы, продвижения и предложим оптимальный для вашего бизнеса.
+												<br> Оставьте заявку на сайте или напишите нам: <strong><em>hello@ilovepaphos.com</em></strong>
+											</div>
+											<div class="about-box__button">
+												<a href="#" class="btn btn--radius btn--tt btn--info">предложение по рекламе</a>
+											</div>
+
+										</div>
+									</div>
+
+
+									<div class="about-grid__item col-sm-6">
+										<div class="about-box">
+											<div class="about-box__title">Подписка на рассылку сайта</div>
+
+											<form action="#" class="about-box__form">
+												<div class="form-field">
+													<input type="text" class="form-input form-input--radius text-center" placeholder="Ваш e-mail">
+												</div>
+												<button type="submit" class="btn btn--block btn--tt btn--radius">Подписаться</button>
+											</form>
+
+											<div class="about-box__text">Следите за нами в социальных сетях</div>
+											<div class="social social--lg">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook2">
+														<use xlink:href="img/sprite.svg#facebook2"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-telegram2">
+														<use xlink:href="img/sprite.svg#telegram2"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-vk">
+														<use xlink:href="img/sprite.svg#vk"></use>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- CONTENT EOF   -->
+
+							<!-- BEGIN SIDEBAR -->
+							<div class="col-xl-3 col-lg-4 sidebar">
+								<div class="about-page__banner-cards-wrap banner-cards-wrap">
+									<div class="row">
+										<div class="col-lg-12 col-sm-6">
+											<div class="banner-card">
+												<div class="banner-card__img">
+													<a href="#"><img src="img/banner-card-img-1.jpg" alt=""></a>
+													<span class="banner-card__sticker">Реклама</span>
+												</div>
+												<div class="banner-card__title"><a href="#">Аренда авто в Пафосе</a></div>
+												<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+											</div>
+										</div>
+										<div class="col-lg-12 col-sm-6">
+											<div class="banner-card">
+												<div class="banner-card__img">
+													<a href="#"><img src="img/banner-card-img-2.jpg" alt=""></a>
+													<span class="banner-card__sticker">Реклама</span>
+												</div>
+												<div class="banner-card__title"><a href="#">Экскурсии по Кипру</a></div>
+												<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!-- SIDEBAR EOF   -->
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+		@@include('./template/popups/questions.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Добавить фото в фотогалерею"
+})
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><span>Добавить фото в фотогалерею</span></li>
+					</ul>
+				</div>
+				<div class="main-content">
+					<div class="main-content__head">
+						<h1 class="title">Добавить фото в фотогалерею</h1>
+					</div>
+					<div class="main-content__body">
+						<form action="#" class="main-content__add-form add-form">
+							<div class="row">
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field">
+										<label class="form-label">Описание фото <span class="star">*</span></label>
+										<textarea rows="7" class="form-input form-input--radius" placeholder="Напишите кратко что изображено на фото (макс 250 символов)"></textarea>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 offset-lg-1 ">
+									<div class="form-field">
+										<label class="form-label">Название места <span class="star">*</span></label>
+										<input type="text" class="form-input form-input--radius" placeholder="Напишите где сделано фото">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field">
+										<label class="form-label">Загрузите фото <span class="star">*</span></label>
+
+
+										<div class="upload">
+											<label class="upload__input form-input">
+												<span class="placeholder">Добавить файл из своих документов</span>
+												<svg class="icon icon-upload">
+													<use xlink:href="img/sprite.svg#upload"></use>
+												</svg>
+												<input type="file" class="form-input form-input--radius addImage" placeholder="Добавить файл из своих документов">
+											</label>
+
+											<ul class="upload-images uploadImagesList">
+												<div class="upload-images__item template">
+													<div class="upload-images__preview">
+														<img src="" alt="">
+													</div>
+													<div class="upload-images__remove">удалить</div>
+												</div>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-lg-4 offset-lg-1 col-md-6">
+									<div class="form-field">
+										<label class="form-label">Добавьте тэги (нажмите enter после каждого тэга) <span class="star">*</span></label>
+										<input type="text" class="form-input form-input--radius" placeholder="Природа, достопримечательность, лето">
+
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="form-field">
+										<label class="form-label">Ваши комментарии</label>
+										<textarea rows="7" class="form-input form-input--radius" placeholder="Введите текст, не более 250 символов"></textarea>
+									</div>
+								</div>
+								<div class="col-12 ">
+									<div class="check-wrap form-field">
+										<label class="checkbox ">
+											<input type="checkbox" class="_open-block" data-name="ifot">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Я профессиональный фотограф, работающий в Пафосе
+											</span>
+										</label>
+
+										<span class="toltipe-symbol" data-toltipe>
+											?
+											<div class="toltipe">Ваши контакты будут размещены под фотографией</div>
+										</span>
+									</div>
+
+									<div class="ifot" style="display: none;">
+										<label class="form-label">Ваше имя</label>
+										<div class="row ">
+											<div class="col-lg-4 ">
+												<div class="form-field">
+
+													<input type="text" class="form-input form-input--radius" placeholder="Введите имя, фамилию">
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6">
+												<div class="form-field">
+													<div class="form-wrap-icon">
+														<svg class="icon icon-instagram">
+															<use xlink:href="img/sprite.svg#instagram"></use>
+														</svg>
+														<div class="form-wrap-icon__input">
+															<input type="text" class="form-input form-input--radius" placeholder="Введите ссылку на ваш Insatgram">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6">
+												<div class="form-field">
+													<div class="form-wrap-icon">
+														<svg class="icon icon-facebook">
+															<use xlink:href="img/sprite.svg#facebook"></use>
+														</svg>
+														<div class="form-wrap-icon__input">
+															<input type="text" class="form-input form-input--radius" placeholder="Введите ссылку на ваш Facebook">
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<button type="submit" class="btn btn--danger btn--radius">ДОБАВИТЬ ФОТО</button>
+						</form>
+					</div>
+
+
+				</div>
+			</div>
+
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

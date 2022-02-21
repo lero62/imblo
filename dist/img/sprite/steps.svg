@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="10" viewBox="0 0 25 10">
+<path   stroke-miterlimit="20" stroke-width="4" d="M5 0v0h5v5H5v0z" />
+<path   stroke-miterlimit="20" stroke-width="4" d="M0 5v0h5v5H0v0z" />
+<path   stroke-miterlimit="20" stroke-width="4" d="M10 5v0h5v5h-5v0z" />
+<path   stroke-miterlimit="20" stroke-width="4" d="M15 0v0h5v5h-5v0z" />
+<path   stroke-miterlimit="20" stroke-width="4" d="M20 5v0h5v5h-5v0z" />
+</svg>

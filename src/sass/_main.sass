@@ -1,0 +1,790 @@
+.main-wrapper
+	padding: 0
+	padding-top: 5.5rem
+	min-width: 32rem
+	position: relative
+	overflow: hidden
+	opacity: 1
+	flex: 1 1 auto
+	display: flex
+	flex-flow: column nowrap
+	min-height: 100vh
+	width: 100%
+
+.main
+	width: 100%
+	min-width: 32rem
+	text-align: left
+	flex: 1 1 auto
+
+.container
+	width: 100%
+	min-width: 32rem
+	max-width: $container
+	padding: 0 $gutters
+	margin: 0 auto
+	position: relative
+
+	+max($laptop)
+		max-width: 960px
+	+max($ipad)
+		max-width: 720px
+	+max($iphone)
+		max-width: 540px
+	+max($iphone_sm)
+		max-width: none
+
+.main-content
+	margin-top: 5rem
+	&__head
+		margin-bottom: 2rem
+		.title
+			margin-bottom: 1rem
+		.date
+			font-weight: 300
+	&__body
+		margin-bottom: 6rem
+
+.main__head
+	margin-bottom: 3rem
+	h1
+		margin-bottom: 1rem
+
+.section
+	margin-top: 11rem
+	margin-bottom: 11rem
+	&__head
+		margin-bottom: 3rem
+		.rating
+			margin-top: .8rem
+			margin-left: 2rem
+	&--sm
+		margin-top: 8rem
+		margin-bottom: 8rem
+.rw
+	margin-bottom: -9rem
+	&__item
+		margin-bottom: 9rem
+
+.sec-link
+	display: block
+	margin-top: 2.2rem
+
+.under-link
+	display: inline-block
+	position: relative
+	padding-left: 1.5rem
+	white-space: nowrap
+	font-size: 1.2rem
+	font-weight: 500
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -.3rem
+		+arr(.4rem, .7rem, $color-danger, r)
+		+tr
+	span
+		position: relative
+		display: block
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			bottom: -.7rem
+			left: 0
+			width: 100%
+			height: 0.3rem
+			box-shadow: 0.1rem 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.15)
+			background-color: #e9edf0
+			pointer-events: none
+
+	&:hover
+		text-decoration: none
+		color: $color
+		&:before
+			left: .4rem
+
+/* Promo ===================================================================================================*/
+/* =========================================================================================================*/
+
+.promo
+	&-wrap
+		margin-bottom: 6rem
+	&__title
+		margin-bottom: 1rem
+	&__text
+		color: $color-default
+		font-size: 1.6rem
+		font-weight: 500
+		max-width: 38rem
+	&__img
+		margin-bottom: 1.5rem
+		img
+			border-radius: 1rem 1rem 0 0
+			width: 100%
+
+.promo-grid
+	.swiper-container
+		padding: 1rem .8rem
+		margin: -1rem -.8rem
+	.swiper-slide
+		display: flex
+		height: auto
+
+	&__item
+		border-radius: 1rem 1rem 0 0
+		background-color: #e9edf0
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+		padding: 2.5rem 2rem
+		display: block
+		width: 100%
+		&:hover
+			text-decoration: none
+			box-shadow: inset 0.3rem 0.3rem 0.6rem 0.1rem rgba(0, 0, 0, 0.3), inset -0.1rem -0.1rem 0.5rem  rgba(0, 0, 0, 0.1)
+			color: $color
+	&__icon
+		height: 3rem
+		width: 3rem
+		margin-bottom: 1rem
+		.icon
+			display: block
+			font-size: 3rem
+			color: $color-danger
+	&__title
+		font-size: 1.6rem
+		font-weight: 700
+		margin-bottom: .5rem
+
+.promo-grid-nav
+	top: 1rem !important
+
+.icons-grid
+	margin-bottom: -2rem
+	&__item
+		display: inline-flex
+		align-items: center
+		vertical-align: middle
+		width: 16.5rem
+		margin-bottom: 2rem
+	&__icon
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		width: 4.5rem
+		height: 4.5rem
+		border-radius: 1rem
+		background-color: #e9edf0
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+		.icon
+			display: block
+			font-size: 2.5rem
+			color: $color-info
+	&__text
+		margin-left: 1.7rem
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 1.2rem
+
+/* News ===================================================================================================*/
+/* =========================================================================================================*/
+
+.news-wrap
+	&__item
+		margin-bottom: 5rem
+		display: flex
+	.banner-card
+		margin-bottom: 0
+
+.news-inner,
+.tour-inner,
+.shop-inner
+	display: flex
+	flex-direction: column
+	width: 100%
+	&__img
+		position: relative
+		margin-bottom: 1.2rem
+		overflow: hidden
+		border-radius: 1rem 1rem 0 0
+		img
+			border-radius: 1rem 1rem 0 0
+			width: 100%
+
+		@media (any-hover: hover)
+			&:hover
+				&:after
+					opacity: 1
+
+		&:after
+			content: ''
+			+coverdiv
+			background-color: rgba(#393939, 0.6)
+			opacity: 0
+			+tr
+			pointer-events: none
+
+		.marker
+			font-size: 1.2rem
+			color: #fff
+			font-weight: 500
+			+text-overflow
+			max-width: 100%
+			z-index: 2
+			pointer-events: none
+			.icon
+				vertical-align: middle
+				font-size: 1.4rem
+				margin-right: .5rem
+
+	&__st-cover
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 1
+		padding: 3rem 1rem 1rem
+		background: linear-gradient(to top, rgba(#7d7d7d, 0.8), rgba(#7d7d7d, 0) )
+
+	&__title
+		margin-bottom: .8rem
+		flex: 1 0 auto
+
+	p
+		font-size: 1.2rem
+		font-weight: 300
+		margin-bottom: .5rem
+
+	&__grid
+		margin: .5rem 0 0
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.comment
+			margin-left: auto
+
+	.tags
+		line-height: 2rem
+
+.news-list
+	&__item
+		margin-bottom: 1.4rem
+		display: flex
+		align-items: flex-start
+	&__date
+		flex: none
+		margin-right: 1.8rem
+		font-size: 1.2rem
+		font-weight: 500
+	&__title
+		flex: 1
+		overflow: hidden
+		font-weight: 700
+		font-size: 1.2rem
+
+.comment
+	font-size: 1.2rem
+	font-weight: 500
+	white-space: nowrap
+	display: inline-block
+	vertical-align: middle
+
+	.icon
+		font-size: 2rem
+		vertical-align: middle
+		color: $color-danger
+		margin-left: .8rem
+	&:hover
+		color: $color-danger
+		text-decoration: none
+
+.price, .time
+	font-size: 1.2rem
+	font-weight: 500
+	white-space: nowrap
+	display: inline-block
+	vertical-align: middle
+	line-height: 2rem
+	.icon
+		font-size: 2rem
+		vertical-align: middle
+		color: $color-info
+		margin-right: .5rem
+		top: -.1rem
+
+.date
+	font-size: 1.2rem
+	font-weight: 700
+	white-space: nowrap
+	display: inline-block
+	vertical-align: middle
+	line-height: 2rem
+
+.info-label
+	font-size: 1.2rem
+	font-weight: 500
+	.icon
+		color: $color-danger
+		vertical-align: middle
+		font-size: 1.4rem
+		margin-right: .5rem
+		top: -.2rem
+	&--info
+		.icon
+			color: $color-info
+
+.stickers
+	position: absolute
+	top: .7rem
+	right: .7rem
+	background-color: #e9edf0
+	padding: .5rem
+	border-radius: .5rem
+	z-index: 1
+
+.sticker-label
+	height: 1.7rem
+	width: 1.7rem
+	display: block
+
+	& + .sticker-label
+		margin-top: .5rem
+	.icon
+		display: block
+		font-size: 1.7rem
+		&-bus
+			color: $color-danger
+		&-port
+			color: $color-info
+
+.sticker
+	position: absolute
+	top: .5rem
+	right: .5rem
+	width: 5.7rem
+	height: 5.7rem
+	z-index: 1
+	text-align: center
+	white-space: nowrap
+	line-height: 5.7rem
+	border-radius: 50%
+	color: #f3f3f3
+	font-size: 1.2rem
+	font-weight: 700
+	text-transform: uppercase
+	&--action
+		background-color: #34a1d3
+	&--sale
+		font-weight: 900
+		font-size: 1.6rem
+		background-color: #fa4242
+
+.img
+	img
+		width: 100%
+
+/* Poster ===================================================================================================*/
+/* =========================================================================================================*/
+
+.poster-list
+	list-style: none
+	li
+		display: flex
+		align-items: flex-start
+		position: relative
+		margin-bottom: 2.5rem
+		padding-left: 1.5rem
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: .5rem
+
+			+arr(.4rem, .7rem, $color-info, r)
+			+tr
+		&:hover:before
+			left: .4rem
+
+		a:hover
+			color: $color-info
+	&__title
+		font-size: 1.4rem
+		font-weight: 500
+		width: 60%
+		min-width: 18rem
+		flex: 1
+	&__info
+		width: 40%
+		flex: none
+		padding-left: 1.5rem
+		.date
+			margin-right: 2rem
+			font-size: 1.4rem
+		.price
+			font-size: 1.4rem
+			font-weight: 500
+			white-space: nowrap
+
+/* Category ===================================================================================================*/
+/* =========================================================================================================*/
+
+.category-list
+	margin-bottom: -3rem
+	&__item
+		margin-bottom: 3rem
+
+.category-inner
+	display: flex
+	align-items: center
+	&__icon
+		flex: none
+		margin-right: 1.5rem
+		width: 4.5rem
+		height: 4.5rem
+		border-radius: 1rem
+		background-color: #e9edf0
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+		display: flex
+		align-items: center
+		justify-content: center
+		.icon
+			color: $color-info
+			display: block
+			font-size: 2.5rem
+	&__title
+		font-weight: 700
+		font-size: 1.6rem
+	&:hover
+		color: $color-info
+		.category-inner__icon
+			box-shadow: inset 0.2rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
+
+.category-grid
+	.swiper-container
+		padding: 1rem .8rem
+		margin: -1rem -.8rem
+	.swiper-slide
+		display: flex
+		height: auto
+
+	&__item
+		border-radius: 1rem 1rem 0 0
+		background-color: #e9edf0
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+		padding: 3rem 1.5rem
+		text-align: center
+		display: block
+		width: 100%
+		&:hover
+			box-shadow: inset 0.3rem 0.3rem 0.6rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
+			text-decoration: none
+			color: $color
+	&__title
+		font-size: 1.6rem
+		font-weight: 700
+	&__icon
+		margin-bottom: 1.3rem
+		font-size: 0
+		.icon
+			font-size: 3rem
+			color: $color-info
+
+/* Interesting ===================================================================================================*/
+/* =========================================================================================================*/
+.interesting-wrap
+	margin-bottom: -4rem
+	.swiper-wrapper
+		width: auto
+	.swiper-slide
+		margin-bottom: 4rem
+
+.interesting-inner
+
+	&__title
+		margin-bottom: 1rem
+	&__body
+		display: flex
+
+	&__img
+		flex: none
+		width: 16.3rem
+		margin-right: 1.5rem
+		position: relative
+		overflow: hidden
+		border-radius: 1rem 1rem 0 0
+		img
+			border-radius: 1rem 1rem 0 0
+		&:after
+			content: ''
+			+coverdiv
+			background-color: rgba(#393939, 0.6)
+			opacity: 0
+			+tr
+			pointer-events: none
+
+		@media (any-hover: hover)
+			&:hover
+				&:after
+					opacity: 1
+	&__content
+		display: flex
+		flex-direction: column
+		flex: 1
+
+	&__list
+		list-style: none
+		flex: 1 0 auto
+		margin-bottom: .7rem
+		li
+			position: relative
+			padding-left: 1.5rem
+			font-size: 1.2rem
+			font-weight: 300
+			margin-bottom: .5rem
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: .4rem
+				+arr(.4rem, .7rem, $color-info, r)
+
+		a
+			&:hover
+				color: $color-info
+
+	.sec-link
+		margin-top: auto
+		margin-bottom: .7rem
+	.under-link
+		color: #7d7d7d
+
+/* Box Gallary ===================================================================================================*/
+/* =========================================================================================================*/
+.box-gallery
+	margin-bottom: -2rem
+.box-gallery-inner
+	display: block
+	position: relative
+	margin-bottom: 2rem
+	&__img
+		height: 15.6rem
+		background-position: top center
+		background-size: cover
+		background-repeat: no-repeat
+		border-radius: 1rem 1rem 0 0
+		overflow: hidden
+		margin-bottom: .5rem
+		position: relative
+
+		@media (any-hover: hover)
+			&:hover
+
+				&:after
+					opacity: 1
+
+		&:after
+			content: ''
+			+coverdiv
+			background-color: rgba(#393939, 0.6)
+			opacity: 0
+			+tr
+			pointer-events: none
+	&__head
+		h6
+			+text-overflow
+			margin-bottom: 0
+
+.box-banner-inner
+	display: block
+	margin-bottom: 2rem
+	height: 37.9rem
+	background-position: top center
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	border-radius: 1rem 1rem 0 0
+	overflow: hidden
+
+	&__head
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 1
+		background: $color-info
+		color: #fff
+		padding: 1.5rem 1.9rem
+		+tr
+		h6
+			margin-bottom: .8rem
+		p
+			margin-bottom: 0
+
+	&:after
+		content: ''
+		+coverdiv
+		background-color: rgba(#393939, 0.6)
+		opacity: 0
+		+tr
+		pointer-events: none
+
+	@media (any-hover: hover)
+		&:hover
+
+			.box-banner-inner__head
+				padding-top: 2rem
+				padding-bottom: 3rem
+			&:after
+				opacity: 1
+
+/* Shops ===================================================================================================*/
+/* =========================================================================================================*/
+.shop-block
+	columns: 2
+	column-gap: 3rem
+	margin-top: -.5rem
+	.shop-inner
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		margin-bottom: 0
+		margin-top: .5rem
+		&__title
+			height: 4rem
+			overflow: hidden
+			margin-bottom: .5rem
+
+	.category-inner
+		display: inline-flex
+		vertical-align: top
+		width: 100%
+		margin-bottom: .5rem
+		margin-top: .5rem
+
+/* Search block ===================================================================================================*/
+/* =========================================================================================================*/
+.search-block
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin-bottom: 1.4rem
+	&__form, &__info
+		margin-bottom: 3rem
+		position: relative
+
+	&__form
+		flex: 1
+
+	&__info
+		flex: none
+		width: 19.5rem
+		margin-left: 3rem
+	&__input
+		height: 3.2rem
+		border-radius: 1rem
+		background-color: #e9edf0
+		box-shadow: .3rem .3rem .3rem rgba(#393939, 0.6), -.3rem -.3rem .3rem #fff
+		border: none
+		width: 100%
+		font-size: 1.4rem
+		font-weight: 400
+		padding: 0 4.5rem 0 1.5rem
+		line-height: normal
+		font-family: $font-family
+		+placeholder
+			color: #7d7d7d
+			font-size: 1rem
+			font-weight: 300
+
+	&__icon
+		position: absolute
+		top: 1rem
+		right: 1.8rem
+		.icon
+			display: block
+			color: #fa4242
+			font-size: 1.3rem
+	&__close
+		position: absolute
+		top: 1rem
+		right: 1.5rem
+		display: none
+
+		cursor: pointer
+		height: 3.1rem
+		width: 3.1rem
+		background-color: #e9edf0
+		border-radius: .5rem
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+		padding: 0
+		&:after, &:before
+			content: ''
+			display: block
+			width: 1.4rem
+			height: .2rem
+			background: $mm-sub-color
+			position: absolute
+			left: .8rem
+			top: 47%
+
+		&:after
+			transform: rotate(-45deg)
+		&:before
+			transform: rotate(45deg)
+
+	& + .section
+		margin-top: 4rem
+
+.text-field
+	margin-top: 1.5rem
+	font-size: 1rem
+
+	&__title, &__link
+		display: inline-block
+		vertical-align: middle
+		margin-right: .9rem
+		font-weight: 300
+		color: #7d7d7d
+	&__link
+		font-style: italic
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.list
+	list-style: none
+
+	li
+		padding-left: 1rem
+		position: relative
+		font-size: 1.4rem
+		margin-bottom: .5rem
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: .5rem
+			left: 0
+
+			+arr(.4rem,.7rem, #fa4242, r)
+.sd-list
+	margin-top: 1.4rem
+	margin-bottom: 2rem
+	display: flex
+	flex-direction: column
+
+/* У вас есть вопросы? ===================================================================================================*/
+/* =========================================================================================================*/
+
+.q-contacts
+	&__text
+		font-weight: 500
+		font-size: 1.6rem
+		margin-bottom: 1.5rem !important

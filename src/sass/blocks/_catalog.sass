@@ -1,0 +1,886 @@
+.ct-main
+	display: flex
+	align-items: flex-start
+
+.ct-sidebar
+	flex: none
+	width: 19.5rem
+	margin-right: 3rem
+
+.sidebar-sm
+	width: 19.5rem
+	margin-left: auto
+	.sd-list
+		display: block
+
+.sidebar
+	&__gulp-list
+		margin-bottom: 2.5rem
+	&__side-info-block
+		margin-top: 3rem
+	&__button
+		margin-top: 3rem
+	&__subscribe
+		margin-top: 4rem
+.ct-content
+	flex: 1
+	min-width: 1px
+
+	&__wrap
+		display: flex
+		align-items: flex-start
+	&__left
+		flex: 1
+	&__right
+		width: 19.5rem
+		margin-left: 3rem
+		flex: none
+
+.ct-menu
+	&__item
+		margin-bottom: 1.6rem
+		&:last-child
+			margin-bottom: 0
+		&.is-active
+			.ct-menu__link
+				&:after
+					transform: rotate(90deg)
+			& > ul
+				display: block
+		&.ct-item
+			.ct-menu__link
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					top: 50%
+					right: 0
+					margin-top: -.3rem
+					+arr(.4rem,.7rem, #fa4242, r)
+					+tr
+
+	&__link
+		position: relative
+		display: block
+		font-size: 1.4rem
+		font-weight: 700
+		padding-right: 1rem
+
+	ul
+		display: none
+
+		margin: 1.8rem 0 1.8rem 1.4rem
+		font-size: 1.2rem
+		font-weight: 500
+		li
+			margin-bottom: 1.5rem
+			position: relative
+			&.is-active
+				font-weight: 700
+				&:before
+					content: ''
+					display: block
+					position: absolute
+					top: 50%
+					left: -1rem
+					margin-top: -.3rem
+					+arr(.4rem,.7rem, #fa4242, r)
+
+.ct-head
+	display: flex
+	align-items: center
+	margin-bottom: 2.4rem
+	&__icon
+		flex: none
+		margin-right: 1.5rem
+		width: 4.5rem
+		height: 4.5rem
+		border-radius: 1rem
+		background-color: #e9edf0
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+		display: flex
+		align-items: center
+		justify-content: center
+		.icon
+			color: $color-info
+			display: block
+			font-size: 2.5rem
+	&__content
+		flex: 1
+		h2
+			margin-bottom: 0
+
+.cat-name
+	font-size: 1.4rem
+	font-weight: 300
+	margin-bottom: .6rem
+	a
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+			color: $color-info
+
+.ct-filter
+	+margin
+	&-menu
+		margin-bottom: 3rem
+		li
+			margin-bottom: 1.7rem
+			font-size: 1.4rem
+			font-weight: 500
+			&:last-child
+				margin-bottom: 0
+
+		a
+			color: #393939
+			transition: none
+		ul
+			display: none
+
+			margin: 1.8rem 0 1.8rem 1.4rem
+			font-size: 1.2rem
+			font-weight: 500
+			li
+				margin-bottom: 1.5rem
+				position: relative
+				&.is-active
+					font-weight: 700
+	&-item
+		& > a
+			position: relative
+			padding-right: 1.5rem
+
+			&:after
+				content: ''
+				+arr(.7rem,1.1rem, #fa4242, r)
+				display: inline-block
+				vertical-align: middle
+				margin-left: .8rem
+
+				+tr
+
+		&.is-active
+			& > ul
+				display: block
+			& > a:after
+				transform: rotate(90deg)
+		&.is-selected
+			& > a
+				font-weight: 700
+
+	&__title
+		margin-bottom: 1.2rem
+		color: #393939
+		font-size: 1.4rem
+		font-weight: 900
+	.link-wrap
+		margin-top: -1.5rem
+	.checkbox
+		font-size: inherit
+		font-weight: inherit
+		margin-bottom: 0
+		font-size: 1.4rem
+		&__figure
+			width: 1.5rem
+			height: 1.5rem
+			top: .2rem
+		&__text
+			padding-top: 0
+			padding-left: 2.6rem
+			min-height: 1.5rem
+
+			input:checked ~ .checkbox__figure:after
+				background: url("../img/check.png") .2rem .4rem no-repeat
+
+.link
+	font-weight: 700
+	font-size: 1.4rem
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+
+.map-link-wrap
+	margin-bottom: 1.7rem
+
+.map-link
+	color: #34a1d3
+	font-size: 1.4rem
+	font-weight: 500
+	text-decoration: underline
+	&:hover
+		color: #34a1d3
+		text-decoration: none
+
+.widjet-block
+	margin-bottom: 3.5rem
+	&:last-child
+		margin-bottom: 0
+	&__title
+		font-weight: 700
+		font-size: 1.6rem
+		padding-left: 1.5rem
+		position: relative
+		margin-bottom: 2.5rem
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: .6rem
+			left: 0
+			+arr(.4rem, .7rem, $color-danger, r)
+
+	&__form
+		.form-field
+			margin-bottom: 1.4rem
+	.subscribe
+		&-form__input
+			max-width: none
+
+.widjet-row
+	&__item
+		margin-bottom: 3.5rem
+
+.sorting
+	&-nav
+		margin-bottom: -1rem
+		&__item
+			display: inline-block
+			vertical-align: top
+			margin-right: 1.8rem
+			margin-bottom: 1rem
+			&:last-child
+				margin-right: 0
+
+.dropdown
+	position: relative
+
+	&-button
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		padding-right: 1.2rem
+		font-size: 1rem
+		font-weight: 500
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			right: 0
+			top: .5rem
+			+arr(.7rem, .4rem ,$color-danger, b)
+	&-menu
+		position: absolute
+		top: 100%
+		left: 0
+		z-index: 5
+		background: $bgcolor
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		border-radius: 0px 0px 10px 10px
+		min-width: 20rem
+		padding: .5rem 0
+		display: none
+		overflow: hidden
+
+		li
+			display: block
+			padding: 1rem 2.5rem
+			font-size: 1.2rem
+			font-weight: 400
+			cursor: pointer
+			color: $color-default
+			&:hover
+
+				color: $color-danger
+
+			&.is-active
+				background: $color-danger
+				color: #fff
+
+	&.is-open
+		.dropdown-menu
+			display: block
+
+.side-info-block
+	&__title
+		font-size: 1.3rem
+		font-weight: 700
+		margin-bottom: 1rem
+
+	&--content
+		display: flex
+		align-items: flex-start
+		margin-bottom: 1rem
+		.side-info-block__title
+			margin-right: 2rem
+
+			font-size: 1.6rem
+
+/* Banner */
+.banner-cards-wrap
+	margin-top: 5rem
+	margin-bottom: -4rem
+.banner-card
+	margin-bottom: 4rem
+	&__img
+		margin-bottom: 1.2rem
+		position: relative
+		border-radius: 1rem 1rem 0 0
+		overflow: hidden
+
+		img
+			border-radius: 1rem 1rem 0 0
+			width: 100%
+
+		@media (any-hover: hover)
+			&:hover
+
+				text-decoration: none
+				&:after
+					opacity: 1
+
+		&:after
+			content: ''
+			+coverdiv
+			background-color: rgba(#393939, 0.6)
+			opacity: 0
+			+tr
+			pointer-events: none
+
+	&__sticker
+		position: absolute
+		bottom: .7rem
+		right: 0
+		background: $color-danger
+		color: #fff
+		padding: .3rem 1rem
+		font-size: 1rem
+		z-index: 1
+		border-radius: .5rem 0 0 .5rem
+		text-align: center
+		pointer-events: none
+
+	&__title
+		font-weight: 700
+		font-size: 1.6rem
+		margin-bottom: .8rem
+	&__list
+		li
+			margin-bottom: .5rem
+			font-size: 1.2rem
+			font-weight: 300
+
+.banner-card-horizontal
+	display: flex
+	align-items: flex-start
+	.banner-card__img
+		margin-bottom: 0
+		margin-right: 1.5rem
+		width: 16.4rem
+		flex: none
+	.banner-card__title
+		margin-bottom: 1.2rem
+
+/* Cards */
+
+.cards-week
+	.swiper-slide
+
+		.card-horizontal
+			margin-bottom: 0
+
+.card-horizontal
+	display: flex
+	align-items: flex-start
+	margin-bottom: 3rem
+	&__img
+		width: 16.4rem
+		flex: none
+		position: relative
+		overflow: hidden
+		border-radius: 1rem 1rem 0 0
+		margin-right: 1.5rem
+		img
+			border-radius: 1rem 1rem 0 0
+		&:after
+			content: ''
+			+coverdiv
+			background-color: rgba(#393939, 0.6)
+			opacity: 0
+			+tr
+			pointer-events: none
+
+		@media (any-hover: hover)
+			&:hover
+
+				&:after
+					opacity: 1
+
+	&__title
+		margin-bottom: .8rem
+		max-height: 4rem
+		overflow: hidden
+
+	p
+		margin-bottom: 0
+
+	&__price
+		margin-top: .8rem
+		.price-value
+			font-size: 1.8rem
+			font-weight: 900
+
+.aviable
+	color: #34a1d3
+	font-size: 1.2rem
+	font-weight: 500
+
+	&--red
+		color: #fa4242
+
+.hh-title
+	font-weight: 900
+	font-size: 1.2rem
+	margin-bottom: .9rem
+
+.wb-title
+	font-weight: 700
+	font-size: 1.4rem
+	margin-bottom: 1.5rem
+
+.master
+	padding: 1.8rem
+	background: $bgcolor
+	border-radius: 1rem
+	margin-bottom: 2.6rem
+	box-shadow: -5px -6px 6px #FFFFFF, 5px 6px 6px rgba(0, 0, 0, 0.25)
+	&__header
+		display: flex
+		align-items: flex-start
+	&__img
+		margin-right: 1.5rem
+		flex: none
+		width: 8.2rem
+		height: 8.2rem
+
+		a
+			height: 100%
+			display: block
+			border-radius: .5rem
+			overflow: hidden
+			&:hover
+				text-decoration: none
+		&.not-img
+			a
+				display: flex
+				align-items: center
+				justify-content: center
+				text-align: center
+
+				box-shadow: -2px -2px 2px #FFFFFF, 2px 2px 2px rgba(0, 0, 0, 0.25)
+		.master-logo
+			font-size: 0.9rem
+			font-weight: 900
+			text-transform: uppercase
+			color: $color
+			.icon
+				color: $color-danger
+				margin: 0 .2rem
+				vertical-align: middle
+				top: -.1rem
+				font-size: 1.4rem
+		img
+			min-height: 100%
+			width: 100%
+
+	&__content
+		flex: 1
+		overflow: hidden
+	&__top
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		padding-right: 7rem
+		position: relative
+
+		.rating
+			margin-right: 1.2rem
+			margin-bottom: .8rem
+			margin-top: .4rem
+
+	&__date
+		position: absolute
+		top: 0
+		right: 0
+		font-weight: 400
+		font-size: 1.2rem
+		margin-bottom: .8rem
+		margin-top: .3rem
+
+	&__title
+		font-weight: 700
+		margin-right: 1.2rem
+		margin-bottom: .8rem
+		font-size: 1.8rem
+
+	&__description
+		font-size: 1.2rem
+		font-weight: 400
+
+	&__tags
+		margin-top: 1rem
+
+	&__footer
+		display: flex
+		align-items: center
+		position: relative
+		flex-wrap: wrap
+		padding-top: 1.8rem
+		margin-top: 1.2rem
+		&:before
+			content: ''
+			display: block
+			height: 0.2rem
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			background: #E9EDF0
+			box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25)
+		&-item
+			margin-right: 2rem
+			flex: none
+			margin-top: 0.5rem
+			max-width: 15rem
+			+text-overflow
+		&-buttons
+			display: flex
+			margin-left: auto
+			.btn
+				margin-left: 0.7rem
+				flex: none
+
+	&__reviews
+		padding: 3rem 0 1rem
+		.comment-form
+			&__name
+				flex: none
+				width: 18rem
+
+	&__contacts
+		padding: 3rem 0 1rem
+		&-row
+			margin-bottom: -1.5rem
+		.social__btn
+			.icon
+				color: $color-info
+
+		.contacts-item
+			margin-bottom: 1rem
+
+.tags
+	margin-bottom: -.5rem
+	.tag
+		display: inline-block
+		vertical-align: middle
+		margin-right: 1rem
+		margin-bottom: .5rem
+		color: #34a1d3
+		font-size: 1.2rem
+		font-weight: 700
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+
+		&:last-child
+			margin-right: 0
+	.tag-btn
+		display: inline-block
+		vertical-align: top
+		border-radius: 1rem
+		background-color: #e9edf0
+		padding: .5rem 1.2rem
+		font-size: 1.2rem
+		font-weight: 500
+		line-height: 1.4
+		margin: 0 .5rem .8rem 0
+		box-shadow: .2rem .2rem .2rem rgba(#393939, 0.6), -.2rem -.2rem .2rem #fff
+		&:hover
+			text-decoration: none
+			color: #393939
+		+min($ipad + 1)
+			&:not(.is-active):hover
+
+				background: $color-info
+				color: #fff
+		&.is-active
+			box-shadow: inset 0.2rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
+
+/* master Contacts */
+
+.contacts-item
+	font-size: 1.2rem
+	font-weight: 400
+	position: relative
+	padding-left: 2.2rem
+
+	&--n-icon
+		padding-left: 0
+	&__icon
+		position: absolute
+		left: 0
+		top: -.1rem
+		.icon
+			font-size: 1.5rem
+			display: block
+			top: .1rem
+			color: #fa4242
+
+	&__txt
+		margin-right: .5rem
+		margin-bottom: .5rem
+		display: inline-block
+
+	.social
+		top: -.1rem
+		&__icon
+			.icon
+				font-size: 1.8rem
+
+.lang-row
+	display: inline-block
+	vertical-align: middle
+	font-size: 0
+	span
+		display: inline-block
+		vertical-align: middle
+		margin: 0 .3rem
+
+/* Tours grid ===================================================================== */
+.tours-grid
+	&__item
+		margin-bottom: 3rem
+
+/* Reviews ===================================================================== */
+.reviews-slider
+	.swiper-container
+		padding: 1rem
+		margin: -1rem
+
+.reviews-inner
+	margin-top: 1rem
+	margin-bottom: 1rem
+	&__top
+		display: flex
+		justify-content: space-between
+		border-left: .3rem solid #34a1d3
+		padding-left: 1.4rem
+		margin-bottom: 1.7rem
+		&-left
+			padding-right: 1rem
+			overflow: hidden
+			flex: 1
+		&-right
+			flex: none
+			.rating
+				display: block
+				text-align: right
+
+				&__stars
+					margin-right: -.4rem
+					margin-bottom: .4rem
+
+		.rating
+			margin-top: .3rem
+	&__title
+		font-size: 1.6rem
+		font-weight: 700
+		+text-overflow
+		a:hover
+			color: $color-info
+	&__name
+		font-size: 1.2rem
+		font-weight: 700
+	&__cat
+		font-size: 1.2rem
+		font-weight: 500
+	&__body
+		display: flex
+		flex-direction: column
+		height: 13.5rem
+		padding: 1.4rem 1.5rem
+		border-radius: 1rem
+		background-color: #e9edf0
+		box-shadow: .5rem .5rem .7rem rgba(#393939, 0.5), -.3rem -.3rem .6rem rgba(#fff, 0.8)
+	&__text
+		width: 100%
+		margin-bottom: 2rem
+		line-height: 1.2
+		max-height: 7.2rem
+		overflow: hidden
+
+	&__date
+		margin-top: auto
+		text-align: right
+		.time
+			margin-left: 1rem
+
+	&__foot
+		margin-top: auto
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+.message
+	border-left: .3rem solid #34a1d3
+	padding-left: 1.4rem
+	margin-bottom: 1.7rem
+	font-size: 1.6rem
+	font-weight: 500
+
+.review-card
+	background: #EAEDF0
+	padding: 2rem
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
+	border-radius: 10px 10px 0px 0px
+	margin-bottom: 2.8rem
+	&__head
+		display: flex
+		align-items: center
+		margin-bottom: 2.7rem
+		&-right
+			margin-left: auto
+			display: flex
+			align-items: center
+			flex: none
+	&__name
+		font-weight: 600
+		font-size: 1.4rem
+		font-style: italic
+		margin-right: 1.1rem
+		white-space: nowrap
+		flex: none
+	&__rc-sticker
+		flex: none
+		margin-right: 1.1rem
+
+	&__date
+		font-weight: 300
+		font-size: 1rem
+		color: #000
+		padding-top: 0.1rem
+	&__rating
+		flex: none
+		margin-left: 1.1rem
+
+	&__body
+		font-size: 1.4rem
+		font-weight: 400
+		+margin
+
+	.i-gallery
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+
+	.img-gallery
+		margin-right: 1rem
+		margin-bottom: 1rem
+		border-radius: 1rem 1rem 0 0
+
+.rc-sticker
+	height: 2rem
+	white-space: nowrap
+	color: #fff
+	background: $color-info
+	border-radius: 2rem
+	line-height: 2rem
+	padding: 0 1rem
+	font-size: .9rem
+	font-weight: 600
+	&--danger
+		background: $color-danger
+
++max($laptop)
+	.master
+		&__top
+			display: block
+			margin-bottom: 1.5rem
+		&__title
+
+			font-size: 1.6rem
+		&__footer
+			&-item
+				width: calc(50% - .5rem)
+				margin-right: 1rem
+				max-width: none
+				&:nth-child(2)
+					margin-right: 0
+			&-buttons
+				margin-left: 0
+				width: 100%
+				margin-top: 1.3rem
+				.btn
+					width: calc(50% - .5rem)
+					margin-right: 1rem
+					margin-left: 0
+					&:last-child
+						margin-right: 0
+
+		.comment-buttons
+			display: flex
+			.btn
+				width: calc(50% - .5rem)
+				margin-right: 1rem
+				margin-left: 0
+				&:last-child
+					margin-right: 0
+
++max($iphone)
+
+	.side-info-block
+
+		&--content
+			display: block
+			.side-info-block__title
+				margin-right: 0
+
++max($iphone_sm)
+	.review-card__head
+		flex-wrap: wrap
+		&-right
+			width: 100%
+			margin-left: 0
+			margin-top: 1.2rem
+
+	.master
+
+		&__header
+			align-items: center
+			margin-bottom: 1.5rem
+
+		&__title
+			margin-right: 0
+
+		&__top
+			padding-right: 0
+			display: block
+			margin-bottom: 0
+			.rating
+				display: inline-block
+				vertical-align: middle
+				margin-right: .5rem
+				margin-top: .1rem
+
+		&__date
+			position: static
+			display: inline-block
+			vertical-align: middle
+
+		.comment-buttons
+			display: block
+			.btn
+				width: 100%
+				margin-right: 0
+				margin-bottom: 1rem
+				&:last-child
+					margin-bottom: 0

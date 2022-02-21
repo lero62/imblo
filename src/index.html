@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/_head.html', {
+"title": "Главная"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="main-content">
+
+					<!-- BEGIN PROMO -->
+					<div class="promo">
+						<div class="row promo-wrap">
+							<div class="col-lg-5">
+								<div class="promo__img">
+									<img src="img/promo.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<h1 class="promo__title">Первый русскоязычный портал о Пафосе, Кипр</h1>
+								<p class="promo__text">Все о городе: достопримечательности, инфраструктура, отзывы жителей</p>
+
+								<div class="icons-grid">
+									<div class="icons-grid__item">
+										<div class="icons-grid__icon"><svg class="icon icon-minute">
+												<use xlink:href="img/sprite.svg#minute"></use>
+											</svg></div>
+										<div class="icons-grid__text">22:00</div>
+									</div>
+									<div class="icons-grid__item">
+										<div class="icons-grid__icon"><svg class="icon icon-gradus">
+												<use xlink:href="img/sprite.svg#gradus"></use>
+											</svg></div>
+										<div class="icons-grid__text">+22 C</div>
+									</div>
+									<div class="icons-grid__item">
+										<div class="icons-grid__icon">
+											<svg class="icon icon-whater-tem">
+												<use xlink:href="img/sprite.svg#whater-tem"></use>
+											</svg>
+										</div>
+										<div class="icons-grid__text">83 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Slider promo-grid -->
+						<div class="promo-grid _grid-swiper">
+							<div class="swiper-container">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<a href="#" class="promo-grid__item">
+											<div class="promo-grid__icon"><svg class="icon icon-contract">
+													<use xlink:href="img/sprite.svg#contract"></use>
+												</svg></div>
+											<div class="promo-grid__title">Общая информация</div>
+											<div class="promo-grid__text">Узнайте больше о Пафосе</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="promo-grid__item">
+											<div class="promo-grid__icon"><svg class="icon icon-village">
+													<use xlink:href="img/sprite.svg#village"></use>
+												</svg></div>
+											<div class="promo-grid__title">Районы и деревни</div>
+											<div class="promo-grid__text">Структура города</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="promo-grid__item">
+											<div class="promo-grid__icon"><svg class="icon icon-scroll">
+													<use xlink:href="img/sprite.svg#scroll"></use>
+												</svg></div>
+											<div class="promo-grid__title">История Пафоса</div>
+											<div class="promo-grid__text">Интересные и правдивые факты</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="promo-grid__item">
+											<div class="promo-grid__icon"><svg class="icon icon-party">
+													<use xlink:href="img/sprite.svg#party"></use>
+												</svg></div>
+											<div class="promo-grid__title">Традиции и праздники</div>
+											<div class="promo-grid__text">Все о традциях Пафоса</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="promo-grid__item">
+											<div class="promo-grid__icon"><svg class="icon icon-review">
+													<use xlink:href="img/sprite.svg#review"></use>
+												</svg></div>
+											<div class="promo-grid__title">Отзывы о Пафосе</div>
+											<div class="promo-grid__text">Узнайте о Пафосе из первых уст</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="promo-grid__item">
+											<div class="promo-grid__icon"><svg class="icon icon-picture">
+													<use xlink:href="img/sprite.svg#picture"></use>
+												</svg></div>
+											<div class="promo-grid__title">Фотогалерея города</div>
+											<div class="promo-grid__text">Фотографии туристов и местных</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="promo-grid__item">
+											<div class="promo-grid__icon"><svg class="icon icon-picture">
+													<use xlink:href="img/sprite.svg#picture"></use>
+												</svg></div>
+											<div class="promo-grid__title">Фотогалерея города</div>
+											<div class="promo-grid__text">Фотографии туристов и местных</div>
+										</a>
+									</div>
+
+								</div>
+
+								<div class="promo-grid__controls swiper-controls">
+									<div class=" swiper-button-prev"></div>
+									<div class=" swiper-pagination"></div>
+									<div class=" swiper-button-next"></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- PROMO EOF   -->
+
+					<!-- BEGIN NEWS AND POSTER -->
+					<section class="section">
+						<div class="row rw">
+							<div class="col-xl-6 col-lg-7 rw__item">
+								<div class="section__head">
+									<h2 class="section__title">Новости</h2>
+								</div>
+
+								<!-- Slider news-slider -->
+								<div class="news-slider">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide news-slider__item">
+												<div class="news-inner">
+													<div class="news-inner__img">
+														<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
+													</div>
+													<h6 class="news-inner__title"><a href="#">Жители Пафоса в тяжелой ситуации</a></h6>
+													<p>Спад туристического потока привел в уничножению малого и микробизнеса</p>
+
+													<div class="news-inner__grid">
+														<span class="date">22.09.2020</span>
+														<a href="#" class="comment">20<svg class="icon icon-comment">
+																<use xlink:href="img/sprite.svg#comment"></use>
+															</svg></a>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide news-slider__item">
+												<div class="news-inner">
+													<div class="news-inner__img">
+														<a href="#"><img src="img/news-img-2.jpg" alt=""></a>
+													</div>
+													<h6 class="news-inner__title"><a href="#">Что посмотерть на выходных в Пафосе?</a></h6>
+													<p>Онлайн трансаляции из мировых театров смотреть бесплатно</p>
+
+													<div class="news-inner__grid">
+														<span class="date">22.09.2020</span>
+														<a href="#" class="comment">20<svg class="icon icon-comment">
+																<use xlink:href="img/sprite.svg#comment"></use>
+															</svg></a>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="news-slider__controls swiper-controls">
+											<div class=" swiper-button-prev"></div>
+											<div class=" swiper-pagination"></div>
+											<div class=" swiper-button-next"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="sec-link">
+									<a href="#" class="under-link"><span>Перейти в раздел</span></a>
+								</div>
+
+
+							</div>
+							<div class="offset-xl-1 col-lg-5 rw__item">
+								<div class="section__head">
+									<h2 class="section__title">Афиша мероприятий</h2>
+								</div>
+
+								<ul class="poster-list">
+									<li>
+										<a href="#" class="poster-list__title">Рисуем зверушек на площади</a>
+										<div class="poster-list__info">
+											<span class="date">15.05.2020</span>
+											<span class="price">5€ </span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="poster-list__title">Лепим глиняные горшки вместе с Посейдоном</a>
+										<div class="poster-list__info">
+											<span class="date">15.05.2020</span>
+											<span class="price">от 2€ </span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="poster-list__title">Лекция о древне-греческих богах</a>
+										<div class="poster-list__info">
+											<span class="date">15.05.2020</span>
+											<span class="price">5€ </span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="poster-list__title">Лекция о древне-греческих богах</a>
+										<div class="poster-list__info">
+											<span class="date">15.05.2020</span>
+											<span class="price">0€ </span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="poster-list__title">Мировые шедевры поп музыки в театре</a>
+										<div class="poster-list__info">
+											<span class="date">15.05.2020</span>
+											<span class="price">12 - 19€ </span>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="poster-list__title">Мировые шедевры поп музыки в театре</a>
+										<div class="poster-list__info">
+											<span class="date">15.05.2020</span>
+											<span class="price">12 - 19€ </span>
+										</div>
+									</li>
+
+								</ul>
+								<div class="sec-link ">
+									<a href="#" class="under-link"><span>Перейти в раздел</span></a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- NEWS AND POSTER EOF   -->
+
+					<!-- BEGIN CATEGORY LIST -->
+					<section class="section">
+						<div class="section__head">
+							<h2 class="section__title">Туристу</h2>
+						</div>
+						<div class="i-wrapper">
+							<div class="row category-list">
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-bus">
+												<use xlink:href="img/sprite.svg#bus"></use>
+											</svg></div>
+										<div class="category-inner__title">Транспорт</div>
+									</a>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-mattress">
+												<use xlink:href="img/sprite.svg#mattress"></use>
+											</svg></div>
+										<div class="category-inner__title">Отели</div>
+									</a>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-address">
+												<use xlink:href="img/sprite.svg#address"></use>
+											</svg></div>
+										<div class="category-inner__title">Интересные маршруты</div>
+									</a>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-car">
+												<use xlink:href="img/sprite.svg#car"></use>
+											</svg></div>
+										<div class="category-inner__title">Прокат авто и мото</div>
+									</a>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item i-hidden-xs">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-key">
+												<use xlink:href="img/sprite.svg#key"></use>
+											</svg></div>
+										<div class="category-inner__title">Аренда жилья</div>
+									</a>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item i-hidden-xs">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-plane-tickets">
+												<use xlink:href="img/sprite.svg#plane-tickets"></use>
+											</svg></div>
+										<div class="category-inner__title">Авиа билеты</div>
+									</a>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item i-hidden-xs">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-steps">
+												<use xlink:href="img/sprite.svg#steps"></use>
+											</svg></div>
+										<div class="category-inner__title">Такси и трансферы </div>
+									</a>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item i-hidden-xs">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-museum">
+												<use xlink:href="img/sprite.svg#museum"></use>
+											</svg></div>
+										<div class="category-inner__title">Сувенирные лавки</div>
+									</a>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item i-hidden-xs">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-contract">
+												<use xlink:href="img/sprite.svg#contract"></use>
+											</svg></div>
+										<div class="category-inner__title">Виза</div>
+									</a>
+								</div>
+								<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 category-list__item i-hidden-xs">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-smartphone">
+												<use xlink:href="img/sprite.svg#smartphone"></use>
+											</svg></div>
+										<div class="category-inner__title">Мобильная связь</div>
+									</a>
+								</div>
+							</div>
+							<div class="sec-link visible-xs">
+								<a href="#" class="under-link"><span class="i-btn" data-title="Показать еще">Показать еще</span></a>
+							</div>
+						</div>
+
+					</section>
+					<!-- CATEGORY LIST EOF   -->
+
+					<!-- BEGIN TOUR -->
+					<section class="section">
+						<div class="section__head">
+							<h2 class="section__title">Экскурсии</h2>
+						</div>
+
+
+						<!-- Slider tour-list -->
+						<div class="tour-list _news-swiper">
+							<div class="swiper-container">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide tour-list__item">
+										<div class="tour-inner">
+											<div class="tour-inner__img">
+												<a href="#"><img src="img/tour-img-1.jpg" alt=""></a>
+												<span class="stickers">
+													<span class="sticker-label"><svg class="icon icon-bus">
+															<use xlink:href="img/sprite.svg#bus"></use>
+														</svg></span>
+												</span>
+											</div>
+											<h6 class="tour-inner__title"><a href="#">Голубая Лагуна</a></h6>
+											<p>Мы побываем в самых живописных уголках острова и почувствуем его неповторимую атмосферу. Ощутим </p>
+
+											<div class="tour-inner__grid">
+												<span class="info-label"><svg class="icon icon-calendar">
+														<use xlink:href="img/sprite.svg#calendar"></use>
+													</svg> вторник, пятница</span>
+												<span class="info-label"><svg class="icon icon-clock">
+														<use xlink:href="img/sprite.svg#clock"></use>
+													</svg> ~ 7 часов</span>
+											</div>
+											<div class="tour-inner__grid">
+												<span class="info-label"><svg class="icon icon-wallet">
+														<use xlink:href="img/sprite.svg#wallet"></use>
+													</svg> 20 - 30 €</span>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide tour-list__item">
+										<div class="tour-inner">
+											<div class="tour-inner__img">
+												<a href="#"><img src="img/tour-img-2.jpg" alt=""></a>
+												<span class="stickers">
+													<span class="sticker-label"><svg class="icon icon-port">
+															<use xlink:href="img/sprite.svg#port"></use>
+														</svg></span>
+												</span>
+											</div>
+											<h6 class="tour-inner__title"><a href="#">Акамас — Приключенческая экспедиция</a></h6>
+											<p>Для настоящих искателей приключений, а также тех, кто любит все необычное, мы </p>
+
+											<div class="tour-inner__grid">
+												<span class="info-label"><svg class="icon icon-calendar">
+														<use xlink:href="img/sprite.svg#calendar"></use>
+													</svg> вторник, пятница</span>
+												<span class="info-label"><svg class="icon icon-clock">
+														<use xlink:href="img/sprite.svg#clock"></use>
+													</svg> ~ 7 часов</span>
+											</div>
+											<div class="tour-inner__grid">
+												<span class="info-label"><svg class="icon icon-wallet">
+														<use xlink:href="img/sprite.svg#wallet"></use>
+													</svg> 20 - 30 €</span>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide tour-list__item">
+										<div class="tour-inner">
+											<div class="tour-inner__img">
+												<a href="#"><img src="img/tour-img-3.jpg" alt=""></a>
+												<span class="stickers">
+													<span class="sticker-label"><svg class="icon icon-bus">
+															<use xlink:href="img/sprite.svg#bus"></use>
+														</svg></span>
+													<span class="sticker-label"><svg class="icon icon-port">
+															<use xlink:href="img/sprite.svg#port"></use>
+														</svg></span>
+												</span>
+											</div>
+											<h6 class="tour-inner__title"><a href="#">Морской круиз «История Русалочки»</a></h6>
+											<p>Отправляйтесь в увлекательное путешествие на пиратском корабле</p>
+
+											<div class="tour-inner__grid">
+												<span class="info-label"><svg class="icon icon-calendar">
+														<use xlink:href="img/sprite.svg#calendar"></use>
+													</svg> вторник, пятница</span>
+												<span class="info-label"><svg class="icon icon-clock">
+														<use xlink:href="img/sprite.svg#clock"></use>
+													</svg> ~ 7 часов</span>
+											</div>
+											<div class="tour-inner__grid">
+												<span class="info-label"><svg class="icon icon-wallet">
+														<use xlink:href="img/sprite.svg#wallet"></use>
+													</svg> 20 - 30 €</span>
+											</div>
+
+										</div>
+									</div>
+									<div class="swiper-slide tour-list__item">
+										<div class="tour-inner">
+											<div class="tour-inner__img">
+												<a href="#"><img src="img/tour-img-4.jpg" alt=""></a>
+												<span class="stickers">
+													<span class="sticker-label"><svg class="icon icon-port">
+															<use xlink:href="img/sprite.svg#port"></use>
+														</svg></span>
+												</span>
+											</div>
+											<h6 class="tour-inner__title"><a href="#">Пиратский круиз</a></h6>
+											<p>Пиратский круиз "Jolly roger" Мы приглашаем вас в захватывающий и веселый круиз для всей семьи на</p>
+
+											<div class="tour-inner__grid">
+												<span class="info-label"><svg class="icon icon-calendar">
+														<use xlink:href="img/sprite.svg#calendar"></use>
+													</svg> вторник, пятница</span>
+												<span class="info-label"><svg class="icon icon-clock">
+														<use xlink:href="img/sprite.svg#clock"></use>
+													</svg> ~ 7 часов</span>
+											</div>
+											<div class="tour-inner__grid">
+												<span class="info-label"><svg class="icon icon-wallet">
+														<use xlink:href="img/sprite.svg#wallet"></use>
+													</svg> 20 - 30 €</span>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="tour-list__controls swiper-controls">
+									<div class=" swiper-button-prev"></div>
+									<div class=" swiper-pagination"></div>
+									<div class=" swiper-button-next"></div>
+								</div>
+
+
+							</div>
+						</div>
+
+
+						<div class="sec-link">
+							<a href="#" class="under-link"><span>Перейти в раздел</span></a>
+						</div>
+					</section>
+					<!-- TOUR EOF   -->
+
+					<!-- BEGIN CATEGORY GRID -->
+					<section class="section">
+						<div class="section__head">
+							<h2 class="section__title">Жителям</h2>
+						</div>
+
+
+						<!-- Slider category-grid -->
+						<div class="category-grid _grid-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#" class="category-grid__item">
+											<div class="category-grid__icon"><svg class="icon icon-contract">
+													<use xlink:href="img/sprite.svg#contract"></use>
+												</svg></div>
+											<div class="category-grid__title">Имиграция</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="category-grid__item">
+											<div class="category-grid__icon"><svg class="icon icon-bus">
+													<use xlink:href="img/sprite.svg#bus"></use>
+												</svg></div>
+											<div class="category-grid__title">Транспорт</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="category-grid__item">
+											<div class="category-grid__icon"><svg class="icon icon-scroll">
+													<use xlink:href="img/sprite.svg#scroll"></use>
+												</svg></div>
+											<div class="category-grid__title">Гос. службы</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="category-grid__item">
+											<div class="category-grid__icon"><svg class="icon icon-cardiac-graphic">
+													<use xlink:href="img/sprite.svg#cardiac-graphic"></use>
+												</svg></div>
+											<div class="category-grid__title">Медицина</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="category-grid__item">
+											<div class="category-grid__icon"><svg class="icon icon-heart2">
+													<use xlink:href="img/sprite.svg#heart2"></use>
+												</svg></div>
+											<div class="category-grid__title">Пожертвования</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="category-grid__item">
+											<div class="category-grid__icon"><svg class="icon icon-university">
+													<use xlink:href="img/sprite.svg#university"></use>
+												</svg></div>
+											<div class="category-grid__title">Образование</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" class="category-grid__item">
+											<div class="category-grid__icon"><svg class="icon icon-university">
+													<use xlink:href="img/sprite.svg#university"></use>
+												</svg></div>
+											<div class="category-grid__title">Образование</div>
+										</a>
+									</div>
+
+								</div>
+								<div class="category-grid__controls swiper-controls swiper-controls--blue">
+									<div class=" swiper-button-prev"></div>
+									<div class=" swiper-pagination"></div>
+									<div class=" swiper-button-next"></div>
+								</div>
+							</div>
+						</div>
+
+					</section>
+					<!-- CATEGORY GRID EOF   -->
+
+					<!-- BEGIN NEWS -->
+					<section class="section">
+						<div class="section__head">
+							<h2 class="section__title">Интересное</h2>
+						</div>
+
+
+						<!-- Slider interesting-slider -->
+						<div class="interesting-slider _news-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/int-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Магазин игрушек «Toys» открыл новое напраление</a></h6>
+											<p>Это строки для рекламы. Нативная реклама - лучшая реклама</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/int-img-2.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Отдых с детьми в Пафосе</a></h6>
+											<p>Что стоит учитывать при планировании отпуска с детьми. Все подводные камни и не только в статье</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/int-img-3.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Какие сувениры привезти с Кипра</a></h6>
+											<p>Что можно привезти с острова. Магниты, кружки и прочие сувениры</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/int-img-4.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">В каком месяце лучше отдыхать на Кипре</a></h6>
+											<p>Все о погоде и о сезонах отдыха на Кипре. </p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/int-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Магазин игрушек «Toys» открыл новое напраление</a></h6>
+											<p>Это строки для рекламы. Нативная реклама - лучшая реклама</p>
+										</div>
+									</div>
+								</div>
+								<div class="interesting-slider__controls swiper-controls swiper-controls--blue">
+									<div class=" swiper-button-prev"></div>
+									<div class=" swiper-pagination"></div>
+									<div class=" swiper-button-next"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="sec-link">
+							<a href="#" class="under-link"><span>Перейти в раздел</span></a>
+						</div>
+					</section>
+					<!-- NEWS EOF   -->
+
+					<!-- BEGIN BOX GALLERY -->
+					<section class="section">
+						<div class="section__head">
+							<h2 class="section__title">Куда пойти</h2>
+						</div>
+						<div class="i-wrapper">
+							<div class="box-gallery row">
+								<div class="col-lg-4 col-sm-6 box-gallery__item">
+									<a href="#" class="box-banner-inner" style="background-image: url('img/box-gallery-img-1.jpg')">
+										<div class="box-banner-inner__head">
+											<h6>Трогательный зоопарк в Пафосе</h6>
+											<p>Для детей и взрослых от 6 лет</p>
+										</div>
+									</a>
+									<a href="#" class="box-gallery-inner">
+										<div class="box-gallery-inner__img" style="background-image: url('img/box-gallery-img-2.jpg')"></div>
+										<div class="box-gallery-inner__head">
+											<h6>Детские площадки</h6>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-4 col-sm-6 box-gallery__item">
+									<div class="row">
+										<div class="col-md-12">
+											<a href="#" class="box-gallery-inner">
+												<div class="box-gallery-inner__img" style="background-image: url('img/box-gallery-img-3.jpg')"></div>
+												<div class="box-gallery-inner__head">
+													<h6>Кафе, рестораны, бары</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-12">
+											<a href="#" class="box-gallery-inner">
+												<div class="box-gallery-inner__img" style="background-image: url('img/box-gallery-img-4.jpg')"></div>
+												<div class="box-gallery-inner__head">
+													<h6>Искусство и культура</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col-md-12">
+											<a href="#" class="box-gallery-inner i-hidden-xs">
+												<div class="box-gallery-inner__img" style="background-image: url('img/box-gallery-img-5.jpg')"></div>
+												<div class="box-gallery-inner__head">
+													<h6>Пляжи</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4  box-gallery__item">
+									<div class="row">
+										<div class="col-lg-12 col-sm-6">
+											<a href="#" class="box-gallery-inner i-hidden-xs">
+												<div class="box-gallery-inner__img" style="background-image: url('img/box-gallery-img-6.jpg')"></div>
+												<div class="box-gallery-inner__head">
+													<h6>Достопримечательности</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col-lg-12 col-sm-6">
+											<a href="#" class="box-gallery-inner i-hidden-xs">
+												<div class="box-gallery-inner__img" style="background-image: url('img/box-gallery-img-7.jpg')"></div>
+												<div class="box-gallery-inner__head">
+													<h6>Развлечения</h6>
+												</div>
+											</a>
+										</div>
+										<div class="col-lg-12 col-sm-6">
+											<a href="#" class="box-gallery-inner i-hidden-xs">
+												<div class="box-gallery-inner__img" style="background-image: url('img/box-gallery-img-8.jpg')"></div>
+												<div class="box-gallery-inner__head">
+													<h6>Локации для прогулок</h6>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sec-link visible-xs">
+								<a href="#" class="under-link"><span class="i-btn" data-title="Показать еще">Показать еще</span></a>
+							</div>
+						</div>
+					</section>
+					<!-- BOX GALLERY EOF   -->
+
+					<!-- BEGIN SHOPS -->
+					<section class="section">
+						<div class="row rw">
+							<div class="col-sm-6 rw__item">
+								<div class="section__head">
+									<h2 class="section__title">Магазины Пафоса</h2>
+								</div>
+								<div class="shop-block">
+									<div class="shop-inner">
+										<div class="shop-inner__img"><a href="#"><img src="img/shop-img-1.jpg" alt=""></a></div>
+										<h6 class="shop-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
+									</div>
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-grocery">
+												<use xlink:href="img/sprite.svg#grocery"></use>
+											</svg></div>
+										<div class="category-inner__title">Продукты</div>
+									</a>
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-car-door">
+												<use xlink:href="img/sprite.svg#car-door"></use>
+											</svg></div>
+										<div class="category-inner__title">Автоуслуги</div>
+									</a>
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-cardiac-graphic">
+												<use xlink:href="img/sprite.svg#cardiac-graphic"></use>
+											</svg></div>
+										<div class="category-inner__title">Аптеки</div>
+									</a>
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-hair-dryer">
+												<use xlink:href="img/sprite.svg#hair-dryer"></use>
+											</svg></div>
+										<div class="category-inner__title">Салоны красоты</div>
+									</a>
+									<a href="#" class="category-inner hidden-xs">
+										<div class="category-inner__icon"><svg class="icon icon-destination">
+												<use xlink:href="img/sprite.svg#destination"></use>
+											</svg></div>
+										<div class="category-inner__title">Туризм</div>
+									</a>
+									<a href="#" class="category-inner hidden-xs">
+										<div class="category-inner__icon"><svg class="icon icon-order">
+												<use xlink:href="img/sprite.svg#order"></use>
+											</svg></div>
+										<div class="category-inner__title">Одежда</div>
+									</a>
+								</div>
+								<div class="sec-link">
+									<a href="#" class="under-link"><span>Перейти в раздел</span></a>
+								</div>
+							</div>
+							<div class="col-sm-6 rw__item">
+								<div class="section__head">
+									<h2 class="section__title">Услуги Пафоса</h2>
+								</div>
+								<div class="shop-block">
+									<div class="shop-inner">
+										<div class="shop-inner__img"><a href="#"><img src="img/shop-img-2.jpg" alt=""></a></div>
+										<h6 class="shop-inner__title"><a href="#">Мария Иванова - Ваш личный фотограф на Кипре</a></h6>
+									</div>
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-renovation">
+												<use xlink:href="img/sprite.svg#renovation"></use>
+											</svg></div>
+										<div class="category-inner__title">Автомастера</div>
+									</a>
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-pram">
+												<use xlink:href="img/sprite.svg#pram"></use>
+											</svg></div>
+										<div class="category-inner__title">Няни</div>
+									</a>
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-hair-dryer">
+												<use xlink:href="img/sprite.svg#hair-dryer"></use>
+											</svg></div>
+										<div class="category-inner__title">Мастера красоты</div>
+									</a>
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-paint-roller">
+												<use xlink:href="img/sprite.svg#paint-roller"></use>
+											</svg></div>
+										<div class="category-inner__title">Разнорабочие</div>
+									</a>
+									<a href="#" class="category-inner hidden-xs">
+										<div class="category-inner__icon"><svg class="icon icon-photography">
+												<use xlink:href="img/sprite.svg#photography"></use>
+											</svg></div>
+										<div class="category-inner__title">Фотографы</div>
+									</a>
+									<a href="#" class="category-inner hidden-xs">
+										<div class="category-inner__icon"><svg class="icon icon-cardiac-graphic">
+												<use xlink:href="img/sprite.svg#cardiac-graphic"></use>
+											</svg></div>
+										<div class="category-inner__title">Мед. персонал</div>
+									</a>
+								</div>
+								<div class="sec-link">
+									<a href="#" class="under-link"><span>Перейти в раздел</span></a>
+								</div>
+							</div>
+						</div>
+
+					</section>
+					<!-- SHOPS EOF   -->
+
+					<!-- BEGIN there are questions -->
+					@@include('./template/blocks/section_question.html')
+					<!-- there are questions EOF   -->
+				</div>
+			</div>
+
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		<!-- @@include('./template/_popup.html') -->
+
+
+
+
+	</div>
+	<!-- BODY EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

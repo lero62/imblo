@@ -1,0 +1,134 @@
+
+.districts
+	margin-bottom: 4rem
+	&__item
+		padding-bottom: 4rem
+		padding-top: 4rem
+		border-bottom: .2rem solid $color-info
+		&:first-child
+			padding-top: 0
+
+.district-card
+	&__body
+		overflow: hidden
+	&__img
+		float: left
+		margin: 0 2rem 2rem 0
+		width: 31.1rem
+		.img-gallery
+			display: block
+		img
+			border-radius: 10px 10px 0px 0px
+			width: 100%
+
+	&__title
+		font-size: 1.8rem
+		font-weight: 700
+		margin-bottom: 1.2rem
+	&__text
+		font-size: 1.4rem
+		font-weight: 400
+
+	&__footer
+		margin-top: 4rem
+
+.district-details
+	display: flex
+	&__item
+		padding-right: 2rem
+		&--first
+			width: calc(40% - 5rem)
+		&--second
+			width: calc(35% - 5rem)
+		&--third
+			width: calc(25% - 5rem)
+	&__button
+		flex: none
+		width: 15rem
+		margin-left: auto
+		.btn
+			max-width: 15rem
+
+	&__label
+		font-size: 1.4rem
+		font-weight: 700
+		margin-bottom: 0.5rem
+	&__labeled
+		font-weight: 300
+		font-size: 1.4rem
+
+@media screen and(max-width: $laptop) and (min-width: $ipad + 1)
+	.district-details
+		flex-wrap: wrap
+		margin-bottom: -2rem
+		&__item
+			padding-right: 1rem
+			margin-bottom: 2rem
+			&--first
+				width: 45%
+			&--second
+				width: 35%
+			&--third
+				width: 20%
+		&__button
+			margin-bottom: 2rem
++max($laptop)
+	.district-card
+		&__img
+			width: 27rem
+		&__footer
+			margin-top: 2.5rem
+
++max($ipad)
+	.districts
+		margin-bottom: 4rem
+		&__item
+			padding-top: 3rem
+			padding-bottom: 3rem
+	.district-details
+
+		&__label, &__labeled
+			font-size: 1.2rem
+
++max($iphone)
+
+	.district-card__img
+		width: 19.8rem
+	.district-details
+		flex-wrap: wrap
+		margin-bottom: -2rem
+		&__item
+			padding-right: 1rem
+			margin-bottom: 2rem
+			&--first
+				width: 45%
+			&--second
+				width: 35%
+			&--third
+				width: 20%
+		&__button
+
+			margin-bottom: 2rem
+
++max($iphone_sm)
+	.district-card
+		&__img
+			width: 100%
+			float: none
+			margin-right: 0
+		&__title
+			font-size: 1.6rem
+		&__text
+			font-size: 1.2rem
+
+	.district-details
+		display: block
+		margin-bottom: -1rem
+		&__item
+			width: 100%
+			margin-bottom: 1rem
+		&__button
+			width: 100%
+			margin-bottom: 1rem
+			.btn
+				max-width: 100%

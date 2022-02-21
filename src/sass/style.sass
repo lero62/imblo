@@ -1,0 +1,98 @@
+/* mixin ============================================== */
+@import lib/base
+/* mixin ============================================== */
+
+/* body =============================================== */
+$font-family: 'Montserrat'
+$color:		  #393939
+$bgcolor:		#e9edf0
+$color-danger: #fa4242
+
+$color-default: #7d7d7d
+$color-info:	 #34a1d3
+
+/* body ================================================ */
+
+/*  Container ========================================== */
+$gutters:		 15px
+$minWidth:		32
+$maxWidth:		192
+$containerrem:  114
+$container:	  1220
+$laptop:		  1260px
+$ipad:			 991px
+$iphone:		  767px
+$iphone_sm:	  575px
+$iphone_xs:	  420px
+/*  Container ========================================== */
+
+/* Normalize =========================================== */
+@import normalize
+
+html
+	font-size: 62.5%
+	&.lock, &.lock body
+		overflow: hidden
+
+body
+	color: $color
+	font: 300 1.2rem $font-family, Arial, sans-serif
+	line-height: 1.3
+	background: $bgcolor
+	min-height: 100%
+	display: flex
+	margin: 0px
+	padding: 0px
+	position: relative
+
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	&.lock
+		overflow: hidden
+/* Normalize ====================================== */
+
+/* TYPOGRAPHY
+/* ================================================ */
+@import blocks/typography
+
+/* HEADER
+/* ================================================ */
+@import header
+
+/* MAIN
+/* ================================================ */
+@import main
+
+@import blocks/catalog
+
+@import blocks/gallery
+
+@import blocks/news
+
+@import blocks/add
+
+@import blocks/page
+
+@import blocks/districts
+
+@import blocks/ui
+
+@import blocks/buttons
+
+@import blocks/forms
+
+@import blocks/icons
+
+@import blocks/popup
+
+@import blocks/grid
+
+// @import blocks/tooltip 
+
+/* FOOTER
+/* ================================================ */
+@import footer
+
+/* MEDIA
+/* ================================================ */
+@import media

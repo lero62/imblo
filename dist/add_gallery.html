@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Добавить фото в фотогалерею</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<!-- <link rel="icon" type="image/png" href="img/favicon.png" /> -->
+	<link rel="stylesheet" type="text/css" href="css/style.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendors.css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		<header class="header">
+	<div class="container ">
+		<a href="#" class="mm-toggle burger header__burger">
+			<div class="burger__icon"></div>
+		</a>
+		<a href="#" class="header__logo logo">
+			<span class="logo__text">I<svg class="icon icon-heart"><use xlink:href="img/sprite.svg#heart"></use></svg>PAPHOS</span>
+		</a>
+		<div class="mobile-navbar ">
+			<div class="mobile-navbar__container">
+				<div class="mobile-navbar__header">
+					<div class="mobile-navbar__close mm-toggle"></div>
+				</div>
+				<div class="mobile-navbar__main">
+					<ul class="main-menu">
+						<li class="main-menu__item mm-item">
+							<a href="#" class="main-menu__link">О городе</a>
+							<ul class="mm-menu">
+								<li><a href="#">Транспорт</a></li>
+								<li><a href="#">Отели</a></li>
+								<li><a href="#">Интересные маршруты</a></li>
+								<li><a href="#">Прокат авто и мото</a></li>
+							</ul>
+						</li>
+						<li class="main-menu__item mm-item">
+							<a href="#" class="main-menu__link">Туристу</a>
+							<ul class="mm-menu">
+								<li><a href="#">Транспорт</a></li>
+								<li><a href="#">Отели</a></li>
+								<li><a href="#">Интересные маршруты</a></li>
+								<li><a href="#">Прокат авто и мото</a></li>
+							</ul>
+						</li>
+						<li class="main-menu__item mm-item">
+							<a href="#" class="main-menu__link">Жителю</a>
+							<ul class="mm-menu">
+								<li><a href="#">Транспорт</a></li>
+								<li><a href="#">Отели</a></li>
+								<li><a href="#">Интересные маршруты</a></li>
+								<li><a href="#">Прокат авто и мото</a></li>
+							</ul>
+						</li>
+						<li class="main-menu__item mm-item">
+							<a href="#" class="main-menu__link">Куда пойти</a>
+							<ul class="mm-menu">
+								<li><a href="#">Транспорт</a></li>
+								<li><a href="#">Отели</a></li>
+								<li><a href="#">Интересные маршруты</a></li>
+								<li><a href="#">Прокат авто и мото</a></li>
+							</ul>
+						</li>
+						<li class="main-menu__item mm-item">
+							<a href="#" class="main-menu__link">Магазины</a>
+							<ul class="mm-menu">
+								<li><a href="#">Транспорт</a></li>
+								<li><a href="#">Отели</a></li>
+								<li><a href="#">Интересные маршруты</a></li>
+								<li><a href="#">Прокат авто и мото</a></li>
+							</ul>
+						</li>
+						<li class="main-menu__item mm-item">
+							<a href="#" class="main-menu__link">Услуги</a>
+							<ul class="mm-menu">
+								<li><a href="#">Транспорт</a></li>
+								<li><a href="#">Отели</a></li>
+								<li><a href="#">Интересные маршруты</a></li>
+								<li><a href="#">Прокат авто и мото</a></li>
+							</ul>
+						</li>
+						<li class="main-menu__item "><a href="#popup-subscribe" class="main-menu__link open-popup">Подписка</a></li>
+					</ul>
+				</div>
+			
+			</div>
+			<div class="mobile-navbar__overlay mm-toggle"></div>
+		</div>
+
+		<div class="search-int">
+			<button type="button" class="search-button open-search"><svg class="icon icon-loupe"><use xlink:href="img/sprite.svg#loupe"></use></svg></button>
+			<div class="search-int__block">
+				<input type="text" placeholder="Поиск" class="search-int__input">
+			</div>
+		</div>
+
+		<div class="lang">
+			<button class="lang__button">
+				<img src="img/lang-rus.png" alt="">
+				<span>рус</span>
+			</button>
+			<ul class="lang__list" >
+				<li><a href="#"><img src="img/lang-eng.png" alt=""> <span>eng</span></a></li>
+				<li><a href="#"><img src="img/lang-3.png" alt=""> <span>gre</span></a></li>
+			</ul>
+		</div>
+		
+	</div>
+	
+	
+</header>
+
+
+<div class="fix-menu">
+	<div class="container">
+		<div class="fix-menu__button">
+			
+				<a href="#" class="btn-g open-nav"><svg class="icon icon--l icon--info icon-grid"><use xlink:href="img/sprite.svg#grid"></use></svg>Каталог</a>
+			
+			<a href="#" class="btn-g btn-g--icon open-filter"><svg class="icon icon--info icon-filter"><use xlink:href="img/sprite.svg#filter"></use></svg></a>
+		</div>
+		
+			<div class="fix-nav">
+				<ul class="ct-menu">
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link">Мастера по ремонту</a>
+						<ul>
+							<li><a href="#">Мыло</a></li>
+							<li><a href="#">Средства для волос</a></li>
+						</ul>
+					</li>
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link">Мастера красоты</a>
+						<ul >
+							<li><a href="#">Косметолог</a></li>
+							<li><a href="#">Татуаж</a></li>
+							<li><a href="#">Тату</a></li>
+							<li><a href="#">Эпиляция</a></li>
+							<li><a href="#">Стилист</a></li>
+							<li><a href="#">Массажист</a></li>
+							<li><a href="#">Парикхмахер</a></li>
+							<li class="is-active"><a href="#">Маникюр, педикюр</a></li>
+							<li><a href="#">Визажист</a></li>
+							<li><a href="#">Брови</a></li>
+							<li><a href="#">Ресницы</a></li>
+						</ul>
+					</li>
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link ">Медицина</a>
+						<ul>
+							<li><a href="#">Мыло</a></li>
+							<li><a href="#">Средства для волос</a></li>
+						</ul>
+					</li>
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link ">Секции</a>
+						<ul>
+							<li><a href="#">Мыло</a></li>
+							<li><a href="#">Средства для волос</a></li>
+						</ul>
+					</li>
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link ">Репетиторы, тренеры</a>
+						<ul>
+							<li><a href="#">Мыло</a></li>
+							<li><a href="#">Средства для волос</a></li>
+						</ul>
+					</li>
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link ">Домашние услуги</a>
+						<ul>
+							<li><a href="#">Мыло</a></li>
+							<li><a href="#">Средства для волос</a></li>
+						</ul>
+					</li>
+					<li class="ct-menu__item">
+						<a href="#" class="ct-menu__link ">Домашние животные</a>
+					</li>
+					<li class="ct-menu__item">
+						<a href="#" class="ct-menu__link ">Транспорт</a>
+					</li>
+					<li class="ct-menu__item">
+						<a href="#" class="ct-menu__link ">Артисты</a>
+					</li>
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link ">Разные услуги</a>
+						<ul>
+							<li><a href="#">Наружная реклама, полиграфия</a></li>
+							<li><a href="#">Жидкость для эл.сигарет, испарители</a></li>
+						</ul>
+					</li>
+					<li class="ct-menu__item">
+						<a href="#" class="ct-menu__link ">Мастера по установке оборудования</a>
+					</li>
+				</ul>
+			</div>
+		
+		
+		<div class="fix-filter">
+			
+		</div>
+		
+	</div>
+</div>
+
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><span>Добавить фото в фотогалерею</span></li>
+					</ul>
+				</div>
+				<div class="main-content">
+					<div class="main-content__head">
+						<h1 class="title">Добавить фото в фотогалерею</h1>
+					</div>
+					<div class="main-content__body">
+						<form action="#" class="main-content__add-form add-form">
+							<div class="row">
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field">
+										<label class="form-label">Описание фото <span class="star">*</span></label>
+										<textarea rows="7" class="form-input form-input--radius" placeholder="Напишите кратко что изображено на фото (макс 250 символов)"></textarea>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 offset-lg-1 ">
+									<div class="form-field">
+										<label class="form-label">Название места <span class="star">*</span></label>
+										<input type="text" class="form-input form-input--radius" placeholder="Напишите где сделано фото">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field">
+										<label class="form-label">Загрузите фото <span class="star">*</span></label>
+
+
+										<div class="upload">
+											<label class="upload__input form-input">
+												<span class="placeholder">Добавить файл из своих документов</span>
+												<svg class="icon icon-upload">
+													<use xlink:href="img/sprite.svg#upload"></use>
+												</svg>
+												<input type="file" class="form-input form-input--radius addImage" placeholder="Добавить файл из своих документов">
+											</label>
+
+											<ul class="upload-images uploadImagesList">
+												<div class="upload-images__item template">
+													<div class="upload-images__preview">
+														<img src="" alt="">
+													</div>
+													<div class="upload-images__remove">удалить</div>
+												</div>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-lg-4 offset-lg-1 col-md-6">
+									<div class="form-field">
+										<label class="form-label">Добавьте тэги (нажмите enter после каждого тэга) <span class="star">*</span></label>
+										<input type="text" class="form-input form-input--radius" placeholder="Природа, достопримечательность, лето">
+
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="form-field">
+										<label class="form-label">Ваши комментарии</label>
+										<textarea rows="7" class="form-input form-input--radius" placeholder="Введите текст, не более 250 символов"></textarea>
+									</div>
+								</div>
+								<div class="col-12 ">
+									<div class="check-wrap form-field">
+										<label class="checkbox ">
+											<input type="checkbox" class="_open-block" data-name="ifot">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Я профессиональный фотограф, работающий в Пафосе
+											</span>
+										</label>
+
+										<span class="toltipe-symbol" data-toltipe>
+											?
+											<div class="toltipe">Ваши контакты будут размещены под фотографией</div>
+										</span>
+									</div>
+
+									<div class="ifot" style="display: none;">
+										<label class="form-label">Ваше имя</label>
+										<div class="row ">
+											<div class="col-lg-4 ">
+												<div class="form-field">
+
+													<input type="text" class="form-input form-input--radius" placeholder="Введите имя, фамилию">
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6">
+												<div class="form-field">
+													<div class="form-wrap-icon">
+														<svg class="icon icon-instagram">
+															<use xlink:href="img/sprite.svg#instagram"></use>
+														</svg>
+														<div class="form-wrap-icon__input">
+															<input type="text" class="form-input form-input--radius" placeholder="Введите ссылку на ваш Insatgram">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6">
+												<div class="form-field">
+													<div class="form-wrap-icon">
+														<svg class="icon icon-facebook">
+															<use xlink:href="img/sprite.svg#facebook"></use>
+														</svg>
+														<div class="form-wrap-icon__input">
+															<input type="text" class="form-input form-input--radius" placeholder="Введите ссылку на ваш Facebook">
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<button type="submit" class="btn btn--danger btn--radius">ДОБАВИТЬ ФОТО</button>
+						</form>
+					</div>
+
+
+				</div>
+			</div>
+
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		<footer class="footer">
+	<div class="footer__top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-6 footer__item">
+					<div class="footer__title"><a href="#">Реклама на сайте</a></div>
+					<div class="footer__title mtb-20"><a href="#">Advertising on site</a></div>
+					<div class="footer__title">О городе</div>
+
+					<ul class="footer-menu">
+						<li><a href="#">Общая информация</a></li>
+						<li><a href="#">Районы и деревни</a></li>
+						<li><a href="#">История</a></li>
+						<li><a href="#">Традиции и праздники</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Афиша мероприятий</a></li>
+						<li><a href="#">Фотогалерея</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Погода</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-6 footer__item ">
+					<div class="footer__title">Туристу</div>
+					<ul class="footer-menu">
+						<li><a href="#">Транспорт</a></li>
+						<li><a href="#">Отели</a></li>
+						<li><a href="#">Экскурсии</a></li>
+						<li><a href="#">Прокат авто и мото</a></li>
+						<li><a href="#">Аренда жилья</a></li>
+						<li><a href="#">Авиа билеты</a></li>
+						<li><a href="#">Такси и трансферы </a></li>
+						<li><a href="#">Сувенирные лавки</a></li>
+						<li><a href="#">Виза</a></li>
+						<li><a href="#">Интересные маршруты</a></li>
+						<li><a href="#">Полезная информация</a></li>
+					</ul>
+					<div class="footer__title mtb-20"><a href="#">О проекте</a></div>
+				</div>
+				<div class="col-md-3 col-6 footer__item ">
+					<div class="footer__title">Жителям</div>
+					<ul class="footer-menu">
+						<li><a href="#">Имиграция</a></li>
+						<li><a href="#">Транспорт дубль </a></li>
+						<li><a href="#">Гос. службы</a></li>
+						<li><a href="#">Мобильная связь</a></li>
+						<li><a href="#">Благотворительность</a></li>
+						<li><a href="#">Образование:</a></li>
+						<li><a href="#">Школы</a></li>
+						<li><a href="#">Детские сады</a></li>
+						<li><a href="#">Секции и кружки</a></li>
+						<li><a href="#">Репетиторство</a></li>
+						<li><a href="#">Высшее образование</a></li>
+						<li><a href="#">Колледжи</a></li>
+					</ul>
+				
+				</div>
+				<div class="col-md-3 col-6 footer__item ">
+					<div class="footer__title">Куда пойти</div>
+					<ul class="footer-menu">
+						<li><a href="#">Кафе, рестораны, бары</a></li>
+						<li><a href="#">Детские площадки</a></li>
+						<li><a href="#">Достопримечательности</a></li>
+						<li><a href="#">Искусство и культура </a></li>
+						<li><a href="#">Развлечения</a></li>
+						<li><a href="#">Пляжи</a></li>
+						<li><a href="#">Локации для прогулок</a></li>
+					</ul>
+					<div class="footer__title mtb-20"><a href="#">Магазины</a></div>
+					<div class="footer__title mtb-20"><a href="#">Услуги</a></div>
+
+					
+					<ul class="footer-menu">
+						<li><a href="maito:ilovepaphos@gmail.ru">ilovepaphos@gmail.ru</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<a href="#up" class="up btn-g btn-g--icon anchor"></a>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 footer__subscribe">
+					<div class="footer__title">Подпишитесь на новости сайта</div>
+					<div class="subscribe">
+						<form action="#" class="subscribe-form">
+							<input type="text" placeholder="Ваш e-mail" class="subscribe-form__input">
+							<button class="subscribe-form__button"></button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-3 ">
+					<div class="row">
+						<div class="col-md-12 col-sm-6 col-7">
+							<div class="footer__title"><a href="#">Сообщить об ошибке</a></div>
+						</div>
+						<div class="col-md-12 col-sm-6 col-5">
+							<div class="footer__title "><a href="#">2020. Пафос</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 ">
+					<div class="row">
+						<div class="col-sm-6 col-7">
+							<div class="footer__title"><a href="#">Политика конфеденциальности</a></div>
+							<div class="visible-sm">Дизайн сайта Seta Nera</div>
+						</div>
+						<div class="col-sm-6 col-5">
+							<div class="footer__title"><a href="#">Карта сайта</a></div>
+							<div class="hidden-sm">Дизайн сайта Seta Nera</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+	</div>
+</footer>
+
+
+
+
+		<!-- FOOTER EOF   -->
+
+		<div id="popup-subscribe" class="popup mfp-hide">
+	
+	<h2 class="popup__title ">Подпишитесь на новости сайта</h2>
+	<form action="#" class="popup-form">
+		
+		<div class="form-field">
+			<input type="text" class="form-input form-input--default " placeholder="Ваш e-mail">
+		</div>
+
+		<div class="form-field">
+			<input type="submit" class="btn btn--danger btn--radius" value="Оформить подписку">
+		</div>
+
+	</form>
+</div>
+
+	</div>
+	<!-- BODY EOF   -->
+	
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

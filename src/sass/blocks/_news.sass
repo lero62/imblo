@@ -1,0 +1,490 @@
+/* Page article */
+.news-page
+	&__banner-cards-wrap
+		margin-top: 0
+
+.page-article
+	padding-right: 2rem
+
+	&-swiper
+		margin-bottom: 2rem
+		padding-left: 3rem
+		padding-right: 3rem
+		position: relative
+		&__pagination
+			margin-top: 1.5rem
+		&__prev, &__next
+			top: calc(50% - 1.4rem) !important
+		.swiper-slide
+			img
+				width: 100%
+				border-radius: 1rem 1rem 0 0
+
+	.i-gallery
+
+		display: flex
+		flex-wrap: wrap
+		margin: -.5rem -.5rem 1.5rem
+		.img-gallery
+			flex: 1 1 auto
+			margin: .5rem
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+			&:first-child:last-child
+				flex: none
+				max-width: 100%
+				img
+					width: auto
+
+.news-wrapper-head
+	margin-bottom: 1.7rem
+	.title
+		margin-bottom: .7rem
+		font-weight: 900
+		&.inline
+			display: inline-block
+			margin-right: 2rem
+	.title-inset
+		display: inline-block
+		vertical-align: top
+		position: relative
+
+	.date
+		font-weight: 300
+		margin-bottom: .7rem
+		display: inline-block
+
+.article-imgs
+	margin: 3rem 0 1rem
+	img
+		border-radius: 1rem 1rem 0 0
+
+.article-img-left
+	.img-gallery
+		margin: 0  !important
+		img
+			width: 100%
+
+.img-gallery
+	display: inline-block
+
+	position: relative
+	overflow: hidden
+	border-radius: 1rem 1rem 0 0
+	img
+		display: block
+
+	@media (any-hover: hover)
+		&:hover
+
+			&:after
+				opacity: 1
+
+	&:after
+		content: ''
+		+coverdiv
+		background-color: rgba(#393939, 0.6)
+		opacity: 0
+		+tr
+		pointer-events: none
+
+.clear
+	clear: both
+	width: 100%
+	margin-top: 2.5rem
+	margin-bottom: 2rem
+
+.article-details
+	box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+	background: $bgcolor
+	border-radius: 1rem 1rem 0 0
+	padding: 2.2rem 2rem
+	&__item
+		margin-bottom: 2rem
+		display: flex
+		align-items: flex-start
+
+		&:last-child
+			margin-bottom: 0
+		&.selected
+			.article-details__icon
+				background: #E9EDF0
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
+				border-radius: .5rem
+				.icon
+					font-size: 1.8rem
+					top: 0
+			.article-details__content
+				font-weight: 900
+
+	&__icon
+		width: 2.7rem
+		height: 2.7rem
+		display: flex
+		align-items: center
+		justify-content: center
+		flex: none
+		margin-right: 1rem
+		font-size: 0
+		.icon
+			color: $color-info
+			font-size: 2.4rem
+			top: -.1rem
+
+	&__content
+		font-size: 1.4rem
+		font-weight: 600
+		align-self: center
+
+.ad-address
+	margin-bottom: .5rem
+	display: block
+
+.mistake
+	margin-top: 3rem
+
+.a-details
+	p
+		margin-bottom: 2rem
+		font-size: 1.4rem
+		font-weight: 300
+		&:last-child
+			margin-bottom: 0
+		b, strong
+			font-weight: 800
+
+.bl-wrap
+
+	max-width: 75rem
+.bl-list
+
+	&__item
+		margin-bottom: 3rem
+
+#content-map
+	height: 30.3rem
+
+/* About ================================================================== */ 
+.main-content
+	&__about-grid
+		margin-top: 5rem
+.about-grid
+
+	&__item
+		display: flex
+		margin-bottom: 6rem
+.about-box
+	display: flex
+	flex-direction: column
+	width: 100%
+	&__title
+		font-size: 1.8rem
+		font-weight: 700
+		margin-bottom: 1.5rem
+	&__text
+		font-size: 1.4rem
+		font-weight: 400
+		margin-bottom: 1.5rem
+	&__button
+		margin-top: auto
+		display: flex
+		flex-wrap: wrap
+		margin-left: -0.5rem
+		margin-right: -0.5rem
+		margin-bottom: -1rem
+		.btn
+			min-width: 19.5rem
+			margin-left: 0.5rem
+			margin-right: 0.5rem
+			padding-left: 1rem
+			padding-right: 1rem
+			margin-bottom: 1rem
+			.icon
+				margin-right: 1rem
+	&__form
+		margin-bottom: 3rem
+	.form-field
+		margin-bottom: 1.5rem
+
+/* Controls ================================================================== */ 
+.dasert
+	margin-top: 3.5rem
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	.share, .comment-btn
+		margin-bottom: 1.5rem
+		margin-right: 7rem
+	.comment-add
+		margin-bottom: 1.5rem
+	.share__title
+		max-width: 11.5rem
+
+.share
+	display: flex
+	align-items: center
+	position: relative
+
+	&__title
+		font-size: 1.2rem
+		font-weight: 500
+		margin-right: 1.5rem
+		position: relative
+		padding-left: 2.7rem
+		.icon
+			font-size: 1.8rem
+			color: $color-info
+			position: absolute
+			top: 50%
+			transform: translate(0,-50%)
+			left: 0
+	.social__btn
+		width: 3.3rem
+		height: 3.3rem
+		margin-right: 1.2rem
+		.icon
+			font-size: 1.8rem
+
+.comment-add
+	font-weight: 500
+	font-size: 1.2rem
+	a
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+/* Comment ===================================================================*/
+.comment-block, .comment-block-form
+	margin-top: 2rem
+	max-width: 62.4rem
+	&__title
+		font-size: 1.2rem
+		font-weight: 700
+		margin-bottom: 2rem
+		&--lg
+			font-size: 1.8rem
+
+	&--line
+		border-top: .3rem solid #34A1D3
+		padding-top: 2rem
+		margin-top: 4rem
+
+.comment-list
+
+	&__item
+		margin-bottom: 3rem
+
+.comment-buttons
+	text-align: right
+	margin-bottom: 3rem
+	.btn
+		margin-right: 2rem
+		&:last-child
+			margin-right: 0
+
+.comment-inner
+	&__top
+		display: flex
+		justify-content: space-between
+		margin-bottom: 1rem
+	&__name
+		font-size: 1.2rem
+		font-weight: 700
+		color: #393939
+	&__date
+		font-size: 1.2rem
+		font-weight: 400
+		color: #7D7D7D
+		span
+			display: inline-block
+			margin-left: 1rem
+
+	&__text
+		font-weight: 400
+		font-size: 1.2rem
+
+	&__bottom
+		display: flex
+		align-items: center
+		margin-top: 1rem
+
+	&__answer
+		a
+			font-size: 1.2rem
+			font-weight: 700
+			color: #7d7d7d
+			&:hover
+				text-decoration: underline
+	&__appraisal
+		margin-left: auto
+		white-space: nowrap
+		display: flex
+		flex: none
+		align-items: center
+		.like
+			margin-right: 2.5rem
+
+.answer-inner
+	padding-left: 2.5rem
+	margin-top: 2.5rem
+	position: relative
+
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: -1.5rem
+		width: 1.9rem
+		height: 2.3rem
+		border-left: .1rem solid $color-info
+		border-bottom: .1rem solid $color-info
+
+.like, .dislike
+	display: inline-flex
+	align-items: center
+	font-size: 1.2rem
+	font-weight: 400
+	cursor: pointer
+	.icon
+		font-size: 2rem
+		margin-right: .7rem
+
+.like
+	color: #34a1d3
+	.icon
+		color: $color-info
+		top: -.2rem
+
+.dislike
+	color: $color-danger
+	.icon
+		color: $color-danger
+		top: .2rem
+
+.comment-form
+	&__wrap
+		display: flex
+		align-items: flex-start
+		margin: 0 -1rem
+	&__name
+		flex: 1
+		padding: 0 1rem
+	&__message
+		flex: 1
+		padding: 0 1rem
+	&__btn
+		flex: none
+		padding: 0 1rem
+
++max($laptop)
+	/* Page article */
+
+	.page-article
+		padding-right: 1rem
+
+	.dasert
+		.share
+			width: 100%
+			margin-right: 0
+			&__title
+				max-width: none
+				margin-right: 3rem
+		.comment-btn
+			margin-right: 3rem
++max($ipad)
+	.news-wrapper-head-widjet
+		margin-bottom: 2rem
+
+	.page-article
+		&-swiper
+			padding-left: 0
+			padding-right: 0
+			&__prev, &__next
+				display: none !important
+
+	.article-details
+		display: flex
+		flex-wrap: wrap
+		&__item
+			width: 50%
+
+		&__button
+			margin-left: auto
+			margin-right: auto
+			width: 51%
+
+	.a-details
+		display: flex
+		flex-wrap: wrap
+		padding-left: 1rem !important
+		padding-right: 1rem !important
+		p
+			width: 50%
+			margin-bottom: 1rem
+			padding-left: 1.2rem
+			padding-right: 1.2rem
+
+	.about-grid
+		&__item
+			margin-bottom: 5rem
+
+	.comment-block, .comment-block-form
+		max-width: none
+
++max($iphone)
+	.a-details
+		display: block
+
+		p
+			width: auto
+
+	.dasert
+
+		.comment-btn
+			width: 100%
+			margin-right: 0
+			.btn
+				width: 100%
+		.comment-add
+			margin-right: 0
+			br
+				display: none
+
+	.main-content__about-grid
+		margin-top: 4rem
+
+	.about-grid
+		&__item
+			margin-bottom: 4rem
+
+	.comment-form__name
+		.form-input--t-center
+			text-align: left
+
++max($iphone_sm)
+	/* Page article */
+
+	.article-img-left
+		float: none
+		display: block !important
+		margin-right: 0 !important
+		max-width: none
+
+	.dasert
+		.share
+			display: block
+			&__title
+				margin-bottom: 1.7rem
+				display: block
+
+	.article-details
+		display: block
+		&__item
+			width: auto
+
+		&__button
+
+			width: auto

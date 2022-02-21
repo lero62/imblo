@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/_head.html', {
+"title": "Галерея"
+})
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><span>Фотогалерея Пафоса</span></li>
+					</ul>
+				</div>
+				<div class="main-content gallery-page">
+					<div class="row ">
+						<div class="col-lg-9 ">
+							<div class="main-content__head">
+								<h1 class="title">Фотогалерея Пафоса</h1>
+								<div class="sorting">
+									<ul class="sorting-nav">
+										<li class="sorting-nav__item">
+											<div class="dropdown">
+												<a href="#" class="dropdown-button">По дате добавления</a>
+												<ul class="dropdown-menu">
+													<li class="is-active">По дате добавления</li>
+													<li>По рейтингу</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="main-content__side"></div>
+							<div class="grid p-gallery">
+								<div class="grid-sizer"></div>
+								<div class="grid-item">
+									<a href="img/image3.png" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-1.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй»</div>
+											<div class="pg-block__text">Пляж Корал Бэй самый популярный в этом районе. Заход в море пологий, отсутствуют перепады. Море у берегов пляжа очень спокойное. Волны совсем небольшие. Благодаря этому Корал Бэй — отличный пляж для семейного отдыха.отличный пляж для семейного отдыха.</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Мария Иванова</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="grid-item">
+									<a href="img/image4.png" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-2.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Локации для прогулок</div>
+											<div class="pg-block__text">Локации для прогулок в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="grid-item">
+									<a href="img/gallery-img-3.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-3.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй»</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Мария Иванова</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="grid-item">
+									<a href="img/gallery-img-4.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-4.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="grid-item">
+									<a href="img/gallery-img-5.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-5.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="grid-item grid-item--height2">
+									<a href="img/gallery-img-6.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-6.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="grid-item">
+									<a href="img/gallery-img-9.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-9.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="grid-item">
+									<a href="img/gallery-img-10.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-10.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="grid-item grid-item--height2">
+									<a href="img/gallery-img-6.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-6.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="grid-item">
+									<a href="img/gallery-img-11.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-11.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="grid-item">
+									<a href="img/gallery-img-10.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-10.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="grid-item">
+									<a href="img/gallery-img-11.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-11.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="grid-item">
+									<a href="img/gallery-img-10.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-10.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+
+								<div class="grid-item grid-item--height2">
+									<a href="img/gallery-img-6.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-6.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="grid-item">
+									<a href="img/gallery-img-11.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-11.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="grid-item">
+									<a href="img/gallery-img-11.jpg" class=" img-gallery img-gallery-info">
+										<img src="img/gallery-img-11.jpg" alt="">
+									</a>
+									<div class="p-gallery-info">
+										<div class="pg-top">
+
+											<div class="pg-top__like _like">
+												<svg class="icon icon-heart-alt">
+													<use xlink:href="img/sprite.svg#heart-alt"></use>
+												</svg>
+												<svg class="icon icon-heart">
+													<use xlink:href="img/sprite.svg#heart"></use>
+												</svg>
+											</div>
+											<div class="pg-top__share _share">
+												<svg class="icon icon-share2">
+													<use xlink:href="img/sprite.svg#share2"></use>
+												</svg>
+												<div class="dropdown-share">
+													<div class="dropdown-share__inner">
+														<div class="dropdown-share__title">Поделиться:</div>
+														<ul>
+															<li><a href="#">Facebook</a></li>
+															<li><a href="#">Vk</a></li>
+															<li><a href="#">Копировать ссылку</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="pg-top__date">20.10.2022</div>
+
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-pin">
+													<use xlink:href="img/sprite.svg#pin"></use>
+												</svg> Пляж «Корал Бэй» 2</div>
+											<div class="pg-block__text">Пляж «Корал Бэй» 2 в одноименном районе — самый популярный в Пафосе</div>
+											<a href="#" class="btn btn--info btn--radius">Подробнее</a>
+										</div>
+										<div class="pg-block">
+											<div class="pg-block__title"><svg class="icon icon-technology">
+													<use xlink:href="img/sprite.svg#technology"></use>
+												</svg>Фотограф</div>
+											<div class="pg-block__name">Василий Петрович</div>
+											<div class="pg-block__social social">
+												<a href="#" class="social__link"><svg class="icon icon-instagram">
+														<use xlink:href="img/sprite.svg#instagram"></use>
+													</svg></a>
+												<a href="#" class="social__link"><svg class="icon icon-facebook">
+														<use xlink:href="img/sprite.svg#facebook"></use>
+													</svg></a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- CONTENT EOF   -->
+
+						<!-- BEGIN SIDEBAR -->
+						<div class="col-lg-3 sidebar">
+
+							<div class="sidebar-ch" data-da="main-content__side, 1, 991">
+								<div class="sd-list">
+									<ul class="list">
+										<li><a href="#"><strong>Добавить фотографию</strong></a></li>
+									</ul>
+								</div>
+								<div class="widjet-block hidden-md">
+									<div class="tags">
+										<a href="#" class="tag-btn is-active">все фотографии</a>
+										<a href="#" class="tag-btn">город</a>
+										<a href="#" class="tag-btn">пляжи</a>
+										<a href="#" class="tag-btn">достопримечательности</a>
+										<a href="#" class="tag-btn">отели</a>
+										<a href="#" class="tag-btn">природа</a>
+										<a href="#" class="tag-btn">летом</a>
+										<a href="#" class="tag-btn">зимой</a>
+										<a href="#" class="tag-btn">весной</a>
+										<a href="#" class="tag-btn">осенью</a>
+										<a href="#" class="tag-btn">дома</a>
+										<a href="#" class="tag-btn">туристы</a>
+										<a href="#" class="tag-btn">море</a>
+										<a href="#" class="tag-btn">монастыри</a>
+										<a href="#" class="tag-btn">фауна</a>
+									</div>
+
+								</div>
+							</div>
+							<div class="banner-cards-wrap">
+								<div class="row">
+									<div class="col-lg-12 col-sm-6">
+										<div class="banner-card">
+											<div class="banner-card__img">
+												<a href="#"><img src="img/banner-card-img-1.jpg" alt=""></a>
+												<span class="banner-card__sticker">Реклама</span>
+											</div>
+											<div class="banner-card__title"><a href="#">Аренда авто в Пафосе</a></div>
+											<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-sm-6">
+										<div class="banner-card">
+											<div class="banner-card__img">
+												<a href="#"><img src="img/banner-card-img-2.jpg" alt=""></a>
+												<span class="banner-card__sticker">Реклама</span>
+											</div>
+											<div class="banner-card__title"><a href="#">Экскурсии по Кипру</a></div>
+											<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+
+						</div>
+						<!-- SIDEBAR EOF   -->
+					</div>
+
+					@@include('./template/blocks/section_about.html')
+
+
+					<!-- BEGIN there are questions -->
+					@@include('./template/blocks/section_question.html')
+					<!-- there are questions EOF   -->
+				</div>
+			</div>
+
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+
+</body>
+
+</html>
