@@ -4,13 +4,13 @@ import cheerio from "gulp-cheerio";
 import svgSprite from "gulp-svg-sprite";
 
 export const svgSprive = () => {
-	return app.gulp.src(`${app.path.src.sprite}`, {})
-		// .pipe(app.plugins.plumber(
-		// 	app.plugins.notify.onError({
-		// 		title: "SvgSptire",
-		// 		message: "Error: <%= error.message %>"
-		// 	}))
-		// )
+	return app.gulp.src(app.path.src.sprite)
+		.pipe(app.plugins.plumber(
+			app.plugins.notify.onError({
+				title: "SvgSptire",
+				message: "Error: <%= error.message %>"
+			}))
+		)
 		.pipe(svgmin({
 			js2svg: {
 				pretty: true
@@ -22,8 +22,8 @@ export const svgSprive = () => {
 				$('[stroke]').removeAttr('stroke');
 				$('[style]').removeAttr('style');
 			},
-				parserOptions: {xmlMode: true}
-			}))
+			parserOptions: { xmlMode: true }
+		}))
 		.pipe(replace('&gt;', '>'))
 		.pipe(svgSprite({
 			shape: {
@@ -35,6 +35,6 @@ export const svgSprive = () => {
 				}
 			}
 		}))
-		.pipe(app.gulp.dest(`${app.path.build.images}`))
+		.pipe(app.gulp.dest(`src/img`))
 
 }

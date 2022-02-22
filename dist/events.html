@@ -504,7 +504,7 @@
 						<div class="col-xl-3 col-lg-4 sidebar">
 							<div class="sd-list " data-da="main-content__side, 1, 991">
 								<ul class="list">
-									<li><a href="#"><strong>Добавить мероприятие</strong></a></li>
+									<li><a href="#popup-add-event" class="open-popup"><strong>Добавить мероприятие</strong></a></li>
 								</ul>
 							</div>
 
@@ -915,69 +915,114 @@
 		<!-- FOOTER EOF   -->
 
 		<div id="popup-subscribe" class="popup mfp-hide">
-	
+
 	<h2 class="popup__title ">Подпишитесь на новости сайта</h2>
 	<form action="#" class="popup-form">
-		
+
 		<div class="form-field">
-			<input type="text" class="form-input form-input--default " placeholder="Ваш e-mail">
+			<input type="text" class="form-input " placeholder="Ваш e-mail">
 		</div>
 
 		<div class="form-field">
-			<input type="submit" class="btn btn--danger btn--radius" value="Оформить подписку">
+			<input type="submit" class="btn btn--danger " value="Оформить подписку">
 		</div>
 
 	</form>
 </div>
 		<div id="popup-add-event" class="popup mfp-hide">
 	<div class="popup__head text-center">
-		<h2 class="popup__title ">Есть вопросы?</h2>
-		<p class="popup__description">Отправьте вопрос, мы с вами свяжемся</p>
+		<h2 class="popup__title ">Добавить мерориятие</h2>
+		<p class="popup__description">Заполните форму, ваше мероприятие появится на сайте после проверки модератора</p>
 	</div>
 	<form action="#" class="popup-form">
 
-		<div class="form-field">
-			<label for="">Ваше имя</label>
-			<input type="text" class="form-input form-input--default " placeholder="Введите название ">
-		</div>
-		<div class="form-field">
-			<label for="">Ваше телефон</label>
-			<input type="tel" class="form-input form-input--default " placeholder="Введите название ">
-		</div>
-		<div class="form-field">
-			<label for="">Ваш e-mail</label>
-			<input type="email" class="form-input form-input--default " placeholder="Введите название ">
-		</div>
-		<div class="form-field">
-			<label for="">Ваш вопрос</label>
-			<textarea class="form-input form-input--default " placeholder="Введите текст "></textarea>
-		</div>
-		<div class="form-field">
-			<label for="">Свяжитесь со мной в мессенджерах </label>
-			<div class="checkboxs">
-				<label class="checkbox inline">
-					<input type="checkbox">
-					<span class="checkbox__figure"></span>
-					<span class="checkbox__text">WhatsApp</span>
-				</label>
 
-				<label class="checkbox inline">
-					<input type="checkbox">
-					<span class="checkbox__figure"></span>
-					<span class="checkbox__text">Viber</span>
-				</label>
-
-				<label class="checkbox inline">
-					<input type="checkbox">
-					<span class="checkbox__figure"></span>
-					<span class="checkbox__text">Telegram</span>
-				</label>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Название мероприятия">
+		</div>
+		<div class="form-field">
+			<div class="form-icon">
+				<input type="text" class="form-input  datepicker-input" readonly placeholder="Дата">
+				<svg class="icon icon-calendar">
+					<use xlink:href="img/sprite.svg#calendar"></use>
+				</svg>
+			</div>
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input " placeholder="Время">
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Стоимость для взрослых">
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Стоимость для детей">
+		</div>
+		<div class="form-field">
+			<div class="form-icon">
+				<input type="text" class="form-input  " placeholder="Адрес">
+				<svg class="icon icon-pin">
+					<use xlink:href="img/sprite.svg#pin"></use>
+				</svg>
 			</div>
 		</div>
 
+		<label class="label-lg">Текст</label>
+		<div class="form-field">
+			<textarea class="form-input " placeholder="Введите текст"></textarea>
+		</div>
 
-		<input type="submit" class="btn btn--danger btn--radius btn--block" value="ОТПРАВИТЬ">
+		<label class="label-lg">Контакты мероприятия</label>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Введите контакты">
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Введите контакты">
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Введите контакты">
+		</div>
 
+
+		<label class="label-lg">Контакты мероприятия</label>
+		<div class="form-field">
+			<div class="upload">
+				<label class="upload__input form-input">
+					<span class="placeholder">Добавить афишу</span>
+					<svg class="icon icon-upload">
+						<use xlink:href="img/sprite.svg#upload"></use>
+					</svg>
+					<input type="file" class="form-input  addImage">
+				</label>
+
+				<ul class="upload-images uploadImagesList">
+					<div class="upload-images__item template">
+						<div class="upload-images__preview">
+							<img src="" alt="">
+						</div>
+						<div class="upload-images__remove">удалить</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+
+		<label class="label-lg">Добавьте фотографии</label>
+		<div class="form-field">
+			<div class="upload">
+				<label class="upload__input form-input">
+					<span class="placeholder">Добавьте файлы, до 10 штук</span>
+					<svg class="icon icon-upload">
+						<use xlink:href="img/sprite.svg#upload"></use>
+					</svg>
+					<input type="file" data-max="10" multiple class="form-input  addImages">
+				</label>
+
+				<ul class="upload-images uploadImagesList">
+
+				</ul>
+			</div>
+		</div>
+
+		<input type="submit" class="btn btn--danger  btn--block" value="ОТПРАВИТЬ">
 
 	</form>
 </div>

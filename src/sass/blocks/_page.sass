@@ -133,6 +133,138 @@
 .page-map
 	margin-top: 3rem
 
+/* аренда жилья ===================================================================================================*/
+/* =========================================================================================================*/
+.rent-page
+	&__alert-block
+		margin-bottom: 5rem
+.alert-block
+	padding: 2.5rem 2.5rem 2.5rem 7rem
+	border-radius: 1rem 1rem 0 0
+	border: .2rem solid $color-info
+	position: relative
+	&__icon
+		position: absolute
+		top: 1.5rem
+		left: 1.5rem
+		width: 4.5rem
+		text-align: center
+		line-height: 1
+		font-size: 7.2rem
+		color: $color-info
+		display: flex
+
+		align-items: center
+		justify-content: center
+		font-weight: 700
+	&__title
+		font-size: 1.8rem
+		font-weight: 700
+		margin-bottom: 1rem
+	&__text
+		font-weight: 400
+		font-size: 1.4rem
+		margin-bottom: 1rem
+	&__button
+		margin-top: 2.5rem
+
+.applications
+	margin-bottom: -2rem
+	&__item
+		margin-bottom: 2rem
+.item-application
+	background: #EAEDF0
+	padding: 2.5rem
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
+	border-radius: 10px 10px 0px 0px
+
+	&__head
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 1rem
+		flex-wrap: wrap
+	&__sticker
+		height: 2.4rem
+		line-height: 2.4rem
+		color: #fff
+		background: #34A1D3
+		border-radius: 2rem
+		padding: 0 1rem
+		display: inline-block
+		vertical-align: middle
+		font-size: 1.2rem
+		font-weight: 600
+		white-space: nowrap
+		margin-bottom: 1rem
+		margin-right: 3rem
+		&--danger
+			background: $color-danger
+
+	&__code
+		font-size: 1.4rem
+		font-weight: 600
+		white-space: nowrap
+		margin-bottom: 1rem
+
+	&__text
+		font-size: 1.4rem
+		font-weight: 400
+
+	&__body
+		margin-bottom: 1rem
+	&__foot
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+		&-right
+			display: flex
+			align-items: center
+
+	&__empty
+		display: inline-flex
+		align-items: center
+		white-space: nowrap
+		text-decoration: underline
+		font-size: 1.4rem
+		font-weight: 600
+		margin-top: 1rem
+		flex: none
+		.icon
+			margin-right: 1rem
+			color: $color-info
+			font-size: 1.9rem
+
+	&__author
+		font-style: italic
+		font-weight: 600
+		font-size: 1.4rem
+		margin-left: 4rem
+		margin-top: 1rem
+	&__date
+		margin-left: 4rem
+		margin-top: 1rem
+		font-weight: 300
+		font-size: 1.4rem
+
+@media (max-width: $ipad) and (min-width: $iphone_sm + 1)
+	.rental-widjet
+		display: flex
+		border-radius: 1rem
+		overflow: hidden
+		&__img
+			flex: none
+			border-radius: 1rem 0 0 1rem
+			overflow: hidden
+			width: calc(50% - 1.5rem)
+			img
+				height: 100%
+				object-fit: cover
+		&__body
+			flex: 1
+			.form-input, .btn, a.btn
+				height: 3.3rem
 +max($ipad)
 	/* Gallery Events ========== */ 
 	.events-page, .gallery-page
@@ -162,6 +294,18 @@
 .about-page
 	.banner-cards-wrap
 		margin-top: 0
+
+/* About ===================================================================================================*/
+/* =========================================================================================================*/
+.error-page
+	text-align: center
+	&__wrap
+		margin: 10rem 0
+	.main-content__head
+		margin-bottom: 3rem
+	.subtitle
+		font-weight: 500
+		margin-bottom: 2rem
 
 +max($iphone)
 	/* Rental ========== */ 
@@ -198,3 +342,22 @@
 		li
 			width: auto
 			margin-bottom: 1.6rem
+
+	/* Аренда жилья ========== */ 
+	.item-application
+		&__date, &__author
+			margin-left: 3rem
+
+	/* Error page ========== */ 
+	.error-page
+		&__wrap
+			margin-top: 6.5rem
+			margin-bottom: 6.5rem
+
++max($iphone_sm)
+	/* Аренда жилья ========== */ 
+	.item-application
+		&__head
+			display: block
+		&__foot
+			display: block

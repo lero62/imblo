@@ -80,6 +80,10 @@
 						<li><a href="excursions_inner.html">экскурсии внутринняя</a></li>
 						<li><a href="excursions.html">экскурсии</a></li>
 						<li><a href="rental.html">Прокат авто</a></li>
+						<li><a href="rent_property.html">Аренда жилья</a></li>
+						<li><a href="rent_property_landlord.html">Доступ для арендодателя</a></li>
+						<li><a href="404.html">404</a></li>
+
 					</ul>
 
 				</div>
@@ -89,6 +93,11 @@
 					<ul>
 						<li><a href="#popup-subscribe" class="open-popup">Оставьте заявку!</a></li>
 						<li><a href="#popup-questions" class="open-popup">Написать нам</a></li>
+						<li><a href="#popup-add-event" class="open-popup">Добавить мерориятие</a></li>
+						<li><a href="#popup-suggest-accommodation" class="open-popup">Предложить жилье</a></li>
+						<li><a href="#popup-search-accommodation" class="open-popup">Поиск жилья</a></li>
+						<li><a href="#popup-search-accommodation-success" class="open-popup">Поиск жилья модалка</a></li>
+						<li><a href="#popup-login" class="open-popup">Вход в личный кабинет для арендодателя</a></li>
 					</ul>
 				</div>
 			</div>
@@ -98,16 +107,16 @@
 	</div>
 
 	<div id="popup-subscribe" class="popup mfp-hide">
-	
+
 	<h2 class="popup__title ">Подпишитесь на новости сайта</h2>
 	<form action="#" class="popup-form">
-		
+
 		<div class="form-field">
-			<input type="text" class="form-input form-input--default " placeholder="Ваш e-mail">
+			<input type="text" class="form-input " placeholder="Ваш e-mail">
 		</div>
 
 		<div class="form-field">
-			<input type="submit" class="btn btn--danger btn--radius" value="Оформить подписку">
+			<input type="submit" class="btn btn--danger " value="Оформить подписку">
 		</div>
 
 	</form>
@@ -118,18 +127,18 @@
 		<p class="popup__description">Отправьте вопрос, мы с вами свяжемся</p>
 	</div>
 	<form action="#" class="popup-form">
-		
+
 		<div class="form-field">
 			<label for="">Ваше имя</label>
-			<input type="text" class="form-input form-input--default " placeholder="Введите название ">
+			<input type="text" class="form-input form-input--default " placeholder="Введите имя  ">
 		</div>
 		<div class="form-field">
 			<label for="">Ваше телефон</label>
-			<input type="tel" class="form-input form-input--default " placeholder="Введите название ">
+			<input type="tel" class="form-input form-input--default tel" placeholder="Введите телефон ">
 		</div>
 		<div class="form-field">
 			<label for="">Ваш e-mail</label>
-			<input type="email" class="form-input form-input--default " placeholder="Введите название ">
+			<input type="email" class="form-input form-input--default " placeholder="Введите e-mail ">
 		</div>
 		<div class="form-field">
 			<label for="">Ваш вопрос</label>
@@ -158,12 +167,351 @@
 			</div>
 		</div>
 
-		
 		<input type="submit" class="btn btn--danger btn--radius btn--block" value="ОТПРАВИТЬ">
-		
+
 
 	</form>
 </div>
+	<div id="popup-add-event" class="popup mfp-hide">
+	<div class="popup__head text-center">
+		<h2 class="popup__title ">Добавить мерориятие</h2>
+		<p class="popup__description">Заполните форму, ваше мероприятие появится на сайте после проверки модератора</p>
+	</div>
+	<form action="#" class="popup-form">
+
+
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Название мероприятия">
+		</div>
+		<div class="form-field">
+			<div class="form-icon">
+				<input type="text" class="form-input  datepicker-input" readonly placeholder="Дата">
+				<svg class="icon icon-calendar">
+					<use xlink:href="img/sprite.svg#calendar"></use>
+				</svg>
+			</div>
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input " placeholder="Время">
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Стоимость для взрослых">
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Стоимость для детей">
+		</div>
+		<div class="form-field">
+			<div class="form-icon">
+				<input type="text" class="form-input  " placeholder="Адрес">
+				<svg class="icon icon-pin">
+					<use xlink:href="img/sprite.svg#pin"></use>
+				</svg>
+			</div>
+		</div>
+
+		<label class="label-lg">Текст</label>
+		<div class="form-field">
+			<textarea class="form-input " placeholder="Введите текст"></textarea>
+		</div>
+
+		<label class="label-lg">Контакты мероприятия</label>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Введите контакты">
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Введите контакты">
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input  " placeholder="Введите контакты">
+		</div>
+
+
+		<label class="label-lg">Контакты мероприятия</label>
+		<div class="form-field">
+			<div class="upload">
+				<label class="upload__input form-input">
+					<span class="placeholder">Добавить афишу</span>
+					<svg class="icon icon-upload">
+						<use xlink:href="img/sprite.svg#upload"></use>
+					</svg>
+					<input type="file" class="form-input  addImage">
+				</label>
+
+				<ul class="upload-images uploadImagesList">
+					<div class="upload-images__item template">
+						<div class="upload-images__preview">
+							<img src="" alt="">
+						</div>
+						<div class="upload-images__remove">удалить</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+
+		<label class="label-lg">Добавьте фотографии</label>
+		<div class="form-field">
+			<div class="upload">
+				<label class="upload__input form-input">
+					<span class="placeholder">Добавьте файлы, до 10 штук</span>
+					<svg class="icon icon-upload">
+						<use xlink:href="img/sprite.svg#upload"></use>
+					</svg>
+					<input type="file" data-max="10" multiple class="form-input  addImages">
+				</label>
+
+				<ul class="upload-images uploadImagesList">
+
+				</ul>
+			</div>
+		</div>
+
+		<input type="submit" class="btn btn--danger  btn--block" value="ОТПРАВИТЬ">
+
+	</form>
+</div>
+	<div id="popup-suggest-accommodation" class="popup mfp-hide">
+	<div class="popup__head text-center">
+		<h2 class="popup__title ">Предложить жилье</h2>
+		<p class="popup__description">Оставьте ваши данные и с вами свяжется менеджер для получения бесплатного доступа к контактам туристов
+		</p>
+	</div>
+	<form action="#" class="popup-form">
+
+		<div class="form-field">
+			<label for="">Ваше имя</label>
+			<input type="text" class="form-input form-input--default " placeholder="Введите имя  ">
+		</div>
+		<div class="form-field">
+			<label for="">Ваше телефон</label>
+			<input type="tel" class="form-input form-input--default tel" placeholder="Введите телефон  ">
+		</div>
+		<div class="form-field">
+			<label for="">Ваш e-mail</label>
+			<input type="email" class="form-input form-input--default " placeholder="Введите e-mail  ">
+		</div>
+
+		<div class="form-field">
+
+			<div class="checkboxs">
+				<label class="checkbox inline">
+					<input type="checkbox">
+					<span class="checkbox__figure"></span>
+					<span class="checkbox__text">Я риелтор</span>
+				</label>
+
+				<label class="checkbox inline">
+					<input type="checkbox">
+					<span class="checkbox__figure"></span>
+					<span class="checkbox__text">Я хозяин</span>
+				</label>
+
+
+			</div>
+		</div>
+		<div class="form-field">
+			<label for="">Свяжитесь со мной в мессенджерах </label>
+			<div class="checkboxs">
+				<label class="checkbox inline">
+					<input type="checkbox">
+					<span class="checkbox__figure"></span>
+					<span class="checkbox__text">WhatsApp</span>
+				</label>
+
+				<label class="checkbox inline">
+					<input type="checkbox">
+					<span class="checkbox__figure"></span>
+					<span class="checkbox__text">Viber</span>
+				</label>
+
+				<label class="checkbox inline">
+					<input type="checkbox">
+					<span class="checkbox__figure"></span>
+					<span class="checkbox__text">Telegram</span>
+				</label>
+			</div>
+		</div>
+
+		<div class="form-field">
+			<label class="checkbox">
+				<input type="checkbox" />
+				<span class="checkbox__figure"></span>
+				<span class="checkbox__text">Я согласен на обработку персональных данных</span>
+			</label>
+		</div>
+		<input type="submit" class="btn btn--danger btn--radius btn--block" value="ОТПРАВИТЬ">
+
+
+	</form>
+</div>
+	<div id="popup-search-accommodation" class="popup mfp-hide">
+	<div class="popup__head text-center">
+		<h2 class="popup__title ">Поиск жилья</h2>
+		<p class="popup__description">Заполните заявку и вы получите предложения от хозяев и риэлторов Пафоса
+		</p>
+	</div>
+	<form action="#" class="popup-form">
+
+		<div class="form-field">
+			<div class="selectbox">
+				<div class="selectbox__head">
+					<div class="selectbox__text placeholder">Выберите тип аренды</div>
+					<div class="selectbox__caret"></div>
+				</div>
+				<div class="selectbox__drop scrollbar">
+					<ul>
+						<li>Краткосрочная</li>
+						<li>Долгосрочная</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="form-field">
+			<div class="selectbox">
+				<div class="selectbox__head">
+					<div class="selectbox__text placeholder">Выберите тип жилья</div>
+					<div class="selectbox__caret"></div>
+				</div>
+				<div class="selectbox__drop scrollbar">
+					<ul>
+						<li>Квартира</li>
+						<li>Дом</li>
+						<li>Комната</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input datepicker-input" readonly placeholder="Выберите даты аренды">
+		</div>
+
+		<div class="form-field">
+			<label class="checkbox ">
+				<input type="checkbox">
+				<span class="checkbox__figure"></span>
+				<span class="checkbox__text">Плавающие даты</span>
+			</label>
+		</div>
+		<div class="form-field">
+			<div class="selectbox">
+				<div class="selectbox__head">
+					<div class="selectbox__text placeholder">Удаленность от моря</div>
+					<div class="selectbox__caret"></div>
+				</div>
+				<div class="selectbox__drop scrollbar">
+					<ul>
+						<li>неважно</li>
+						<li>пешком</li>
+						<li>на машине до 5 мин</li>
+						<li>на машине до 15 минут</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-field">
+			<div class="selectbox">
+				<div class="selectbox__head">
+					<div class="selectbox__text placeholder">Количество человек</div>
+					<div class="selectbox__caret"></div>
+				</div>
+				<div class="selectbox__drop scrollbar">
+					<ul>
+						<li>1</li>
+						<li>2</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="form-field">
+			<div class="selectbox">
+				<div class="selectbox__head">
+					<div class="selectbox__text placeholder">Бюджет</div>
+					<div class="selectbox__caret"></div>
+				</div>
+				<div class="selectbox__drop scrollbar">
+					<ul>
+						<li>100$</li>
+						<li>1000$</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-field">
+			<label for="">Пожелания</label>
+			<textarea class="form-input " placeholder="Введите текст "></textarea>
+		</div>
+
+		<div class="form-field">
+			<label class="checkbox">
+				<input type="checkbox" />
+				<span class="checkbox__figure"></span>
+				<span class="checkbox__text">Я согласен на обработку персональных данных</span>
+			</label>
+		</div>
+		<div class="form-field">
+			<label for="">Ваше имя</label>
+			<input type="text" class="form-input " placeholder="Введите имя ">
+		</div>
+		<div class="form-field">
+			<label for="">Ваш e-mail</label>
+			<input type="text" class="form-input " placeholder="Введите email">
+		</div>
+		<div class="form-field">
+			<label class="checkbox">
+				<input type="checkbox" />
+				<span class="checkbox__figure"></span>
+				<span class="checkbox__text">Нужен автомобиль в аренду</span>
+			</label>
+		</div>
+		<div class="form-field">
+			<label class="checkbox">
+				<input type="checkbox" />
+				<span class="checkbox__figure"></span>
+				<span class="checkbox__text">Я согласен на обработку персональных данных</span>
+			</label>
+		</div>
+		<div class="alert alert--sm alert--margin">
+			<em>Наш сайт оказывает информационную функцию и не несет ответственности за качество предоставляемых услуг по аренде жилья</em>
+		</div>
+		<input type="submit" class="btn btn--danger btn--block" value="ОТПРАВИТЬ">
+
+
+	</form>
+</div>
+	<div id="popup-search-accommodation-success" class="popup mfp-hide">
+	<div class="alert">
+		<p><strong>Ваша заявка принята и будет размещена на сайте после проверки.</strong></p>
+
+		<p><strong>На указанные контакты Вам будут отправлены предложения.</strong></p>
+	</div>
+
+</div>
+	<div id="popup-login" class="popup mfp-hide">
+	<div class="popup__head text-center">
+		<h2 class="popup__title ">Вход в личный кабинет для арендодателя</h2>
+
+	</div>
+	<form action="#" class="popup-form">
+
+		<div class="form-field">
+			<label for="">Ваш логин</label>
+			<input type="text" class="form-input " placeholder="Введите логин ">
+		</div>
+		<div class="form-field">
+			<label for="">Ваш пароль</label>
+			<input type="password" class="form-input " placeholder="Введите пароль ">
+		</div>
+		<div class="line-links">
+			<a href="#" class="line-link line-link--danger"><span>Забыли пароль?</span></a>
+			<a href="#" class="line-link line-link--info"><span>Нет доступа?</span></a>
+		</div>
+		<input type="submit" class="btn btn--danger btn--block" value="ВОЙТИ">
+
+
+	</form>
+</div>
+
 
 
 	

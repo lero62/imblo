@@ -72,6 +72,10 @@
 						<li><a href="excursions_inner.html">экскурсии внутринняя</a></li>
 						<li><a href="excursions.html">экскурсии</a></li>
 						<li><a href="rental.html">Прокат авто</a></li>
+						<li><a href="rent_property.html">Аренда жилья</a></li>
+						<li><a href="rent_property_landlord.html">Доступ для арендодателя</a></li>
+						<li><a href="404.html">404</a></li>
+
 					</ul>
 
 				</div>
@@ -81,6 +85,11 @@
 					<ul>
 						<li><a href="#popup-subscribe" class="open-popup">Оставьте заявку!</a></li>
 						<li><a href="#popup-questions" class="open-popup">Написать нам</a></li>
+						<li><a href="#popup-add-event" class="open-popup">Добавить мерориятие</a></li>
+						<li><a href="#popup-suggest-accommodation" class="open-popup">Предложить жилье</a></li>
+						<li><a href="#popup-search-accommodation" class="open-popup">Поиск жилья</a></li>
+						<li><a href="#popup-search-accommodation-success" class="open-popup">Поиск жилья модалка</a></li>
+						<li><a href="#popup-login" class="open-popup">Вход в личный кабинет для арендодателя</a></li>
 					</ul>
 				</div>
 			</div>
@@ -91,6 +100,12 @@
 
 	@@include('./template/popups/callback.html')
 	@@include('./template/popups/questions.html')
+	@@include('./template/popups/add-event.html')
+	@@include('./template/popups/suggest_accommodation.html')
+	@@include('./template/popups/search_accommodation.html')
+	@@include('./template/popups/search_accommodation_success.html')
+	@@include('./template/popups/login.html')
+
 
 
 	@@include('./template/_js.html', {})

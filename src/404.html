@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Новости"
+})
+
+<body class="loaded">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><span>Ошибка 404</span></li>
+					</ul>
+				</div>
+				<div class="main-content error-page">
+					<div class="error-page__wrap">
+						<div class="main-content__head">
+							<h1 class="title">Ошибка 404</h1>
+
+						</div>
+
+						<h2 class="subtitle">Такой страницы не существует или она удалена </h2>
+
+						<h2 class="subtitle">Вы можете перейти на главную страницу сайта</h2>
+
+						<div class="main-content__button"><a href="#" class="btn"><span class="hidden-iphone">ПЕРЕЙТИ</span> НА ГЛАВНУЮ СТРАНИЦУ</a></div>
+					</div>
+				</div>
+
+				@@include('./template/blocks/section_question.html')
+
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+
+
+</body>
+
+</html>

@@ -1,37 +1,50 @@
 $form-border: .1rem solid #e9edf0
 $form-bg: #e9edf0
-$form-radius: 2rem
+$form-radius: 4rem
 $form-color: $color
 $form-placeholder: #7d7d7d
-$form-size: 1.2rem
-$form-height: 3.3rem
+$form-size: 1.4rem
+$form-height: 4rem
 $form-weight: 700
 
-.form 
+.form
 	&-field
 		margin-bottom: 2rem
 		position: relative
-		.checkbox, .radio 
+		.checkbox, .radio
 			margin-bottom: 0
-	&-label 
+	&-label
 		font-weight: 700
 		font-size: 1.4rem
 		margin-bottom: 1.2rem
 
-	&-wrap-icon 
-		display: flex 
+	&-wrap-icon
+		display: flex
 		align-items: center
-		&__input 
+		&__input
 			flex: 1
 			min-width: 1px
-		.icon 
-			flex: none 
-			color: $color-info 
+		.icon
+			flex: none
+			color: $color-info
 			font-size: 2.8rem
 			margin-right: 1.3rem
 			display: block
-
-	&-input 
+	&-icon
+		position: relative
+		.form-input
+			padding-right: 5.5rem
+		.icon
+			color: $color-info
+			position: absolute
+			top: 50%
+			transform: translate(0,-50%)
+			right: 1.5rem
+			margin-top: -0.1rem
+			font-size: 2rem
+			&-pin
+				font-size: 2.2rem
+	&-input
 		display: block
 		width: 100%
 		height: $form-height
@@ -44,38 +57,34 @@ $form-weight: 700
 		border-radius: $form-radius
 		transition: all 0.2s linear
 		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
-		&:focus 
-			+placeholder
-				opacity: 0
+
 		+placeholder
 			color: $form-placeholder
 			transition: opacity 0.2s linear
 			font-weight: 300
 
-		&--t-center 
+		&--t-center
 			text-align: center
-		&--center 
+		&--center
 			text-align: center
-
-			
 
 		&.error
 			border-color: red
-		&.valid 
+		&.valid
 			border-color: green
 
-	&-text 
+	&-text
 		margin-top: 1rem
-		a 
+		a
 			font-size: 1.4rem
 			font-weight: 700
 			color: #7D7D7D
 			text-decoration: underline
-			&:hover 
+			&:hover
 				text-decoration: none
-		&--lg 
+		&--lg
 			font-size: 1.4rem
-	&-button 
+	&-button
 		margin-top: 2rem
 
 .text-error
@@ -93,78 +102,75 @@ $form-weight: 700
 	padding: 0
 	flex: none
 	box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
-	&:after 
+	&:after
 		content: ''
 		display: inline-block
 		vertical-align: middle
 		+arr(.5rem, .9rem, $color-danger, r)
 
-
-textarea.form-input 
+textarea.form-input
 	height: auto
 	min-height: 9.4rem
 	padding-top: 1rem
 	padding-bottom: 1rem
 	resize: none
 	overflow: auto
-	&--radius 
-		border-radius: 2rem
-	
-label 
+	border-radius: 2rem
+
+label
 	display: block
 	font-weight: 700
-	font-size: 1.4rem
+	font-size: 1.6rem
 	margin-bottom: 1.2rem
 
-
-.star 
+.star
 	color: $color-danger
 
+/* Checkbox Radio  ======================================= */
 .check-wrap
-	display: flex 
+	display: flex
 	align-items: flex-start
 
 .check-list
 	.checkbox, .radio
 		margin-bottom: 1rem
 
-.checkbox, .radio 
+.checkbox, .radio
 	display: block
 	cursor: pointer
 	font-size: $form-size
-	font-weight: 700
+	font-weight: 400
 	line-height: normal
 	margin: 0 0 2rem 0
 	position: relative
 
-	input 
+	input
 		display: none
-			
-	&__figure 
+
+	&__figure
 		position: absolute
-		top: .1rem
+		top: 0rem
 		left: 0
 		width: 2.5rem
 		height: 2.6rem
-	
+
 		background: #E9EDF0
 		border: none
 		transition: all 0.2s linear
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
-	&__text 
+	&__text
 		min-height: 2.5rem
 		padding-left: 4.1rem
 		min-width: 1px
 		padding-top: 0.6rem
 		display: block
 
-
 .checkbox
 	input
 		&:checked ~ .checkbox__figure
 			box-shadow: inset -2px -2px 3px #FFFFFF, inset 2px 2px 3px #7E7E7E
 			&:after
-				content: '' 
+				content: ''
 				display: block
 				position: absolute
 				z-index: 1
@@ -172,22 +178,21 @@ label
 				width: 100%
 				// background: url('../img/check.png') no-repeat .2rem .4rem
 				background: url('../img/check-lg.png') no-repeat .3rem .6rem
-				
 
-	&__figure 
+	&__figure
 		border-radius: .5rem
 
-	&.inline 
+	&.inline
 		margin-right: 3rem
 		margin-bottom: 1.5rem
 
 .checkboxs
 	margin-bottom: -1.5rem
-	
+
 .radio
 	input
 		&:checked ~ .radio__figure:after
-			content: '' 
+			content: ''
 			display: block
 			position: absolute
 			z-index: 1
@@ -197,184 +202,136 @@ label
 			width: 1rem
 			border-radius: 50%
 			background: #fa4242
-	
 
-	&__figure 
+	&__figure
 		border-radius: 50%
 
-
-.jq-selectbox
-	width: 100%
-	display: block
-	text-align: left
-	cursor: pointer
+/* Selectbox  ======================================= */
+.selectbox
 	position: relative
-	vertical-align: middle
-	z-index: 5
-	select 
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		margin: 0
-		padding: 0
-		opacity: 0
-		display: none
-		
-	&__select 
+	&__head
+		display: flex
 		height: $form-height
-		padding:  0 4.5rem 0 2rem
-		color: $form-color
-		font: $form-weight $form-size $font-family, Arial, sans-serif
-		line-height: $form-height - .2rem
 		border: $form-border
-		background-color: $form-bg
 		border-radius: $form-radius
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
-		+tr
-		&-text 
-			+text-overflow
-			width: 100% !important
-			&.placeholder 
-				color: $form-placeholder
-	&__trigger
-		position: absolute
-		top: 0
-		bottom: 0
-		right: 0
-		width: 4rem
-		&-arrow 
-			display: block
-			position: absolute
-			top: 50%
-			right: 2rem
-			transform: translate(0,-50%)
-			+arr(1.2rem, .6rem,$color, b)
-				
-	&__dropdown 
-		position: absolute
-		
-		border: $form-border
-		background-color: $form-bg
-		min-width: 100%
-		margin-top: .3rem
-		top: 100% !important
-		z-index: 1
-		color: $form-color
-		ul 
-			margin: 0
-			max-height: 20rem !important
-		li 
-			padding: 1rem 2rem
-			font-size: $form-size
-			cursor: pointer
-			font-weight: $form-weight
-			color: $form-color
-			background: $form-bg
-			
-			@media (any-hover: hover) 
-				&:hover 
-					
-					background: #f9f9f9
-				
-			&.sel 
-				color: #fff
-				background: red
-				
+		cursor: pointer
+		background: $form-bg
+		position: relative
+		transition: all 0.2s linear
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
 
-			&.disabled 
-				color: rgba($color, 0.6)
+	&__text
 
-	&.dropup
-		.jq-selectbox__dropdown
-			top: auto !important
-			bottom: 100% !important
-			margin-top: 0
-			margin-bottom: .3rem
-
-.jq-selectbox__dropdown > ul::-webkit-scrollbar
-	width: .4rem
-	background-color: #f3f3f3
-
-.jq-selectbox__dropdown > ul::-webkit-scrollbar-thumb
-	width: .4rem
-	background-color: #aaa
-
-
-.ms-ctn
-	min-height: $form-height
-	padding-left: 2rem
-	padding-right: 2rem
-	color: $form-color
-	font: $form-weight $form-size $font-family, Arial, sans-serif
-	line-height: $form-height - .2rem
-	
-	background-color: $form-bg
-	border-radius: $form-radius
-	
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
-
-	.ms-sel-item
-		height: 2.8rem
-		line-height: 2.6rem
-
-.ms-sel-ctn
-
-	input 
-		min-width: 5rem
-		background: transparent
-		height: $form-height
-		
-		
-		color: $form-color
+		flex: 1
+		min-width: 1px
+		padding: 0 2rem
+		max-width: 100%
+		+text-overflow
 		font: $form-weight $form-size $font-family, Arial, sans-serif
-
-		&:focus 
-			+placeholder
-				opacity: 0
-		+placeholder
+		color: $form-color
+		line-height: $form-height - .2rem
+		letter-spacing: 0.02rem
+		&.placeholder
 			color: $form-placeholder
 			transition: opacity 0.2s linear
 			font-weight: 300
 
+	&__caret
+		display: flex
+		align-items: center
+		flex: none
+		margin-right: 2rem
+		font-size: 0
+		&:after
+			content: ''
+			display: block
+			+arr(1.6rem,.8rem,#E43C3C, b)
 
-.ms-ctn-focus
-	border-radius: 2rem 2rem 0 0
-.ms-sel-item 
-	max-width: 10rem
-	+text-overflow
-.ms-res-ctn
-	margin-top: 0.1rem
-	max-height: 20rem
-	height: auto !important
-	padding-top: 0
-	padding-bottom: 0
+	&__drop
+		display: none
+		border: none
+		border-radius: 2rem
+		border-top: none
+		position: absolute
+		top: 100%
+		margin-top: 1rem
+		left: 0
+		width: 100%
+		z-index: 10
+		background: $form-bg
+		box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
+		overflow: hidden
 
-.ms-trigger
-	display: none
+		ul
 
+			max-height: 17.2rem
+			overflow: hidden
+			overflow-y: auto
+			padding: 1rem 0
+			li
+				padding: .8rem 2rem
+				font-size: 1.4rem
+				font-weight: 600
+				color: $color
+				cursor: pointer
 
-	
-	
+				@media (any-hover: hover)
+					&:hover
+
+						color: $color-danger
+				&._selected
+					background: $color-danger
+					color: #fff
+
+	&__search
+		margin-left: -0.1rem
+		margin-right: -0.1rem
+		position: relative
+		.icon-zoom
+			position: absolute
+			left: 1.3rem
+			top: 1rem
+			font-size: 1.6rem
+			color: #aaa
+		.form-input
+			padding-left: 3.9rem
+
+	&._open
+		.selectbox__head
+			z-index: 11
+		.selectbox__caret
+			transform: rotate(180deg)
+		.selectbox__drop
+			display: block
+
+.scrollbar::-webkit-scrollbar
+	width: .4rem
+	background-color: #f3f3f3
+
+.scrollbar::-webkit-scrollbar-thumb
+	width: .4rem
+	background-color: #aaa
+
+/* Upload */
+/* --------------------------------------------------------------- */
 .upload-images
 	align-items: center
-	display: flex 
+	display: flex
 	flex-wrap: wrap
-	
-	&__item 
+
+	&__item
 		margin-top: 2rem
 		flex: none
 		width: 8.8rem
 		margin-right: 1.9rem
-		
-		&.template 
-			display: none
-	&__preview 
 
-		img 
-			height: 5rem 
-			width: 8.8rem 
+		&.template
+			display: none
+	&__preview
+
+		img
+			height: 5rem
+			width: 8.8rem
 			object-fit: cover
 
 	&__remove
@@ -383,39 +340,36 @@ label
 		color: $color-danger
 		font-size: 1.2rem
 		font-weight: 400
-		
 
-	&._change 
+	&._change
 		.upload-images__item
-		
+
 			display: block
 
-
 .upload
-	&__input 
+	&__input
 		position: relative
-		line-height: 3rem
+		line-height: 3.7rem
 		white-space: nowrap
 		cursor: pointer
 		padding-right: 5rem
+		margin-bottom: 0
 		flex: 1
 		min-width: 1px
-		span 
+		span
 			+text-overflow
 			display: block
 		span.placeholder
-			
+
 			color: $form-placeholder
 			font-weight: 300
-			
-		.icon 
+
+		.icon
 			position: absolute
-			top: .4rem
+			top: .7rem
 			right: 1.5rem
 			color: $color-danger
 			font-size: 2rem
-			
-		input 
-			display: none
 
-	
+		input
+			display: none

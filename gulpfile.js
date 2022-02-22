@@ -43,15 +43,15 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 const style = gulp.parallel(sass, css);
 
 // Основные задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(html, style, js, images, svgSprive));
+const mainTasks = gulp.series(fonts, svgSprive, gulp.parallel(html, style, js, images));
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
 
 // Экспорт сценариев
-export {dev}
-export {build}
+export { dev }
+export { build }
 
 // Выполнение сценария по умолчанию
 gulp.task('default', dev);

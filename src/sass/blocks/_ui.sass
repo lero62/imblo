@@ -25,8 +25,8 @@
 	display: flex
 	align-items: flex-start
 	flex-wrap: wrap
-	
-	&__back 
+
+	&__back
 		margin-bottom: 1rem
 		flex: none
 		white-space: nowrap
@@ -37,19 +37,19 @@
 		position: relative
 		padding-left: 1.6rem
 		margin-right: 3.4rem
-		&:after, &:before 
+		&:after, &:before
 			+arr(.4rem, .7rem, #fa4242, l)
 			content: ''
 			position: absolute
 			top: 50%
 			left: 0
 			transform: translate(0,-50%)
-		&:after 
+		&:after
 			left: .6rem
-		
-	&__list 
+
+	&__list
 		font-size: 0
-		li 
+		li
 			margin-bottom: 1rem
 			display: inline-block
 			vertical-align: top
@@ -63,17 +63,17 @@
 				top: 50%
 				right: 0
 				transform: translate(0,-50%)
-			
+
 		a
 			font-size: 1.2rem
 			font-weight: 500
 			color: #7d7d7d
-			
-			@media (any-hover: hover) 
-				&:hover 
-					
+
+			@media (any-hover: hover)
+				&:hover
+
 					color: $color-danger
-		span 
+		span
 			font-weight: 700
 			font-size: 1.2rem
 			color: #7d7d7d
@@ -94,8 +94,7 @@
 // 			.toltipe
 // 				display: block
 
-
-.tooltipster-box 
+.tooltipster-box
 	font-size: .9rem
 	font-weight: 400
 	color: #7D7D7D
@@ -126,7 +125,6 @@
 	// 		+arr(.8rem, .5rem, #E1E1E1, t)
 	// 		top: auto 
 	// 		bottom: 100%
-			
 
 	// &--right 
 	// 	text-align: left
@@ -160,9 +158,9 @@
 	// 	text-align: left
 	// 	transform: translate(0, -1rem)
 	// 	left: -1rem
-	
+
 	// 	&:after 
-			
+
 	// 		left: 1.4rem
 	// 		margin-left: 0
 
@@ -171,64 +169,53 @@
 	// 	transform: translate(0, -1rem)
 	// 	left: auto
 	// 	right: -1rem
-	
+
 	// 	&:after 
 	// 		left: auto 
 	// 		right: 1.4rem
 	// 		margin-left: 0
-			
 
 	// &--w-auto 
 	// 	width: auto 
 	// 	white-space: nowrap
-	
+
 .tooltipster-arrow,
-.tooltipster-arrow::before 
+.tooltipster-arrow::before
 	position: absolute
 	width: 6px
 	height: 6px
 	background: #E1E1E1
 
-
-
-.tooltipster-arrow 
+.tooltipster-arrow
 	visibility: hidden
 
-
-
-.tooltipster-arrow::before 
+.tooltipster-arrow::before
 	visibility: visible
 	content: ''
 	transform: rotate(45deg)
-	
-
 
 .tooltip[data-popper-placement^='top'] > .tooltipster-arrow,
 .tooltipster-top > .tooltipster-arrow
 	bottom: -3px
 	margin-left: -0.3rem
-	&:before 
-		border-bottom: .1rem solid rgba(0, 0, 0, 0.05) 
+	&:before
+		border-bottom: .1rem solid rgba(0, 0, 0, 0.05)
 		border-left: .1rem solid rgba(0, 0, 0, 0.02)
 
-
-.tooltip[data-popper-placement^='bottom'] > .tooltipster-arrow 
+.tooltip[data-popper-placement^='bottom'] > .tooltipster-arrow
 	top: -3px
 
-
-.tooltip[data-popper-placement^='left'] > .tooltipster-arrow 
+.tooltip[data-popper-placement^='left'] > .tooltipster-arrow
 	right: -3px
-
 
 .tooltip[data-popper-placement^='right'] > .tooltipster-arrow,
 .tooltipster-right > .tooltipster-arrow
 	left: -3px
 	margin-top: -0.3rem
-	top: 50% !important 
-	&:before 
-		border-bottom: .1rem solid rgba(0, 0, 0, 0.05) 
+	top: 50% !important
+	&:before
+		border-bottom: .1rem solid rgba(0, 0, 0, 0.05)
 		border-left: .1rem solid rgba(0, 0, 0, 0.02)
-
 
 .toltipe-symbol
 	width: 1.6rem
@@ -248,11 +235,9 @@
 	cursor: pointer
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
 
-	
-	&:hover 
+	&:hover
 		box-shadow: inset -2px -2px 3px #FFFFFF, inset 2px 2px 3px #7E7E7E
 
-			
 // +max($ipad)
 // 	.toltipe 
 // 		width: 18rem
@@ -293,7 +278,7 @@
 // 				margin-top: 0
 
 /* Dots */
-.swiper-prev, .swiper-next 
+.swiper-prev, .swiper-next
 	position: absolute
 	top: 50%
 	margin-top: -1.5rem
@@ -305,19 +290,19 @@
 	text-indent: -999px
 	overflow: hidden
 	z-index: 10
-	display: flex 
+	display: flex
 	align-items: center
 	justify-content: center
 
-.swiper-prev 
+.swiper-prev
 	left: 0
 	&:after
 		+arr(1rem, 2rem, #fa4242, l)
 		content: 'prev'
 		display: block
-		
+
 		font-variant: initial
-.swiper-next 
+.swiper-next
 	right: 0
 	&:after
 		+arr(1rem, 2rem, #fa4242, r)
@@ -325,7 +310,7 @@
 		display: block
 		font-variant: initial
 
-.swiper-controls 
+.swiper-controls
 	position: relative
 	display: flex
 	justify-content: center
@@ -333,8 +318,8 @@
 	margin-top: 2rem
 	margin-bottom: 0.3rem
 	z-index: 4
-		
-	.swiper-button-prev, .swiper-button-next 
+
+	.swiper-button-prev, .swiper-button-next
 		cursor: pointer
 		padding: 0
 		height: 1.3rem
@@ -345,57 +330,54 @@
 		text-indent: -999px
 		overflow: hidden
 		z-index: 10
-		
-	.swiper-button-prev 
-		
+
+	.swiper-button-prev
+
 		position: relative
-		
+
 		&:after
 			+arr(.7rem, 1.3rem, #fa4242, l)
 			content: 'prev'
 			display: block
-			
+
 			font-variant: initial
-	.swiper-button-next 
-		
+	.swiper-button-next
+
 		position: relative
-		
+
 		&:after
 			+arr(.7rem, 1.3rem, #fa4242, r)
 			content: 'next'
 			display: block
 			font-variant: initial
-			
-	
 
-	&--blue 
+	&--blue
 		.swiper-button-prev
 			&:after
 				border-right-color: #35a0d2
 		.swiper-button-next
-			&:after 
+			&:after
 				border-left-color: #35a0d2
-.swiper-pagination 
+.swiper-pagination
 	list-style: none
 	font-size: 0
 	&-bullet
 		margin: 0 .7rem !important
-		
 
 		width: 1.3rem !important
 		height: 1.3rem !important
-		
+
 		background-color: #e9edf0 !important
 		border-radius: 50% !important
 		box-shadow: .2rem .2rem .2rem rgba(#393939, 0.6), -.2rem -.2rem .2rem #fff !important
-		
+
 		&-active
-			
+
 			box-shadow: inset -0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.31) !important
 			background-color: #e9edf0 !important
 .swiper-button-lock
 	display: none
-		
+
 /* Pagination */
 .box-paging
 	margin-top: 1rem
@@ -403,16 +385,16 @@
 	display: flex
 	align-items: center
 	flex-wrap: wrap
-	&__item 
+	&__item
 		margin-right: 1.2rem
-		&:last-child 
+		&:last-child
 			margin-right: 0
 		&.paging-prev
 			.paging-list__link
 				display: flex
 				align-items: center
 				justify-content: center
-				&:after, &:before 
+				&:after, &:before
 					+arr(.4rem, .7rem, #fa4242, l)
 					content: ''
 					display: inline-block
@@ -422,13 +404,13 @@
 				display: flex
 				align-items: center
 				justify-content: center
-				&:after, &:before 
+				&:after, &:before
 					+arr(.4rem, .7rem, #fa4242, r)
 					content: ''
 					display: inline-block
 					vertical-align: middle
-					
-	&__link 
+
+	&__link
 		height: 2.1rem
 		min-width: 2.1rem
 		text-align: center
@@ -440,13 +422,13 @@
 		font-weight: 500
 		&.is-active
 			box-shadow: .1rem .1rem .2rem rgba(#393939, 0.6), -.1rem -.1rem .2rem #fff
-		&:active 
+		&:active
 			box-shadow: inset 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
-		&:hover 
+		&:hover
 			text-decoration: none
 
-		@media (any-hover: hover) 
-			&:hover 
+		@media (any-hover: hover)
+			&:hover
 				color: $color
 				box-shadow: .1rem .1rem .2rem rgba(#393939, 0.6), -.1rem -.1rem .2rem #fff
 
@@ -456,10 +438,9 @@
 .hidden
 	display: none
 
-
 .social
 
-	&__btn 
+	&__btn
 		display: inline-flex
 		vertical-align: middle
 		margin-right: .2rem
@@ -471,13 +452,13 @@
 		width: 2rem
 		height: 2rem
 		margin-bottom: .2rem
-		&:last-child 
+		&:last-child
 			margin-right: 0
-		
-		@media (any-hover: hover) 
-			&:hover 
+
+		@media (any-hover: hover)
+			&:hover
 				box-shadow: inset 0.2rem 0.2rem 0.4rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
-		.icon 
+		.icon
 			display: block
 			font-size: 1.2rem
 			color: $color-danger
@@ -487,65 +468,65 @@
 		vertical-align: middle
 		margin-right: .2rem
 		margin-bottom: .2rem
-		&:last-child 
+		&:last-child
 			margin-right: 0
-		.icon 
+		.icon
 			display: block
 			font-size: 1.5rem
 			color: $color-info
 
-	&__link 
+	&__link
 		margin-right: 2rem
-		
+
 		display: inline-block
 		vertical-align: middle
-		.icon 
+		.icon
 			font-size: 2.5rem
 			color: $color-info
 			&-telegram2
 				fill: none
 				stroke-width: .2rem
 
-		&:last-child 
+		&:last-child
 			margin-right: 0
 
-	&--inline 
+	&--inline
 		display: inline-block
 		vertical-align: middle
 		position: relative
 		top: -.2rem
-		
-	&--xl 
+
+	&--xl
 		.social__btn
 			width: 4.5rem
 			height: 4.5rem
 			margin-right: 2.4rem
 			margin-bottom: 1.5rem
-			.icon 
+			.icon
 				font-size: 2.6rem
 			+max($laptop)
 				margin-right: 1.6rem
 
-	&--lg 
+	&--lg
 		.social__btn
 			width: 2.5rem
 			height: 2.5rem
 			margin-right: .7rem
 			margin-bottom: .7rem
-			.icon 
+			.icon
 				font-size: 1.6rem
 
-		.social__link 
+		.social__link
 			margin-right: 3rem
-			.icon 
+			.icon
 				font-size: 3.7rem
-				&-vk 
+				&-vk
 					font-size: 5rem
 
 /* Range  */
 .range
-	&__row 
-		
+	&__row
+
 		display: flex
 		margin-left: -1rem
 		margin-right: -1rem
@@ -568,7 +549,7 @@
 			box-shadow: .3rem .3rem .4rem rgba(#393939, 0.6), -.3rem -.3rem .4rem #fff
 			padding: 0 1rem
 			width: 100%
-	&__devider 
+	&__devider
 
 		width: 0.7rem
 		height: 0.1rem
@@ -588,7 +569,7 @@
 	.ui-slider-handle
 		width: 1.3rem
 		height: 1.3rem
-		
+
 		background-color: #fa4242
 		display: block
 		position: absolute
@@ -607,7 +588,6 @@
 			font-weight: 500
 			color: #94a6aa
 
-
 /* Rating */
 .rating
 	display: flex
@@ -615,13 +595,12 @@
 	&__stars
 		white-space: nowrap
 		font-size: 0
-		.icon 
+		.icon
 			font-size: 1.2rem
 			color: #34a1d3
 			margin-right: .4rem
 
-
-	&__value 
+	&__value
 		font-size: 1rem
 		color: #7d7d7d
 		font-weight: 500
@@ -632,7 +611,7 @@
 .counter
 	display: flex
 	align-items: center
-	&__btn 
+	&__btn
 		width: 1.4rem
 		height: 1.4rem
 		display: inline-block
@@ -642,36 +621,34 @@
 		border-radius: 0.2rem
 		background-color: #e9edf0
 		border: none
-		padding: 0 
+		padding: 0
 		margin: 0
 		font-size: 1.2rem
-		
+
 		font-weight: 500
 		box-shadow: .1rem .1rem .2rem rgba(#393939, 0.6), -.1rem -.1rem .2rem #fff
-		
-		@media (any-hover: hover) 
-			&:hover 
-				
+
+		@media (any-hover: hover)
+			&:hover
+
 				box-shadow: inset 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3), inset 0 0 0 rgba(255, 255, 255, 0)
-	&--lg 
-		.counter__btn 
+	&--lg
+		.counter__btn
 			width: 2.1rem
 			height: 2.1rem
 			line-height: 2.1rem
 			font-size: 1.8rem
-		.counter__input 
+		.counter__input
 			font-size: 1.6rem
 			font-weight: 500
 
-
-	&__input 
+	&__input
 		margin: 0 1.3rem
 
-
 ._text-collapse
-	.more-wrap 
+	.more-wrap
 		display: none
-	&._full 
+	&._full
 		.more-wrap
 			display: block
 
@@ -679,8 +656,8 @@
 	overflow: hidden
 	position: relative
 
-	&._short 
-		&:after 
+	&._short
+		&:after
 			content: ''
 			position: absolute
 			bottom: 0
@@ -691,22 +668,116 @@
 			background: linear-gradient(to bottom, rgba(#fbfbfb, 0), rgba(#fbfbfb, 1) )
 	&._full
 		max-height: none
-		&:after 
+		&:after
 			display: none
 
+/* Line link */ 
+.line-links
+	margin-bottom: 1.5rem
+	.line-link
+		margin-right: 2.5rem
+		margin-bottom: 1.5rem
+		&:last-child
 
-/* loader */
+			margin-right: 0
+.line-link
+	display: inline-block
+	position: relative
+	vertical-align: middle
+	white-space: nowrap
+	font-size: 1.4rem
+	font-weight: 700
+
+	span
+		position: relative
+		display: block
+		padding-bottom: 0.7rem
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 0.3rem
+			box-shadow: 0.1rem 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.15)
+			background-color: #e9edf0
+			pointer-events: none
+			+tr
+	&:hover
+		text-decoration: none
+
+	@media (any-hover: hover)
+		&:hover
+			span:after
+				box-shadow: 0.1rem 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.3)
+
+	&--danger
+		color: $color-danger
+		@media (any-hover: hover)
+			&:hover
+				color: $color-danger
+	&--info
+		color: $color-info
+		@media (any-hover: hover)
+			&:hover
+				color: $color-info
+
+.sec-link
+	display: block
+	margin-top: 2.2rem
+
+.under-link
+	display: inline-block
+	position: relative
+	padding-left: 1.5rem
+	white-space: nowrap
+	font-size: 1.2rem
+	font-weight: 500
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -.3rem
+		+arr(.4rem, .7rem, $color-danger, r)
+		+tr
+	span
+		position: relative
+		display: block
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			bottom: -.7rem
+			left: 0
+			width: 100%
+			height: 0.3rem
+			box-shadow: 0.1rem 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.15)
+			background-color: #e9edf0
+			pointer-events: none
+
+	@media (any-hover: hover)
+		&:hover
+
+			text-decoration: none
+			color: $color
+			&:before
+				left: .4rem
+	/* loader */
 .loaded .main-wrapper
 	visibility: hidden
 	opacity: 0
 	transition: opacity 0.3s
-.loaded .icon-load 
+.loaded .icon-load
 	display: flex
 .icon-load
 	position: fixed
 	top: 0
 	left: 0
-	right: 0 
+	right: 0
 	bottom: 0
 	z-index: 1045
 	display: none
@@ -714,7 +785,7 @@
 	align-items: center
 	width: auto
 	background: #fff
- 
+
 .ball
 	width: 3rem
 	height: 3rem
@@ -732,7 +803,7 @@
 .c
 	animation: ball-c 0.7s ease-out 0.4s infinite alternate
 
-@keyframes ball-a 
+@keyframes ball-a
 	from
 		height: 2rem
 		opacity: 0.3
@@ -742,7 +813,7 @@
 		opacity: 1
 		background: rgba(#929FB2, 0.2)
 
-@keyframes ball-b 
+@keyframes ball-b
 	from
 		height: 2rem
 		opacity: 0.3
@@ -752,7 +823,7 @@
 		opacity: 1
 		background: #929FB2
 
-@keyframes ball-c 
+@keyframes ball-c
 	from
 		height: 2rem
 		opacity: 0.3
@@ -761,4 +832,3 @@
 		height: 6rem
 		opacity: 1
 		background: darken(#1C466C, 6%)
-
