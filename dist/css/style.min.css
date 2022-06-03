@@ -3130,7 +3130,7 @@ img {
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.13);
   background-color: #e9edf0;
 }
-.calendar .datepicker-inline .datepicker {
+.calendar .air-datepicker {
   background: transparent;
   border: none;
   width: auto;
@@ -3139,39 +3139,30 @@ img {
   font-size: 1.2rem;
   margin: 0 -0.6rem;
 }
-.calendar .datepicker--nav, .calendar .datepicker--content {
+.calendar .air-datepicker-nav,
+.calendar .air-datepicker--content {
   padding: 0;
 }
-.calendar .datepicker--nav-action path {
+.calendar .air-datepicker-nav--action path {
   stroke: #fa4242;
 }
-.calendar .datepicker--nav-title {
+.calendar .air-datepicker-nav--title {
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
-.calendar .datepicker--day-name {
+.calendar .air-datepicker-body--day-name {
   color: #7d7d7d;
   font-size: 0.9rem;
   font-weight: 700;
 }
-.calendar .datepicker--cell {
+.calendar .air-datepicker-cell {
   font-size: 0.9rem;
   font-weight: 500;
   color: #7d7d7d;
 }
-.calendar .datepicker--cell-day.-other-month-,
-.calendar .datepicker--cell-year.-other-decade- {
+.calendar .air-datepicker-cell.-day-.-other-month-, .calendar .air-datepicker-cell.-year-.-other-decade- {
   color: #b9b9b9;
-}
-.calendar .datepicker--cell.-selected-, .calendar .datepicker--cell.-selected-.-current- {
-  background: #34a1d3;
-  position: relative;
-  z-index: 2;
-  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25);
-}
-.calendar .datepicker--cell.-current- {
-  color: #7d7d7d;
 }
 .calendar .lightpick {
   background: transparent;

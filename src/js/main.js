@@ -418,26 +418,25 @@ $(function () {
 	}
 
 	if ($('.datepicker-here').length > 0) {
-		$('.datepicker-here').datepicker({
-			inline: true,
-
-			// range: true,
-			toggleSelected: false,
-			minDate: minDate
+		new AirDatepicker('.datepicker-here', {
+			selectedDates: ['2022-06-25']
 		})
 	}
-	var minDate = new Date();
-	minDate.setDate(minDate.getDate());
-
-
 
 	if ($('.datepicker-input').length > 0) {
-		$('.datepicker-input').datepicker({
-			isMobile: true,
+		new AirDatepicker('.datepicker-input', {
+			minDate: [new Date()],
 			autoClose: true,
-			minDate: minDate
 		})
 	}
+
+	if ($('.datepicker-input2').length > 0) {
+		new AirDatepicker('.datepicker-input2', {
+			minDate: [new Date()],
+			autoClose: true,
+		})
+	}
+
 
 	// Mask Phone 
 	// ---------------------------------------------- 

@@ -56,7 +56,7 @@
 			box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.13)
 			background-color: #e9edf0
 
-	.datepicker-inline .datepicker
+	.air-datepicker
 		background: transparent
 		border: none
 		width: auto
@@ -65,79 +65,31 @@
 		font-size: 1.2rem
 		margin: 0 -.6rem
 
-	.datepicker--nav, .datepicker--content
+	.air-datepicker-nav,
+	.air-datepicker--content
 		padding: 0
 
-	.datepicker--nav-action path
+	.air-datepicker-nav--action path
 		stroke: $color-danger
-	// .datepicker--nav
-	// 	min-height: 1px
-	// 	justify-content: flex-start
-	// 	align-items: center
-	// 	margin-bottom: 1rem
-	// 	padding: 0 .7rem
 
-	// .datepicker--nav-action
-	// 	// order: 2
-	// 	width: .4rem
-	// 	height: .7rem
-	// 	margin-left: .5rem
-	// 	svg
-	// 		display: none
-	// 	&[data-action="next"]
-	// 		&:after
-	// 			content: ''
-	// 			display: inline-block
-	// 			vertical-align: middle
-	// 			+arr(.4rem, .7rem, $color-danger, r)
-
-	// 	&[data-action="prev"]
-	// 		&:after
-	// 			content: ''
-	// 			display: inline-block
-	// 			vertical-align: middle
-	// 			+arr(.4rem, .7rem, $color-danger, l)
-
-	.datepicker--nav-title
-
+	.air-datepicker-nav--title
 		font-size: 1.2rem
 		font-weight: 700
-
 		text-transform: uppercase
-		// &:after
-		// 	content: ''
-		// 	display: block
-		// 	position: absolute
-		// 	top: 50%
-		// 	right: 0
-		// 	margin-top: -.3rem
-		// 	+arr(.7rem, .4rem, $color-danger, b)
 
-	// .datepicker--nav-title i
-	// 	color: inherit
-
-	.datepicker--day-name
+	.air-datepicker-body--day-name
 		color: #7d7d7d
 		font-size: .9rem
 		font-weight: 700
 
-	.datepicker--cell
+	.air-datepicker-cell
 		font-size: .9rem
 		font-weight: 500
 		color: #7d7d7d
 
-	.datepicker--cell-day.-other-month-,
-	.datepicker--cell-year.-other-decade-
+	.air-datepicker-cell.-day-.-other-month-, .air-datepicker-cell.-year-.-other-decade-
 		color: #b9b9b9
-	.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-
-		background: $color-info
-		position: relative
-		z-index: 2
-		box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25)
-	.datepicker--cell.-current-
-		color: #7d7d7d
-		// & ~ .datepicker--cell-day:not(.-selected-)
-		// 	background: rgba(38,185,255,.2)
+
 	.lightpick
 		background: transparent
 		box-shadow: none
