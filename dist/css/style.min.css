@@ -3171,11 +3171,7 @@ img {
   box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25);
 }
 .calendar .datepicker--cell.-current- {
-  color: #fff;
-  background: #34a1d3;
-}
-.calendar .datepicker--cell.-current- ~ .datepicker--cell-day:not(.-selected-) {
-  background: rgba(38, 185, 255, 0.2);
+  color: #7d7d7d;
 }
 .calendar .lightpick {
   background: transparent;
