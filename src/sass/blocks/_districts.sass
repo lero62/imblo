@@ -14,7 +14,7 @@
 	&__img
 		float: left
 		margin: 0 2rem 2rem 0
-		width: 31.1rem
+		width: 26.9rem
 		.img-gallery
 			display: block
 		img
@@ -30,8 +30,26 @@
 		font-weight: 400
 
 	&__footer
-		margin-top: 4rem
+		margin-top: 2rem
 
+	&__images
+		clear: both
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		margin-bottom: -2rem
+		margin-top: 2rem
+		margin-left: -1rem
+		margin-right: -1rem
+		.img-gallery
+			flex: none
+			margin-right: 1rem
+			margin-left: 1rem
+			margin-bottom: 2rem
+
+			width: calc(33.33% - 2rem)
+			img
+				width: 100%
 .district-details
 	display: flex
 	&__item
@@ -120,6 +138,13 @@
 			font-size: 1.6rem
 		&__text
 			font-size: 1.2rem
+		&__images
+			margin-left: -0.3rem
+			margin-right: -0.3rem
+			.img-gallery
+				margin-left: 0.3rem
+				margin-right: 0.3rem
+				width: calc(33.33% - .6rem)
 
 	.district-details
 		display: block

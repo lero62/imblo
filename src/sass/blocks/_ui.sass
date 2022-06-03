@@ -523,6 +523,26 @@
 				&-vk
 					font-size: 5rem
 
+.alert
+	padding: 2rem 2.5rem
+	border: .3rem solid $color-info
+	border-radius: 1rem
+	font-size: 1.6rem
+	font-weight: 400
+	&__title
+		font-size: 1.6rem
+		font-weight: 700
+		line-height: 1.2
+		margin-bottom: 1.5rem
+	&__button
+		margin-top: 1.5rem
+
+	&--margin
+		margin-bottom: 3rem
+		margin-top: 3rem
+	&--sm
+		font-size: 1.4rem
+
 /* Range  */
 .range
 	&__row
@@ -832,3 +852,9 @@
 		height: 6rem
 		opacity: 1
 		background: darken(#1C466C, 6%)
+
++max(992)
+	.alert
+		font-size: 1.4rem
+		&__title
+			font-size: 1.4rem

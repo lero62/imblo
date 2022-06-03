@@ -68,53 +68,53 @@
 	.datepicker--nav, .datepicker--content
 		padding: 0
 
-	.datepicker--nav
-		min-height: 1px
-		justify-content: flex-start
-		align-items: center
-		margin-bottom: 1rem
-		padding: 0 .7rem
+	.datepicker--nav-action path
+		stroke: $color-danger
+	// .datepicker--nav
+	// 	min-height: 1px
+	// 	justify-content: flex-start
+	// 	align-items: center
+	// 	margin-bottom: 1rem
+	// 	padding: 0 .7rem
 
-	.datepicker--nav-action
-		order: 2
-		width: .4rem
-		height: .7rem
-		margin-left: .5rem
-		svg
-			display: none
-		&[data-action="next"]
-			&:after
-				content: ''
-				display: inline-block
-				vertical-align: middle
-				+arr(.4rem, .7rem, $color-danger, r)
+	// .datepicker--nav-action
+	// 	// order: 2
+	// 	width: .4rem
+	// 	height: .7rem
+	// 	margin-left: .5rem
+	// 	svg
+	// 		display: none
+	// 	&[data-action="next"]
+	// 		&:after
+	// 			content: ''
+	// 			display: inline-block
+	// 			vertical-align: middle
+	// 			+arr(.4rem, .7rem, $color-danger, r)
 
-		&[data-action="prev"]
-			&:after
-				content: ''
-				display: inline-block
-				vertical-align: middle
-				+arr(.4rem, .7rem, $color-danger, l)
+	// 	&[data-action="prev"]
+	// 		&:after
+	// 			content: ''
+	// 			display: inline-block
+	// 			vertical-align: middle
+	// 			+arr(.4rem, .7rem, $color-danger, l)
 
 	.datepicker--nav-title
-		order: 1
-		font-size: 1rem
-		font-weight: 700
-		margin-right: auto
-		position: relative
-		padding-right: 1.2rem
-		padding-left: 0
-		&:after
-			content: ''
-			display: block
-			position: absolute
-			top: 50%
-			right: 0
-			margin-top: -.3rem
-			+arr(.7rem, .4rem, $color-danger, b)
 
-	.datepicker--nav-title i
-		color: inherit
+		font-size: 1.2rem
+		font-weight: 700
+
+		text-transform: uppercase
+		// &:after
+		// 	content: ''
+		// 	display: block
+		// 	position: absolute
+		// 	top: 50%
+		// 	right: 0
+		// 	margin-top: -.3rem
+		// 	+arr(.7rem, .4rem, $color-danger, b)
+
+	// .datepicker--nav-title i
+	// 	color: inherit
 
 	.datepicker--day-name
 		color: #7d7d7d
@@ -131,10 +131,14 @@
 		color: #b9b9b9
 	.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-
 		background: $color-info
+		position: relative
+		z-index: 2
 		box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25)
 	.datepicker--cell.-current-
 		color: #fff
 		background: $color-info
+		& ~ .datepicker--cell-day:not(.-selected-)
+			background: rgba(38,185,255,.2)
 	.lightpick
 		background: transparent
 		box-shadow: none

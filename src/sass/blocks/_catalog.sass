@@ -194,8 +194,8 @@
 			padding-left: 2.6rem
 			min-height: 1.5rem
 
-			input:checked ~ .checkbox__figure:after
-				background: url("../img/check.png") .2rem .4rem no-repeat
+		input:checked ~ .checkbox__figure:after
+			background: url("../img/check.png") .2rem .4rem no-repeat
 
 .link
 	font-weight: 700
@@ -331,10 +331,16 @@
 		position: relative
 		border-radius: 1rem 1rem 0 0
 		overflow: hidden
+		padding-bottom: 61.064%
 
 		img
 			border-radius: 1rem 1rem 0 0
 			width: 100%
+			height: 100%
+			object-fit: cover
+			position: absolute
+			top: 0
+			left: 0
 
 		@media (any-hover: hover)
 			&:hover
@@ -660,6 +666,175 @@
 		vertical-align: middle
 		margin: 0 .3rem
 
+/* Cafe */
+
+.card
+	padding: 1.8rem
+	background: $bgcolor
+	border-radius: 1rem
+	margin-bottom: 2.6rem
+	box-shadow: -5px -6px 6px #FFFFFF, 5px 6px 6px rgba(0, 0, 0, 0.25)
+	display: flex
+	align-items: flex-start
+	&__head
+		display: flex
+		align-items: flex-start
+		margin-bottom: 1rem
+	&__top
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		padding-right: 2rem
+		position: relative
+		flex: 1
+		min-wdith: 1px
+		.rating
+			margin-right: 1.2rem
+			margin-bottom: .2rem
+			margin-top: .4rem
+
+	&__inf-icons
+		margin-left: auto
+		margin-top: -.5rem
+		margin-bottom: -1rem
+
+	&__img
+		margin-right: 3rem
+		flex: none
+		width: 20.4rem
+		height: 20.4rem
+
+		a
+			height: 100%
+			display: block
+			border-radius: .5rem
+			overflow: hidden
+			&:hover
+				text-decoration: none
+		&.not-img
+			a
+				display: flex
+				align-items: center
+				justify-content: center
+				text-align: center
+
+				box-shadow: -2px -2px 2px #FFFFFF, 2px 2px 2px rgba(0, 0, 0, 0.25)
+		.master-logo
+			font-size: 0.9rem
+			font-weight: 900
+			text-transform: uppercase
+			color: $color
+			.icon
+				color: $color-danger
+				margin: 0 .2rem
+				vertical-align: middle
+				top: -.1rem
+				font-size: 1.4rem
+		img
+			min-height: 100%
+			width: 100%
+
+	&__content
+		flex: 1
+		min-width: 1px
+
+	&__title
+		font-weight: 700
+		margin-right: 1.2rem
+		margin-bottom: .2rem
+		font-size: 1.8rem
+
+	&__description
+		font-size: 1.2rem
+		font-weight: 400
+
+	&__tags
+		margin-top: 1rem
+
+	&__footer
+		display: flex
+		align-items: flex-start
+		position: relative
+
+		padding-top: 2.4rem
+		margin-top: 1.2rem
+		&:before
+			content: ''
+			display: block
+			height: 0.2rem
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			background: #E9EDF0
+			box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25)
+	&__info
+		margin-right: 2rem
+		flex: 1
+		margin-top: 0.5rem
+		&-item
+			margin-top: .5rem
+			margin-bottom: 1.5rem
+			&:last-child
+				margin-bottom: 0
+	&__buttons
+		flex: none
+		margin-left: auto
+		.btn
+			margin-left: 0.7rem
+			flex: none
+			&._open-contacts._active
+				background: #1A5B79
+				@media (any-hover: hover)
+					&:hover
+						background: darken(#1A5B79, 10%)
+		&-item
+			display: flex
+			justify-content: flex-end
+			margin-bottom: 1rem
+			&:last-child
+				margin-bottom: 0
+	&__reviews
+		padding: 3rem 0 1rem
+	&__contacts
+		padding: 3rem 0 1rem
+		&-row
+			margin-bottom: -1.5rem
+		.social__btn
+
+			.icon
+				color: $color-info
+				top: -.1rem
+
+		.contacts-item
+			margin-bottom: 1rem
+			margin-top: .5rem
+
+.inf-icons
+	display: flex
+
+	&__item
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
+		width: 3rem
+		height: 3rem
+		border-radius: .5rem
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		margin-right: 1.6rem
+		margin-bottom: 1rem
+		&:last-child
+			margin-right: 0
+
+		.icon
+			font-size: 1.8rem
+			top: -.1rem
+			color: $color-info
+			&-basket, &-cupon
+				color: $color-danger
+			&-children, &-truck
+				font-size: 2rem
+				top: 0
 /* Tours grid ===================================================================== */
 .tours-grid
 	&__item
@@ -810,9 +985,7 @@
 		&__top
 			display: block
 			margin-bottom: 1.5rem
-		&__title
 
-			font-size: 1.6rem
 		&__footer
 			&-item
 				width: calc(50% - .5rem)
@@ -840,6 +1013,76 @@
 				&:last-child
 					margin-right: 0
 
+	.card
+		&__head
+			margin-bottom: 1.5rem
+		&__top
+			display: block
+
+		&__img
+			width: 16rem
+			height: 16rem
+
+		&__footer
+			display: block
+			padding-top: 1.8rem
+			padding-bottom: 1.2rem
+		&__buttons
+			margin-left: 0
+			width: 100%
+			margin-top: 1.3rem
+			&-item
+				justify-content: flex-start
+
+			.btn
+				width: calc(50% - .5rem)
+				margin-right: 1rem
+				margin-left: 0
+				&:last-child
+					margin-right: 0
+
+		&__info
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+
+			&-item
+				width: calc(50% - .5rem)
+				margin-right: 1rem
+				max-width: none
+				margin-bottom: 0
+				&:nth-child(2)
+					margin-right: 0
+
+		.comment-buttons
+			display: flex
+			.btn
+				width: calc(50% - .5rem)
+				margin-right: 1rem
+				margin-left: 0
+				&:last-child
+					margin-right: 0
+
++max($ipad)
+	.card
+		&__img
+			width: 12rem
+			height: 12rem
+
+		&__content
+			&-wrap
+				display: flex
+				align-items: center
+				margin-bottom: 1.5rem
+
+		&__head
+			display: block
+		&__top
+			margin-bottom: 1.5rem
+			margin-top: 1.5rem
+		&__inf-icons
+			margin-top: 0
+
 +max($iphone)
 
 	.side-info-block
@@ -858,28 +1101,39 @@
 			margin-top: 1.2rem
 
 	.master
-
+		&__content
+			&-wrap
+				display: flex
+				align-items: flex-start
+				margin-bottom: 1.5rem
 		&__header
 			align-items: center
 			margin-bottom: 1.5rem
 
 		&__title
 			margin-right: 0
+			font-size: 1.6rem
 
 		&__top
 			padding-right: 0
 			display: block
+			align-self: center
 			margin-bottom: 0
-			.rating
-				display: inline-block
-				vertical-align: middle
-				margin-right: .5rem
-				margin-top: .1rem
 
 		&__date
 			position: static
 			display: inline-block
 			vertical-align: middle
+			margin-bottom: 0
+
+		&__footer
+			display: block
+			padding-top: 1rem
+			&-item
+				width: auto
+				margin-right: 0
+
+				margin-top: 1rem
 
 		.comment-buttons
 			display: block
@@ -889,3 +1143,40 @@
 				margin-bottom: 1rem
 				&:last-child
 					margin-bottom: 0
+
+	.card
+		&__img
+			width: 10rem
+			height: 10rem
+			margin-right: 1.8rem
+		&__title
+			margin-right: 0
+			font-size: 1.6rem
+		&__info
+			display: block
+			margin-top: -.5rem
+			&-item
+				width: auto
+				margin-right: 0
+				margin-top: 1.5rem
+
+		&__contacts
+			padding-top: 1rem
+		.comment-buttons
+			display: block
+			.btn
+				width: 100%
+				margin-right: 0
+				margin-bottom: 1rem
+				&:last-child
+					margin-bottom: 0
+
+	.inf-icons
+		flex-wrap: -wrap
+		&__item
+			margin-right: 0.8rem
+			margin-bottom: 0.8rem
+			width: 2.4rem
+			height: 2.4rem
+			.icon
+				font-size: 1.4rem

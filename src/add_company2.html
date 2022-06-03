@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Добавьте вашу компанию в каталог"
+})
+
+<body class="loaded ">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 0,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О городе</a></li>
+						<li><span>Отзывы</span></li>
+					</ul>
+				</div>
+				<div class="main-content">
+					<div class="main-content__body">
+						<div class="main-content__head row ">
+							<div class="col-md">
+								<h1 class="title">Добавьте вашу компанию в каталог</h1>
+							</div>
+							<div class="col-md-auto">
+								<div class="iter">
+									<a href="#" class="btn btn--info ">
+										<svg class="icon icon-chat btn-icon">
+											<use xlink:href="img/sprite.svg#chat"></use>
+										</svg>
+										Написать в поддержку
+									</a>
+									<p class="iter__text">Мы говорим по-русски!</p>
+								</div>
+							</div>
+						</div>
+
+						<form action="#" class="main-content__add-form add-form">
+							<div class="row">
+
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field">
+										<label class="form-label">
+											Название компании <span class="star">*</span>
+
+										</label>
+										<input type="text" class="form-input " placeholder="Введите название ">
+									</div>
+									<div class="form-field">
+										<label class="form-label">
+											Выберите тип заведения <span class="star">*</span>
+
+										</label>
+										<div class="selectbox">
+											<div class="selectbox__head">
+												<div class="selectbox__text placeholder">Кафе</div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li>Кафе 1</li>
+													<li>Кафе 2</li>
+													<li>Кафе 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-7 col-md-6 offset-lg-1 ">
+									<div class="form-field">
+										<label class="form-label">Расскажите немного о своем магазине <span class="star">*</span></label>
+										<textarea rows="4" class="form-input " placeholder="Максимальное количество символов 200 "></textarea>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field">
+										<label class="form-label">
+											Выберите ваш район <span class="star">*</span>
+
+										</label>
+										<div class="selectbox">
+											<div class="selectbox__head">
+												<div class="selectbox__text placeholder">Пано-Пафос </div>
+												<div class="selectbox__caret"></div>
+											</div>
+											<div class="selectbox__drop">
+												<ul>
+													<li>Пано-Пафос 1</li>
+													<li>Пано-Пафос 2</li>
+													<li>Пано-Пафос 3</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-7 col-md-6 offset-lg-1">
+									<div class="row">
+										<div class="col-md-7">
+											<div class="form-field check-list">
+												<label class="form-label ">Укажите ваш телефон <span class="star">*</span></label>
+												<input type="tel" class="form-input  tel" placeholder="Введите телефон">
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-5 ">
+											<div class="form-field check-list">
+												<label class="checkbox ">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text">
+														WhatsApp
+
+													</span>
+												</label>
+												<label class="checkbox ">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text">
+														Viber
+
+													</span>
+												</label>
+												<label class="checkbox ">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text">
+														Telegram
+
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field check-list">
+										<label class="form-label ">Укажите кухню <span class="star">*</span></label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Европейская
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Азиатская
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Еврейская
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Восточная
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Кавказская
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Индийская
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												Экзотическая
+											</span>
+										</label>
+										<div class="row no-gutters align-items-center">
+											<div class="col-auto">
+												<label class="checkbox ">
+													<input type="checkbox">
+													<span class="checkbox__figure"></span>
+													<span class="checkbox__text"></span>
+												</label>
+											</div>
+											<div class="col">
+												<input type="text" class="form-input " placeholder="Другая (впишите)">
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+
+
+								<div class="col-lg-4 col-md-6  offset-lg-1">
+									<div class="form-field">
+										<label class="form-label">Загрузите фото <span class="star">*</span></label>
+
+										<div class="upload">
+											<label class="upload__input form-input">
+												<span class="placeholder">Добавить файл из своих документов</span>
+												<svg class="icon icon-upload">
+													<use xlink:href="img/sprite.svg#upload"></use>
+												</svg>
+												<input type="file" class="form-input  addImage" placeholder="Добавить файл из своих документов">
+											</label>
+
+											<ul class="upload-images uploadImagesList">
+												<div class="upload-images__item template">
+													<div class="upload-images__preview">
+														<img src="" alt="">
+													</div>
+													<div class="upload-images__remove">удалить</div>
+												</div>
+											</ul>
+										</div>
+									</div>
+									<div class="form-field">
+										<label class="form-label">Вставьте ссылку адреса с сайта https://2gis.ru/</label>
+										<input type="text" class="form-input " placeholder="Ваш адрес">
+
+									</div>
+									<div class="form-field">
+										<label class="form-label">Или вставьте координаты адреса</label>
+										<input type="text" class="form-input " placeholder="Ваш адрес">
+
+									</div>
+								</div>
+
+								<div class="col-lg-4 col-md-6">
+									<div class="form-field">
+										<label class="form-label">Ваши социальные сети</label>
+										<div class="form-social">
+											<div class="form-social__icon">
+												<svg class="icon icon-vk">
+													<use xlink:href="img/sprite.svg#vk"></use>
+												</svg>
+											</div>
+											<div class="form-social__input">
+												<input type="text" class="form-input " placeholder="введите ссылку">
+											</div>
+										</div>
+										<div class="form-social">
+											<div class="form-social__icon">
+												<svg class="icon icon-facebook">
+													<use xlink:href="img/sprite.svg#facebook"></use>
+												</svg>
+											</div>
+											<div class="form-social__input">
+												<input type="text" class="form-input " placeholder="введите ссылку">
+											</div>
+										</div>
+										<div class="form-social">
+											<div class="form-social__icon">
+												<svg class="icon icon-instagram">
+													<use xlink:href="img/sprite.svg#instagram"></use>
+												</svg>
+											</div>
+											<div class="form-social__input">
+												<input type="text" class="form-input " placeholder="введите ссылку">
+											</div>
+										</div>
+										<div class="form-social">
+											<div class="form-social__icon">
+												<svg class="icon icon-messager">
+													<use xlink:href="img/sprite.svg#messager"></use>
+												</svg>
+											</div>
+											<div class="form-social__input">
+												<input type="text" class="form-input " placeholder="введите ссылку">
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6  offset-lg-1">
+									<div class="form-field check-list">
+										<label class="form-label ">Дополнительно</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												есть доставка
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												есть детская площадка
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												есть детский стул
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												выдаете купоны на скидку
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												еда в заведении
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												еда с собой
+											</span>
+										</label>
+										<label class="checkbox ">
+											<input type="checkbox">
+											<span class="checkbox__figure"></span>
+											<span class="checkbox__text">
+												есть wi-fi
+											</span>
+										</label>
+
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 ">
+									<div class="form-field">
+										<label class="form-label">Имя представителя компании <span class="star">*</span></label>
+										<input type="text" class="form-input " placeholder="Введите имя ">
+									</div>
+
+								</div>
+								<div class="col-lg-4 col-md-6  offset-lg-1 ">
+									<div class="form-field">
+										<label class="form-label">Телефон представителя компании <span class="star">*</span></label>
+										<input type="tel" class="form-input tel" placeholder="Введите телефон">
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 align-self-end">
+									<div class="data-da-alert"></div>
+									<div class="add-button-wrap text-center">
+										<button type="submit" class="btn btn--danger btn--radius btn--tt">добавить компанию</button>
+										<div class="form-text form-text--lg"><strong>Эта услуга бесплатна!</strong></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6  offset-lg-1">
+									<div class="alert text-center" data-da="data-da-alert, 1,767">
+										<div class="alert__title">Хотите получать больше клиентов и пользоваться расширенным функционалом? </div>
+										<div class="alert__text">Получите премиум доступ</div>
+										<div class="alert__button">
+											<a href="#" class="btn btn--radius btn--info">подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>
