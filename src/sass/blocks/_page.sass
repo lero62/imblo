@@ -102,6 +102,8 @@
 	background: $bgcolor
 	border-radius: 1rem 1rem 0 0
 	padding: 2.2rem 2rem
+	&--round
+		border-radius: 1rem
 .facts-list
 	ul
 		display: flex
@@ -295,7 +297,7 @@
 	.banner-cards-wrap
 		margin-top: 0
 
-/* About ===================================================================================================*/
+/* Error page ===================================================================================================*/
 /* =========================================================================================================*/
 .error-page
 	text-align: center
@@ -307,6 +309,55 @@
 		font-weight: 500
 		margin-bottom: 2rem
 
+/* Transport ===================================================================================================*/
+/* =========================================================================================================*/
+.route
+	margin-bottom: 4rem
+	&__title
+		font-size: 1.8rem
+		font-weight: 700
+		margin-bottom: 2rem
+	&__list
+		&-item
+			margin-bottom: .6rem
+			display: flex
+			align-items: flex-start
+		&-icon
+			flex: none
+			position: relative
+			top: 1px
+			margin-right: 1rem
+			.icon
+				color: #34A1D3
+				font-size: 1.8rem
+		&-text
+			font-size: 1.8rem
+			font-weight: 400
+
+.bltext
+	font-weight: 400
+	font-size: 1.6rem
+	border-top: .3rem solid #34A1D3
+	border-bottom: .3rem solid #34A1D3
+	padding: 6rem 0
+	margin-bottom: 6rem
+	margin-top: 6rem
+
+.article-news
+	margin-bottom: 4rem
+	font-size: 14px
+	font-weight: 400
+	&__title
+		margin-bottom: 1.5rem
+	&__body
+		overflow: hidden
+		a
+			text-decoration: underline
+	&__img
+		float: left
+		margin-right: 1rem
+		margin-bottom: 1rem
+		max-width: 26.6rem
 +max($iphone)
 	/* Rental ========== */ 
 	.rental
@@ -354,6 +405,21 @@
 			margin-top: 6.5rem
 			margin-bottom: 6.5rem
 
+	/* Transport ============ */
+	.route
+		margin-bottom: 3rem
+		&__title
+			font-size: 1.6rem
+		&__list
+			&-text
+				font-size: 1.4rem
+			&-icon .icon
+				font-size: 1.6rem
+
+	.bltext
+		margin: 4rem 0
+		padding: 4rem 0
+		font-size: 1.4rem
 +max($iphone_sm)
 	/* Аренда жилья ========== */ 
 	.item-application
@@ -361,3 +427,9 @@
 			display: block
 		&__foot
 			display: block
+
+	/* Transport ============ */
+	.article-news__img
+		max-width: 100%
+		margin-right: 0
+		float: none

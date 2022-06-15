@@ -1,0 +1,64 @@
+<div class="route">
+	<div class="route__title">@@title</div>
+	<ul class="route__list">
+		<li class="route__list-item">
+			<div class="route__list-icon">
+				<svg class="icon icon-bus2">
+					<use xlink:href="img/sprite.svg#bus2"></use>
+				</svg>
+			</div>
+			<div class="route__list-text">
+				<span class="font-600">Автобус:</span>
+				@@bus
+			</div>
+		</li>
+		@@if(bus2 !== '') {
+		<li class="route__list-item">
+			<div class="route__list-icon">
+				<svg class="icon icon-bus2">
+					<use xlink:href="img/sprite.svg#bus2"></use>
+				</svg>
+			</div>
+			<div class="route__list-text">
+				<span class="font-600">Автобус:</span>
+				@@bus2
+			</div>
+		</li>
+		}
+		@@if(bus3 !== '') {
+		<li class="route__list-item">
+			<div class="route__list-icon">
+				<svg class="icon icon-bus2">
+					<use xlink:href="img/sprite.svg#bus2"></use>
+				</svg>
+			</div>
+			<div class="route__list-text">
+				<span class="font-600">Автобус:</span>
+				@@bus3
+			</div>
+		</li>
+		}
+		<li class="route__list-item">
+			<div class="route__list-icon">
+				<svg class="icon icon-clock">
+					<use xlink:href="img/sprite.svg#clock"></use>
+				</svg>
+			</div>
+			<div class="route__list-text">
+				<span class="font-600">Время в пути:</span>
+				@@time
+			</div>
+		</li>
+		<li class="route__list-item">
+			<div class="route__list-icon">
+				<svg class="icon icon-euro2">
+					<use xlink:href="img/sprite.svg#euro2"></use>
+				</svg>
+			</div>
+			<div class="route__list-text">
+				<span class="font-600">Стоимость проезда:</span>
+				@@price
+			</div>
+		</li>
+	</ul>
+</div>
