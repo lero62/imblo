@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Каталог"
+})
+
+<body class="loaded page-catalog">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 1,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О городе</a></li>
+						<li><span>Мастера красоты</span></li>
+					</ul>
+				</div>
+				<div class="main-content">
+					<h1 class="title">Мастера красоты</h1>
+
+					<!-- BEGIN SEARCH BLOCK -->
+					<div class="search-block">
+						<div class="search-block__form">
+							<form action="#">
+								<input type="text" placeholder="Найти специалиста" class="search-block__input">
+								<span class="search-block__icon"><svg class="icon icon-loupe">
+										<use xlink:href="img/sprite.svg#loupe"></use>
+									</svg></span>
+								<div class="text-field">
+									<span class="text-field__title">Сейчас ищут:</span>
+									<a href="#" class="text-field__link">аренда авто</a>
+									<a href="#" class="text-field__link">маникюр</a>
+									<a href="#" class="text-field__link">сантехник</a>
+								</div>
+							</form>
+						</div>
+						<div class="search-block__info">
+							<ul class="list">
+								<li><a href="#"><strong>Добавить компанию</strong></a></li>
+
+							</ul>
+						</div>
+
+					</div>
+					<!-- SEARCH BLOCK EOF   -->
+
+
+					<div class="ct-main">
+
+						<!-- BEGIN CONTENT -->
+						<div class="ct-content">
+
+
+							<div class="ct-content__wrap">
+								<!-- BEGIN CARDS LIST -->
+								<div class="ct-content__left">
+									@@include('./template/blocks/master.html', {
+									img: 'img/master-img-1.jpg',
+									title: 'Эльмира Калачева',
+									cat: 'маникюр',
+									language: 'Говорит на русском языке',
+									tags: '<a href="#" class="tag">маникюр на дому</a> <a href="#" class="tag">педикюр аппаратный</a>',
+									country: 'Айос-Атанасиос',
+									phone: '+3 900 093-00-00',
+									reviews: '999+',
+									more: false,
+									})
+
+									@@include('./template/blocks/master.html', {
+									img: 'img/master-img-1.jpg',
+									title: 'Эльмира Калачева',
+									cat: 'маникюр',
+									language: 'Говорит на русском, греческом, английском языках',
+									tags: '<a href="#" class="tag">маникюр на дому</a> ',
+									country: 'Айос-Атанасиос',
+									phone: '+3 900 093-00-00',
+									reviews: '0',
+									more: true,
+									})
+
+									@@include('./template/blocks/master.html', {
+									img: 'img/master-img-1.jpg',
+									title: 'Эльмира Калачева',
+									cat: 'маникюр',
+									language: 'Говорит на русском, английском языках',
+									tags: '<a href="#" class="tag">маникюр на дому</a> <a href="#" class="tag">педикюр аппаратный</a>',
+									country: 'Айос-Атанасиос',
+									phone: '+3 900 093-00-00',
+									reviews: '999+',
+									more: false,
+									})
+
+									<div class="main__button">
+										<a href="#" class="btn btn--danger btn--radius">ПОКАЗАТЬ ЕЩЕ</a>
+									</div>
+								</div>
+								<!-- CARDS LIST EOF  -->
+
+
+								<!-- BEGIN FILTER -->
+								<div class="ct-content__right">
+									<div class="ct-filter" data-da="fix-filter, 1,991">
+										<div class="ct-filter__title">Категории</div>
+										<ul class="ct-filter-category">
+											<li>Брови</li>
+											<li>Визажист</li>
+											<li>Косметолог</li>
+											<li>Маникюр, педикюр</li>
+											<li>Массажист</li>
+											<li>Парикмахер</li>
+											<li>Перманентный макияж</li>
+											<li>Ресницы</li>
+											<li>Салоны красоты</li>
+											<li>Спа-салон</li>
+											<li>Стилист</li>
+											<li>Тату</li>
+											<li>Татуаж</li>
+											<li>Эпиляция</li>
+										</ul>
+
+										<a href="#" class="btn btn--danger btn--radius ttu mt-2">нашли ошибку? </a>
+									</div>
+
+									<div class="banner-cards-wrap">
+										<div class="row">
+											<div class="col-lg-12 col-sm-6">
+												<div class="banner-card">
+													<div class="banner-card__img">
+														<a href="#"><img src="img/banner-card-img-1.jpg" alt=""></a>
+														<span class="banner-card__sticker">Реклама</span>
+													</div>
+													<div class="banner-card__title"><a href="#">Аренда авто в Пафосе</a></div>
+													<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+												</div>
+											</div>
+											<div class="col-lg-12 col-sm-6">
+												<div class="banner-card">
+													<div class="banner-card__img">
+														<a href="#"><img src="img/banner-card-img-2.jpg" alt=""></a>
+														<span class="banner-card__sticker">Реклама</span>
+													</div>
+													<div class="banner-card__title"><a href="#">Экскурсии по Кипру</a></div>
+													<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- FILTER EOF   -->
+							</div>
+						</div>
+						<!-- CONTENT EOF   -->
+					</div>
+
+					<!-- BEGIN NEWS SLIDER -->
+
+					@@include('./template/blocks/section_popular_spec.html')
+					<!-- NEWS SLIDER EOF   -->
+
+
+				</div>
+			</div>
+
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

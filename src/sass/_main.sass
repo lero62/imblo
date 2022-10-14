@@ -16,6 +16,8 @@
 	min-width: 32rem
 	text-align: left
 	flex: 1 1 auto
+	&__button
+		margin-top: 4rem
 
 .container
 	width: 100%
@@ -163,10 +165,14 @@
 		display: flex
 	.banner-card
 		margin-bottom: 0
-
+.news-swiper
+	.swiper-container
+		padding: 1rem
+		margin: -1rem
 .news-inner,
 .tour-inner,
-.shop-inner
+.shop-inner,
+.master-inner
 	display: flex
 	flex-direction: column
 	width: 100%
@@ -239,6 +245,24 @@
 
 	.tags
 		line-height: 2rem
+
+.master-inner
+	&__favorite
+		position: absolute
+		top: 1rem
+		right: 1rem
+		z-index: 3
+		&.favorite
+			.icon
+				color: #fff
+
+	&__contacts
+		margin-bottom: 1rem
+		.contacts-item
+			margin-bottom: 0.5rem
+
+	.btn
+		border-radius: .4rem
 
 .news-list
 	&__item

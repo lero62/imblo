@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Каталог"
+})
+
+<body class="loaded page-catalog">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 1,
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О городе</a></li>
+						<li><span>Каталог услуг Пафоса</span></li>
+					</ul>
+				</div>
+				<div class="main-content">
+					<div class="main-content__head">
+						<h1 class="title">Автовладельцам</h1>
+					</div>
+					<div class="main-content__body">
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="ct-filter" data-da="fix-filter, 1,991">
+									<ul class="ct-menu">
+										<li class="ct-menu__item is-active">
+											<a href="#" class=" btn btn--block btn--default btn--rounded ">Покупка автомобиля</a>
+										</li>
+										<li class="ct-menu__item ">
+											<a href="#" class=" btn btn--block btn--default btn--rounded ">Оформление</a>
+										</li>
+										<li class="ct-menu__item ">
+											<a href="#" class=" btn btn--block btn--default btn--rounded ">Ремонт и обслуживание
+											</a>
+										</li>
+										<li class="ct-menu__item ">
+											<a href="#" class=" btn btn--block btn--default btn--rounded ">Технический осмотр
+											</a>
+										</li>
+										<li class="ct-menu__item ">
+											<a href="#" class=" btn btn--block btn--default btn--rounded ">Мойка и химчистка
+											</a>
+										</li>
+										<li class="ct-menu__item ">
+											<a href="#" class=" btn btn--block btn--default btn--rounded ">Страховка</a>
+										</li>
+										<li class="ct-menu__item ">
+											<a href="#" class=" btn btn--block btn--default btn--rounded ">Штрафы</a>
+										</li>
+										<li class="ct-menu__item ">
+											<a href="#" class=" btn btn--block btn--default btn--rounded ">Особенности ПДД</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<article class="page-article article">
+
+									<p class="i-gallery">
+										<a href="img/article-img-22.jpg" class="img-gallery"><img src="img/article-img-22.jpg" alt=""></a>
+									</p>
+									<p>Процесс приобретения автомобиля всегда завершается на этапе подписания документов о купле-продаже автомобиля. Для этого продавец и покупатель заполняют специальную форму Т.О.М 9В, указывая личные данные, адрес, телефон, номер пинк или еллоу-слипа, а также полную информацию об автомобиле и ставят свои подписи. </p>
+
+									<p>Затем, для регистрации автомобиля можно обратиться либо в дорожный департамент (как правило для машин, еще не стоявших ранее на учете) либо в KEP - центр обслуживания населения (Citizen Service Center), находящийся по адресу: Eleftheriou Venizelou 62, Paphos, 8021. Важно! Прием ведется по предварительной записи по тел.: _____________.</p>
+
+									<h3>Для переоформления автомобиля покупатель должен предоставить: </h3>
+
+
+									<ul class="article__list article__list--danger">
+										<li>документы на автомобиль (title)</li>
+										<li>паспорт</li>
+										<li>визу F, пинк или еллоу слип, т.е. документ, подтверждающий, что покупатель является резидентом Кипра</li>
+										<li>заранее оформленный страховой полис уже на будущего нового владельца</li>
+										<li>действующий техосмотр (МОТ)</li>
+										<li>подтверждение оплаты дорожного налога</li>
+
+									</ul>
+
+
+									<p>После предоставления указанных документов машина регистрируется уже на нового владельца. </p>
+									<p>Номерные знаки менять не нужно, машина остается с первоначальными гос.номерами.</p>
+								</article>
+
+							</div>
+							<div class="col-lg-3 sidebar">
+								<div class="banner-cards-wrap mt0">
+									<div class="row">
+										<div class="col-lg-12 col-sm-6">
+											<div class="banner-card">
+												<div class="banner-card__img">
+													<a href="#"><img src="img/banner-card-img-1.jpg" alt=""></a>
+													<span class="banner-card__sticker">Реклама</span>
+												</div>
+												<div class="banner-card__title"><a href="#">Аренда авто в Пафосе</a></div>
+												<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+											</div>
+										</div>
+										<div class="col-lg-12 col-sm-6">
+											<div class="banner-card">
+												<div class="banner-card__img">
+													<a href="#"><img src="img/banner-card-img-2.jpg" alt=""></a>
+													<span class="banner-card__sticker">Реклама</span>
+												</div>
+												<div class="banner-card__title"><a href="#">Экскурсии по Кипру</a></div>
+												<div class="banner-card__text">Компания Одуванчик предлагает вашему внманию игры для детей от 7 до 15 лет. </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+
+
+				</div>
+				<!-- CONTENT EOF   -->
+			</div>
+
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

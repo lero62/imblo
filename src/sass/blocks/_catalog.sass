@@ -48,8 +48,12 @@
 			margin-bottom: 0
 		&.is-active
 			.ct-menu__link
+				color: $color-danger
 				&:after
 					transform: rotate(90deg)
+
+			.btn
+				box-shadow: inset -2px -2px 3px #FFFFFF, inset 2px 2px 3px #7E7E7E
 			& > ul
 				display: block
 		&.ct-item
@@ -196,6 +200,22 @@
 
 		input:checked ~ .checkbox__figure:after
 			background: url("../img/check.png") .2rem .4rem no-repeat
+
+.ct-filter-category
+	margin-left: 1.4rem
+
+	font-size: 1.2rem
+	font-weight: 500
+	li
+		margin-bottom: 1rem
+		position: relative
+		cursor: pointer
+		&.is-active
+			font-weight: 700
+
+		@media (any-hover: hover)
+			&:hover
+				color: $color-danger
 
 .link
 	font-weight: 700
@@ -461,24 +481,27 @@
 		font-size: 1.6rem
 
 .master
-	padding: 1.8rem
+	padding: 1.6rem
 	background: $bgcolor
 	border-radius: 1rem
 	margin-bottom: 2.6rem
+	transition: border-color 0.2s linear
 	box-shadow: -5px -6px 6px #FFFFFF, 5px 6px 6px rgba(0, 0, 0, 0.25)
+	border: 6px solid transparent
 	&__header
 		display: flex
 		align-items: flex-start
+
 	&__img
 		margin-right: 1.5rem
 		flex: none
-		width: 8.2rem
+		width: 13.4rem
 		height: 8.2rem
 
 		a
 			height: 100%
 			display: block
-			border-radius: .5rem
+			border-radius: .5rem .5rem 0 0
 			overflow: hidden
 			&:hover
 				text-decoration: none
@@ -502,32 +525,30 @@
 				top: -.1rem
 				font-size: 1.4rem
 		img
-			min-height: 100%
+			height: 100%
 			width: 100%
+			object-fit: cover
 
 	&__content
 		flex: 1
-		overflow: hidden
+		min-width: 1px
+
 	&__top
 		display: flex
 		align-items: flex-start
-		flex-wrap: wrap
-		padding-right: 7rem
+		padding-right: 4rem
 		position: relative
 
-		.rating
-			margin-right: 1.2rem
-			margin-bottom: .8rem
-			margin-top: .4rem
-
-	&__date
-		position: absolute
-		top: 0
-		right: 0
-		font-weight: 400
+	&__cat
+		margin-left: auto
 		font-size: 1.2rem
-		margin-bottom: .8rem
-		margin-top: .3rem
+		font-weight: 400
+		padding-top: 0.3rem
+
+	&__favorite
+		position: absolute
+		right: 0
+		top: 0
 
 	&__title
 		font-weight: 700
@@ -535,19 +556,58 @@
 		margin-bottom: .8rem
 		font-size: 1.8rem
 
-	&__description
-		font-size: 1.2rem
-		font-weight: 400
+	&__middle
+		display: flex
+		align-items: flex-start
+
+	&__language
+		margin-left: auto
+		order: 1
+		font-size: 1rem
+		font-weight: 300
+		font-style: italic
+		max-width: 17rem
+		text-align: right
+		flex: none
 
 	&__tags
-		margin-top: 1rem
+		flex: 1
+		margin-right: 4rem
 
 	&__footer
 		display: flex
 		align-items: center
 		position: relative
-		flex-wrap: wrap
-		padding-top: 1.8rem
+
+		margin-top: 1.2rem
+		&-row
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+			flex: 1
+
+		&-item
+			margin-right: 2rem
+			flex: none
+			margin-top: 0.5rem
+			max-width: 15rem
+			+text-overflow
+		&-buttons
+			display: flex
+			margin-left: auto
+			justify-content: flex-end
+			flex-wrap: wrap
+			.btn
+				margin-left: 0.7rem
+				margin-bottom: 0.7rem
+				flex: 1 1 auto
+				&--danger
+					width: 13rem
+					box-shadow: none
+
+	&__reviews
+		padding: 3rem 0
+		position: relative
 		margin-top: 1.2rem
 		&:before
 			content: ''
@@ -559,36 +619,44 @@
 			right: 0
 			background: #E9EDF0
 			box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25)
-		&-item
-			margin-right: 2rem
-			flex: none
-			margin-top: 0.5rem
-			max-width: 15rem
-			+text-overflow
-		&-buttons
-			display: flex
-			margin-left: auto
-			.btn
-				margin-left: 0.7rem
-				flex: none
-
-	&__reviews
-		padding: 3rem 0 1rem
 		.comment-form
 			&__name
 				flex: none
 				width: 18rem
 
-	&__contacts
-		padding: 3rem 0 1rem
-		&-row
-			margin-bottom: -1.5rem
-		.social__btn
-			.icon
-				color: $color-info
+	@media (any-hover: hover)
+		&:hover
+			border-color: $color-info
 
-		.contacts-item
-			margin-bottom: 1rem
+.favorite
+	width: 2.2rem
+	height: 2.2rem
+	text-align: center
+	font-size: 0
+	padding: 0
+	border: none
+	background: transparent
+	.icon
+		font-size: 2rem
+		color: $color-info
+		&-heart
+			display: none
+	@media (any-hover: hover)
+		&:hover
+			.icon
+				color: $color-danger
+				&-heart-alt
+					display: none
+				&-heart
+					display: inline-block
+
+	&._active
+		.icon
+			color: $color-danger
+			&-heart-alt
+				display: none
+			&-heart
+				display: inline-block
 
 .tags
 	margin-bottom: -.5rem
@@ -658,15 +726,6 @@
 		&__icon
 			.icon
 				font-size: 1.8rem
-
-.lang-row
-	display: inline-block
-	vertical-align: middle
-	font-size: 0
-	span
-		display: inline-block
-		vertical-align: middle
-		margin: 0 .3rem
 
 /* Cafe */
 
@@ -983,38 +1042,8 @@
 		background: $color-danger
 
 +max($laptop)
-	.master
-		&__top
-			display: block
-			margin-bottom: 1.5rem
-
-		&__footer
-			&-item
-				width: calc(50% - .5rem)
-				margin-right: 1rem
-				max-width: none
-				&:nth-child(2)
-					margin-right: 0
-			&-buttons
-				margin-left: 0
-				width: 100%
-				margin-top: 1.3rem
-				.btn
-					width: calc(50% - .5rem)
-					margin-right: 1rem
-					margin-left: 0
-					&:last-child
-						margin-right: 0
-
-		.comment-buttons
-			display: flex
-			.btn
-				width: calc(50% - .5rem)
-				margin-right: 1rem
-				margin-left: 0
-				&:last-child
-					margin-right: 0
-
+	.master__footer-buttons .btn--danger
+		width: auto
 	.card
 		&__head
 			margin-bottom: 1.5rem
@@ -1066,6 +1095,7 @@
 					margin-right: 0
 
 +max($ipad)
+
 	.card
 		&__img
 			width: 12rem
@@ -1087,6 +1117,54 @@
 
 +max($iphone)
 
+	.master
+		padding: 1.5rem
+		border: none
+		margin-bottom: 1.5rem
+		&__top
+			display: block
+			margin-bottom: .7rem
+		&__title
+			margin-bottom: 0.5rem
+
+		&__cat
+			padding-top: 0
+		&__middle
+			display: block
+		&__tags
+			margin-right: 0
+		&__language
+			text-align: left
+			max-width: none
+			margin-bottom: 0.7rem
+		&__footer
+			flex-wrap: wrap
+			&-item
+				width: calc(50% - .5rem)
+				margin-right: 1rem
+				max-width: none
+				&:nth-child(2)
+					margin-right: 0
+			&-buttons
+				margin-left: 0
+				width: 100%
+				margin-top: 1.3rem
+				.btn
+					flex: 1
+					margin-right: 1rem
+					margin-left: 0
+					&:last-child
+						margin-right: 0
+
+		.comment-buttons
+			display: flex
+			.btn
+				width: calc(50% - .5rem)
+				margin-right: 1rem
+				margin-left: 0
+				&:last-child
+					margin-right: 0
+
 	.side-info-block
 
 		&--content
@@ -1103,24 +1181,32 @@
 			margin-top: 1.2rem
 
 	.master
+		margin-left: -1.5rem
+		margin-right: -1.5rem
+		position: relative
+		border-radius: 0
+
 		&__content
 			&-wrap
 				display: flex
 				align-items: flex-start
 				margin-bottom: 1.5rem
-		&__header
-			align-items: center
-			margin-bottom: 1.5rem
 
+		&__img
+			width: 10rem
+			height: 6.2rem
 		&__title
 			margin-right: 0
 			font-size: 1.6rem
-
+		&__favorite
+			top: .5rem
+			right: .5rem
 		&__top
-			padding-right: 0
+			padding-right: 2rem
 			display: block
 			align-self: center
 			margin-bottom: 0
+			position: static
 
 		&__date
 			position: static
@@ -1130,12 +1216,12 @@
 
 		&__footer
 			display: block
-			padding-top: 1rem
+			&-row
+				display: block
 			&-item
 				width: auto
 				margin-right: 0
-
-				margin-top: 1rem
+				margin-top: .5rem
 
 		.comment-buttons
 			display: block
@@ -1145,6 +1231,9 @@
 				margin-bottom: 1rem
 				&:last-child
 					margin-bottom: 0
+
+		.tag
+			font-size: 1rem
 
 	.card
 		&__img

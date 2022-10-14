@@ -101,6 +101,13 @@ $(function () {
 		return false;
 	})
 
+	$('.ct-filter-category > li').on('click', function () {
+		$('.ct-filter-category > li').not($(this)).removeClass('is-active')
+		$(this).addClass('is-active')
+		return false;
+	})
+
+
 	$('.ct-filter-option > a').on('click', function () {
 		var thisText = $(this).html();
 		$(this).parents('.ct-filter-item').find('.ct-filter-option').removeClass('is-active')
@@ -111,6 +118,20 @@ $(function () {
 
 	})
 
+	// Favorite
+	$('.favorite').on('click', function () {
+		$(this).toggleClass('_active')
+		return false;
+	})
+
+
+	//Toggle
+
+	$('._toggle').on('click', function () {
+		$('._toggle').not($(this)).removeClass('is-active')
+		$(this).addClass('is-active')
+		return false;
+	})
 
 	function openSearch() {
 		$('.open-search').on('click', function () {
