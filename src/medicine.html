@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/_head.html', {
+"title": "Каталог"
+})
+
+<body class="loaded page-catalog">
+
+
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
+
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
+		user: 0,
+		nav: 'Категории',
+		filter: '',
+		})
+		<!-- HEADER EOF   -->
+
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+
+						<li><span>Медицина</span></li>
+					</ul>
+				</div>
+				<div class="main-content">
+					<h1 class="title">Медицина</h1>
+
+					<!-- BEGIN SEARCH BLOCK -->
+					<div class="search-block">
+						<div class="search-block__form">
+							<form action="#">
+								<input type="text" placeholder="Найти специалиста" class="search-block__input">
+								<span class="search-block__icon"><svg class="icon icon-loupe">
+										<use xlink:href="img/sprite.svg#loupe"></use>
+									</svg></span>
+								<div class="text-field">
+									<span class="text-field__title">Сейчас ищут:</span>
+									<a href="#" class="text-field__link">аренда авто</a>
+									<a href="#" class="text-field__link">маникюр</a>
+									<a href="#" class="text-field__link">сантехник</a>
+								</div>
+							</form>
+						</div>
+						<div class="search-block__info">
+							<ul class="list">
+								<li><a href="#"><strong>Добавить компанию</strong></a></li>
+								<li><a href="#"><strong>Не нашли что искали? Спросите жителей в телеграм</strong></a></li>
+							</ul>
+						</div>
+
+					</div>
+					<!-- SEARCH BLOCK EOF   -->
+
+
+					<div class="ct-main">
+						<!-- BEGIN SIDEBAR -->
+						<div class="ct-sidebar ct-sidebar--lg  hidden-ipad">
+							<div class="ct-sidebar__title">Категории</div>
+
+							<div data-da="fix-nav, 1, 991">
+								<div class="ct-sidebar__body">
+									<ul class="ct-menu ">
+										<li class="ct-menu__item">
+											<a href="#" class="ct-menu__link">Медицинский центр</a>
+										</li>
+										<li class="ct-menu__item">
+											<a href="#" class="ct-menu__link">Лаборатория</a>
+
+										</li>
+										<li class="ct-menu__item ">
+											<a href="#" class="ct-menu__link ">МРТ</a>
+
+										</li>
+										<li class="ct-menu__item">
+											<a href="#" class="ct-menu__link ">Аптеки</a>
+										</li>
+										<li class="ct-menu__item ct-item is-active">
+											<a href="#" class="ct-menu__link ">Врачи</a>
+											<ul>
+												<li><a href="#">Терапевт</a></li>
+												<li class="is-active"><a href="#">Гинеколог</a></li>
+												<li><a href="#">Уролог</a></li>
+												<li><a href="#">Кардиолог</a></li>
+												<li><a href="#">Дерматолог</a></li>
+												<li><a href="#">Гастроэнтеролог</a></li>
+												<li><a href="#">Аллерголог</a></li>
+												<li><a href="#">Эндокринолог</a></li>
+												<li><a href="#">Ортопед</a></li>
+												<li><a href="#">Педиатр</a></li>
+												<li><a href="#">Хирург</a></li>
+												<li><a href="#">ЛОР</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="main__button">
+									<a href="#" class="btn btn--danger btn--block ttu">нашли ошибку? </a>
+								</div>
+							</div>
+						</div>
+						<!-- SIDEBAR EOF   -->
+
+						<!-- BEGIN CONTENT -->
+						<div class="ct-content">
+							@@include('./template/blocks/master.html', {
+							img: 'img/master-img-1.jpg',
+							title: 'EVANGELISMOS PRIVATE HOSPITAL',
+							cat: 'мед центр',
+							language: 'Говорит на русском языке',
+							tags: '',
+							country: 'Айос-Атанасиос',
+							phone: '+3 900 093-00-00',
+							reviews: '',
+							more: true,
+							})
+
+							@@include('./template/blocks/master.html', {
+							img: 'img/master-img-1.jpg',
+							title: 'Частный медицинский центр Blue Cross ',
+							cat: 'лаборатория',
+							language: 'Говорит на русском, греческом, английском языках',
+							tags: ' ',
+							country: 'Айос-Атанасиос',
+							phone: '+3 900 093-00-00',
+							reviews: '',
+							more: false,
+							})
+
+							@@include('./template/blocks/master.html', {
+							img: 'img/master-img-1.jpg',
+							title: 'Эльмира Калачева',
+							cat: 'маникюр',
+							language: 'Говорит на русском, английском языках',
+							tags: ' ',
+							country: 'Айос-Атанасиос',
+							phone: '+3 900 093-00-00',
+							reviews: '',
+							more: false,
+							})
+
+							@@include('./template/blocks/master.html', {
+							img: 'img/master-img-1.jpg',
+							title: 'EVANGELISMOS PRIVATE HOSPITAL',
+							cat: 'мед центр',
+							language: 'Говорит на русском языке',
+							tags: '',
+							country: 'Айос-Атанасиос',
+							phone: '+3 900 093-00-00',
+							reviews: '',
+							more: true,
+							})
+
+							@@include('./template/blocks/master.html', {
+							img: 'img/master-img-1.jpg',
+							title: 'Частный медицинский центр Blue Cross ',
+							cat: 'лаборатория',
+							language: 'Говорит на русском, греческом, английском языках',
+							tags: ' ',
+							country: 'Айос-Атанасиос',
+							phone: '+3 900 093-00-00',
+							reviews: '',
+							more: false,
+							})
+
+							@@include('./template/blocks/master.html', {
+							img: 'img/master-img-1.jpg',
+							title: 'Эльмира Калачева',
+							cat: 'маникюр',
+							language: 'Говорит на русском, английском языках',
+							tags: ' ',
+							country: 'Айос-Атанасиос',
+							phone: '+3 900 093-00-00',
+							reviews: '',
+							more: false,
+							})
+
+							<div class="main__button">
+								<a href="#" class="btn btn--danger ">ПОКАЗАТЬ ЕЩЕ</a>
+							</div>
+						</div>
+						<!-- CARDS LIST EOF  -->
+
+
+
+					</div>
+
+					<!-- BEGIN NEWS SLIDER -->
+
+					@@include('./template/blocks/section_popular_spec.html')
+					<!-- NEWS SLIDER EOF   -->
+
+
+				</div>
+			</div>
+
+		</main>
+		<!-- MAIN EOF   -->
+
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

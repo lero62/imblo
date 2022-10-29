@@ -13,7 +13,8 @@
 		<!-- BEGIN HEADER -->
 		@@include('./template/_header.html', {
 		user: 0,
-		nav: 0,
+		nav: 'Каталог',
+		filter: true,
 		})
 		<!-- HEADER EOF   -->
 
@@ -60,79 +61,81 @@
 
 					<div class="ct-main">
 						<!-- BEGIN SIDEBAR -->
-						<div class="ct-sidebar hidden-iphone">
-							<ul class="ct-menu">
-								<li class="ct-menu__item ct-item">
-									<a href="#" class="ct-menu__link">Мастера по ремонту</a>
-									<ul>
-										<li><a href="#">Мыло</a></li>
-										<li><a href="#">Средства для волос</a></li>
-									</ul>
-								</li>
-								<li class="ct-menu__item ct-item is-active">
-									<a href="#" class="ct-menu__link">Мастера красоты</a>
-									<ul>
-										<li><a href="#">Косметолог</a></li>
-										<li><a href="#">Татуаж</a></li>
-										<li><a href="#">Тату</a></li>
-										<li><a href="#">Эпиляция</a></li>
-										<li><a href="#">Стилист</a></li>
-										<li><a href="#">Массажист</a></li>
-										<li><a href="#">Парикхмахер</a></li>
-										<li class="is-active"><a href="#">Маникюр, педикюр</a></li>
-										<li><a href="#">Визажист</a></li>
-										<li><a href="#">Брови</a></li>
-										<li><a href="#">Ресницы</a></li>
-									</ul>
-								</li>
-								<li class="ct-menu__item ct-item">
-									<a href="#" class="ct-menu__link ">Медицина</a>
-									<ul>
-										<li><a href="#">Мыло</a></li>
-										<li><a href="#">Средства для волос</a></li>
-									</ul>
-								</li>
-								<li class="ct-menu__item ct-item">
-									<a href="#" class="ct-menu__link ">Секции</a>
-									<ul>
-										<li><a href="#">Мыло</a></li>
-										<li><a href="#">Средства для волос</a></li>
-									</ul>
-								</li>
-								<li class="ct-menu__item ct-item">
-									<a href="#" class="ct-menu__link ">Репетиторы, тренеры</a>
-									<ul>
-										<li><a href="#">Мыло</a></li>
-										<li><a href="#">Средства для волос</a></li>
-									</ul>
-								</li>
-								<li class="ct-menu__item ct-item">
-									<a href="#" class="ct-menu__link ">Домашние услуги</a>
-									<ul>
-										<li><a href="#">Мыло</a></li>
-										<li><a href="#">Средства для волос</a></li>
-									</ul>
-								</li>
-								<li class="ct-menu__item">
-									<a href="#" class="ct-menu__link ">Домашние животные</a>
-								</li>
-								<li class="ct-menu__item">
-									<a href="#" class="ct-menu__link ">Транспорт</a>
-								</li>
-								<li class="ct-menu__item">
-									<a href="#" class="ct-menu__link ">Артисты</a>
-								</li>
-								<li class="ct-menu__item ct-item">
-									<a href="#" class="ct-menu__link ">Разные услуги</a>
-									<ul>
-										<li><a href="#">Наружная реклама, полиграфия</a></li>
-										<li><a href="#">Жидкость для эл.сигарет, испарители</a></li>
-									</ul>
-								</li>
-								<li class="ct-menu__item">
-									<a href="#" class="ct-menu__link ">Мастера по установке оборудования</a>
-								</li>
-							</ul>
+						<div class="ct-sidebar hidden-ipad">
+							<div data-da="fix-nav, 1, 991">
+								<ul class="ct-menu">
+									<li class="ct-menu__item ct-item">
+										<a href="#" class="ct-menu__link">Мастера по ремонту</a>
+										<ul>
+											<li><a href="#">Мыло</a></li>
+											<li><a href="#">Средства для волос</a></li>
+										</ul>
+									</li>
+									<li class="ct-menu__item ct-item is-active">
+										<a href="#" class="ct-menu__link">Мастера красоты</a>
+										<ul>
+											<li><a href="#">Косметолог</a></li>
+											<li><a href="#">Татуаж</a></li>
+											<li><a href="#">Тату</a></li>
+											<li><a href="#">Эпиляция</a></li>
+											<li><a href="#">Стилист</a></li>
+											<li><a href="#">Массажист</a></li>
+											<li><a href="#">Парикхмахер</a></li>
+											<li class="is-active"><a href="#">Маникюр, педикюр</a></li>
+											<li><a href="#">Визажист</a></li>
+											<li><a href="#">Брови</a></li>
+											<li><a href="#">Ресницы</a></li>
+										</ul>
+									</li>
+									<li class="ct-menu__item ct-item">
+										<a href="#" class="ct-menu__link ">Медицина</a>
+										<ul>
+											<li><a href="#">Мыло</a></li>
+											<li><a href="#">Средства для волос</a></li>
+										</ul>
+									</li>
+									<li class="ct-menu__item ct-item">
+										<a href="#" class="ct-menu__link ">Секции</a>
+										<ul>
+											<li><a href="#">Мыло</a></li>
+											<li><a href="#">Средства для волос</a></li>
+										</ul>
+									</li>
+									<li class="ct-menu__item ct-item">
+										<a href="#" class="ct-menu__link ">Репетиторы, тренеры</a>
+										<ul>
+											<li><a href="#">Мыло</a></li>
+											<li><a href="#">Средства для волос</a></li>
+										</ul>
+									</li>
+									<li class="ct-menu__item ct-item">
+										<a href="#" class="ct-menu__link ">Домашние услуги</a>
+										<ul>
+											<li><a href="#">Мыло</a></li>
+											<li><a href="#">Средства для волос</a></li>
+										</ul>
+									</li>
+									<li class="ct-menu__item">
+										<a href="#" class="ct-menu__link ">Домашние животные</a>
+									</li>
+									<li class="ct-menu__item">
+										<a href="#" class="ct-menu__link ">Транспорт</a>
+									</li>
+									<li class="ct-menu__item">
+										<a href="#" class="ct-menu__link ">Артисты</a>
+									</li>
+									<li class="ct-menu__item ct-item">
+										<a href="#" class="ct-menu__link ">Разные услуги</a>
+										<ul>
+											<li><a href="#">Наружная реклама, полиграфия</a></li>
+											<li><a href="#">Жидкость для эл.сигарет, испарители</a></li>
+										</ul>
+									</li>
+									<li class="ct-menu__item">
+										<a href="#" class="ct-menu__link ">Мастера по установке оборудования</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<!-- SIDEBAR EOF   -->
 

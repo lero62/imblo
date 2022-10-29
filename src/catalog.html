@@ -1,336 +1,390 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('./template/_head.html', {
-	"title": "Каталог"
+"title": "Каталог"
 })
+
 <body class="loaded">
 
 
-<!-- BEGIN BODY -->
-<div class="main-wrapper" id="up">
+	<!-- BEGIN BODY -->
+	<div class="main-wrapper" id="up">
 
-	<!-- BEGIN HEADER -->
-	@@include('./template/_header.html', {
+		<!-- BEGIN HEADER -->
+		@@include('./template/_header.html', {
 		user: 0,
-		nav: 0,
-	})
-	<!-- HEADER EOF   -->
+		nav: '',
+		filter: '',
+		})
+		<!-- HEADER EOF   -->
 
-	<!-- BEGIN MAIN -->
-	<main class="main">
-		<div class="container">
-			<div class="breadcrumbs hidden-iphone">
-				<a href="#" class="breadcrumbs__back">Вернуться назад</a>
-				<ul class="breadcrumbs__list">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">О городе</a></li>
-					<li><span>Каталог компаний Пафоса</span></li>
-				</ul>
-			</div>
-			<div class="main-content">
-				<h1 class="title">Каталог магазинов Пафоса</h1>
-			
-				<!-- BEGIN SEARCH BLOCK -->
-				<div class="search-block ">
-					<div class="search-block__form">
-						<form action="#" >
-							<input type="text" placeholder="Найти специалиста или магазин" class="search-block__input">
-							<span class="search-block__icon"><svg class="icon icon-loupe"><use xlink:href="img/sprite.svg#loupe"></use></svg></span>
-							<div class="text-field">
-								<span class="text-field__title">Сейчас ищут:</span>
-								<a href="#" class="text-field__link">аренда авто</a>
-								<a href="#" class="text-field__link">маникюр</a>
-								<a href="#" class="text-field__link">сантехник</a>
-							</div>
-						</form>
-					</div>
-					<div class="search-block__info">
-						<ul class="list">
-							<li><a href="#"><strong>Добавить компанию или специалиста</strong></a></li>
-						</ul>
-					</div>
-					
+		<!-- BEGIN MAIN -->
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs hidden-iphone">
+					<a href="#" class="breadcrumbs__back">Вернуться назад</a>
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О городе</a></li>
+						<li><span>Каталог компаний Пафоса</span></li>
+					</ul>
 				</div>
-				<!-- SEARCH BLOCK EOF   -->
-				
-				<!-- BEGIN NEWS SLIDER -->
-				<section class="section">
-					<div class="section__head"><h2 class="section__title">Самые популярные магазины</h2></div>
+				<div class="main-content">
+					<h1 class="title">Каталог магазинов Пафоса</h1>
+
+					<!-- BEGIN SEARCH BLOCK -->
+					<div class="search-block ">
+						<div class="search-block__form">
+							<form action="#">
+								<input type="text" placeholder="Найти специалиста или магазин" class="search-block__input">
+								<span class="search-block__icon"><svg class="icon icon-loupe">
+										<use xlink:href="img/sprite.svg#loupe"></use>
+									</svg></span>
+								<div class="text-field">
+									<span class="text-field__title">Сейчас ищут:</span>
+									<a href="#" class="text-field__link">аренда авто</a>
+									<a href="#" class="text-field__link">маникюр</a>
+									<a href="#" class="text-field__link">сантехник</a>
+								</div>
+							</form>
+						</div>
+						<div class="search-block__info">
+							<ul class="list">
+								<li><a href="#"><strong>Добавить компанию или специалиста</strong></a></li>
+							</ul>
+						</div>
+
+					</div>
+					<!-- SEARCH BLOCK EOF   -->
+
+					<!-- BEGIN NEWS SLIDER -->
+					<section class="section">
+						<div class="section__head">
+							<h2 class="section__title">Самые популярные магазины</h2>
+						</div>
 
 
-					<!-- Slider news-swiper -->
-					<div class="news-swiper _news-swiper">
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<article class="news-inner">
-										<div class="news-inner__img">
-											<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
-										</div>
-										<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
-									</article>
+						<!-- Slider news-swiper -->
+						<div class="news-swiper _news-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<article class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
+										</article>
+									</div>
+									<div class="swiper-slide">
+										<article class="news-inner">
+											<div class="news-inner__img">
+												<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
+											</div>
+											<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
+										</article>
+									</div>
 								</div>
-								<div class="swiper-slide">
-									<article class="news-inner">
-										<div class="news-inner__img">
-											<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
-										</div>
-										<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
-									</article>
-								</div>
-								<div class="swiper-slide">
-									<article class="news-inner">
-										<div class="news-inner__img">
-											<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
-										</div>
-										<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
-									</article>
-								</div>
-								<div class="swiper-slide">
-									<article class="news-inner">
-										<div class="news-inner__img">
-											<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
-										</div>
-										<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
-									</article>
-								</div>
-								<div class="swiper-slide">
-									<article class="news-inner">
-										<div class="news-inner__img">
-											<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
-										</div>
-										<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
-									</article>
-								</div>
-								<div class="swiper-slide">
-									<article class="news-inner">
-										<div class="news-inner__img">
-											<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
-										</div>
-										<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
-									</article>
-								</div>
-								<div class="swiper-slide">
-									<article class="news-inner">
-										<div class="news-inner__img">
-											<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
-										</div>
-										<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
-									</article>
-								</div>
-								<div class="swiper-slide">
-									<article class="news-inner">
-										<div class="news-inner__img">
-											<a href="#"><img src="img/news-img-1.jpg" alt=""></a>
-										</div>
-										<h6 class="news-inner__title"><a href="#">Продуктовый магазин «Кипр», доставка на дом</a></h6>
-									</article>
+
+								<div class="news-swiper__controls swiper-controls ">
+									<div class=" swiper-button-prev"></div>
+									<div class=" swiper-pagination"></div>
+									<div class=" swiper-button-next"></div>
 								</div>
 							</div>
+						</div>
+					</section>
+					<!-- NEWS SLIDER EOF   -->
 
-							<div class="news-swiper__controls swiper-controls ">
-								<div class=" swiper-button-prev"></div>
-								<div class=" swiper-pagination"></div>
-								<div class=" swiper-button-next"></div>
+					<!-- BEGIN CATEGORY LIST -->
+					<div class="section">
+						<div class="i-wrapper">
+							<div class="row category-list">
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-car-door">
+												<use xlink:href="img/sprite.svg#car-door"></use>
+											</svg></div>
+										<div class="category-inner__title">Автозапчасти</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-car-washing">
+												<use xlink:href="img/sprite.svg#car-washing"></use>
+											</svg></div>
+										<div class="category-inner__title">Автомойка</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-cardiac-graphic">
+												<use xlink:href="img/sprite.svg#cardiac-graphic"></use>
+											</svg></div>
+										<div class="category-inner__title">Аптеки</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-swimming-pool">
+												<use xlink:href="img/sprite.svg#swimming-pool"></use>
+											</svg></div>
+										<div class="category-inner__title">Для бассейнов</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-party">
+												<use xlink:href="img/sprite.svg#party"></use>
+											</svg></div>
+										<div class="category-inner__title">Для праздников</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-rubber-duck">
+												<use xlink:href="img/sprite.svg#rubber-duck"></use>
+											</svg></div>
+										<div class="category-inner__title">Для детей</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-pawprint">
+												<use xlink:href="img/sprite.svg#pawprint"></use>
+											</svg></div>
+										<div class="category-inner__title">Зоомагазины</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-clicking">
+												<use xlink:href="img/sprite.svg#clicking"></use>
+											</svg></div>
+										<div class="category-inner__title">Интернет-магазины</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-education">
+												<use xlink:href="img/sprite.svg#education"></use>
+											</svg></div>
+										<div class="category-inner__title">Книги</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-armchair">
+												<use xlink:href="img/sprite.svg#armchair"></use>
+											</svg></div>
+										<div class="category-inner__title">Мебель</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-sneakers">
+												<use xlink:href="img/sprite.svg#sneakers"></use>
+											</svg></div>
+										<div class="category-inner__title">Обувь</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-bride-dress">
+												<use xlink:href="img/sprite.svg#bride-dress"></use>
+											</svg></div>
+										<div class="category-inner__title">Одежда</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-grocery">
+												<use xlink:href="img/sprite.svg#grocery"></use>
+											</svg></div>
+										<div class="category-inner__title">Продукты</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-fish">
+												<use xlink:href="img/sprite.svg#fish"></use>
+											</svg></div>
+										<div class="category-inner__title">Рыболовные</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-plant">
+												<use xlink:href="img/sprite.svg#plant"></use>
+											</svg></div>
+										<div class="category-inner__title">Сад и огород</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-sink">
+												<use xlink:href="img/sprite.svg#sink"></use>
+											</svg></div>
+										<div class="category-inner__title">Сантехника</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-water-bottle">
+												<use xlink:href="img/sprite.svg#water-bottle"></use>
+											</svg></div>
+										<div class="category-inner__title">Спорт. питание</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-soccer">
+												<use xlink:href="img/sprite.svg#soccer"></use>
+											</svg></div>
+										<div class="category-inner__title">Спорт. товары</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-paint-roller">
+												<use xlink:href="img/sprite.svg#paint-roller"></use>
+											</svg></div>
+										<div class="category-inner__title">Стройматериалы</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-bucket">
+												<use xlink:href="img/sprite.svg#bucket"></use>
+											</svg></div>
+										<div class="category-inner__title">Хоз.товары</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-flower-bouquet">
+												<use xlink:href="img/sprite.svg#flower-bouquet"></use>
+											</svg></div>
+										<div class="category-inner__title">Цветы</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-television">
+												<use xlink:href="img/sprite.svg#television"></use>
+											</svg></div>
+										<div class="category-inner__title">Элетроника</div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-diamond">
+												<use xlink:href="img/sprite.svg#diamond"></use>
+											</svg></div>
+										<div class="category-inner__title">Ювелирные </div>
+									</a>
+								</div>
+								<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
+									<a href="#" class="category-inner">
+										<div class="category-inner__icon"><svg class="icon icon-order">
+												<use xlink:href="img/sprite.svg#order"></use>
+											</svg></div>
+										<div class="category-inner__title">Mall</div>
+									</a>
+								</div>
+							</div>
+							<div class="sec-link visible-iphone">
+								<a href="#" class="under-link"><span class="i-btn" data-title="Показать еще">Показать еще</span></a>
 							</div>
 						</div>
 					</div>
-				</section>
-				<!-- NEWS SLIDER EOF   -->
+					<!-- CATEGORY LIST EOF   -->
 
-				<!-- BEGIN CATEGORY LIST -->
-				<div class="section">
-					<div class="i-wrapper">
-						<div class="row category-list">
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-car-door"><use xlink:href="img/sprite.svg#car-door"></use></svg></div>
-									<div class="category-inner__title">Автозапчасти</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-car-washing"><use xlink:href="img/sprite.svg#car-washing"></use></svg></div>
-									<div class="category-inner__title">Автомойка</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-cardiac-graphic"><use xlink:href="img/sprite.svg#cardiac-graphic"></use></svg></div>
-									<div class="category-inner__title">Аптеки</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-swimming-pool"><use xlink:href="img/sprite.svg#swimming-pool"></use></svg></div>
-									<div class="category-inner__title">Для бассейнов</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-party"><use xlink:href="img/sprite.svg#party"></use></svg></div>
-									<div class="category-inner__title">Для праздников</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-rubber-duck"><use xlink:href="img/sprite.svg#rubber-duck"></use></svg></div>
-									<div class="category-inner__title">Для детей</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-pawprint"><use xlink:href="img/sprite.svg#pawprint"></use></svg></div>
-									<div class="category-inner__title">Зоомагазины</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-clicking"><use xlink:href="img/sprite.svg#clicking"></use></svg></div>
-									<div class="category-inner__title">Интернет-магазины</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-education"><use xlink:href="img/sprite.svg#education"></use></svg></div>
-									<div class="category-inner__title">Книги</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-armchair"><use xlink:href="img/sprite.svg#armchair"></use></svg></div>
-									<div class="category-inner__title">Мебель</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-sneakers"><use xlink:href="img/sprite.svg#sneakers"></use></svg></div>
-									<div class="category-inner__title">Обувь</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-bride-dress"><use xlink:href="img/sprite.svg#bride-dress"></use></svg></div>
-									<div class="category-inner__title">Одежда</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-grocery"><use xlink:href="img/sprite.svg#grocery"></use></svg></div>
-									<div class="category-inner__title">Продукты</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-fish"><use xlink:href="img/sprite.svg#fish"></use></svg></div>
-									<div class="category-inner__title">Рыболовные</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-plant"><use xlink:href="img/sprite.svg#plant"></use></svg></div>
-									<div class="category-inner__title">Сад и огород</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-sink"><use xlink:href="img/sprite.svg#sink"></use></svg></div>
-									<div class="category-inner__title">Сантехника</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-water-bottle"><use xlink:href="img/sprite.svg#water-bottle"></use></svg></div>
-									<div class="category-inner__title">Спорт. питание</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-soccer"><use xlink:href="img/sprite.svg#soccer"></use></svg></div>
-									<div class="category-inner__title">Спорт. товары</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-paint-roller"><use xlink:href="img/sprite.svg#paint-roller"></use></svg></div>
-									<div class="category-inner__title">Стройматериалы</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-bucket"><use xlink:href="img/sprite.svg#bucket"></use></svg></div>
-									<div class="category-inner__title">Хоз.товары</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-flower-bouquet"><use xlink:href="img/sprite.svg#flower-bouquet"></use></svg></div>
-									<div class="category-inner__title">Цветы</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-television"><use xlink:href="img/sprite.svg#television"></use></svg></div>
-									<div class="category-inner__title">Элетроника</div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-diamond"><use xlink:href="img/sprite.svg#diamond"></use></svg></div>
-									<div class="category-inner__title">Ювелирные </div>
-								</a>
-							</div>
-							<div class="col-xl-3 col-md-4 col-sm-6 category-list__item i-hidden-iphone">
-								<a href="#" class="category-inner">
-									<div class="category-inner__icon"><svg class="icon icon-order"><use xlink:href="img/sprite.svg#order"></use></svg></div>
-									<div class="category-inner__title">Mall</div>
-								</a>
-							</div>
-						</div>
-						<div class="sec-link visible-iphone">
-							<a href="#" class="under-link" ><span class="i-btn" data-title="Показать еще">Показать еще</span></a>
-						</div>
-					</div>
+					<!-- BEGIN NEWS SLIDER -->
+					@@include('./template/blocks/section_news_actions.html')
+					<!-- NEWS SLIDER EOF   -->
+
+					<!-- BEGIN REVIEWS SLIDER -->
+					@@include('./template/blocks/section_reviews.html')
+					<!-- REVIEWS SLIDER EOF   -->
+
+
+					<!-- BEGIN CARD WEEK -->
+					@@include('./template/blocks/section_card_week.html')
+					<!-- NEWS SLIDER EOF   -->
+
+					<!-- BEGIN CARD WEEK -->
+					@@include('./template/blocks/section_about.html')
+					<!-- NEWS SLIDER EOF   -->
+
+					<!-- BEGIN there are questions -->
+					@@include('./template/blocks/section_question.html')
+					<!-- there are questions EOF   -->
 				</div>
-				<!-- CATEGORY LIST EOF   -->
-
-				<!-- BEGIN NEWS SLIDER -->
-				@@include('./template/blocks/section_news_actions.html')
-				<!-- NEWS SLIDER EOF   -->
-
-				<!-- BEGIN REVIEWS SLIDER -->
-				@@include('./template/blocks/section_reviews.html')
-				<!-- REVIEWS SLIDER EOF   -->
-				
-
-				<!-- BEGIN CARD WEEK -->
-				@@include('./template/blocks/section_card_week.html')
-				<!-- NEWS SLIDER EOF   -->
-
-				<!-- BEGIN CARD WEEK -->
-				@@include('./template/blocks/section_about.html')
-				<!-- NEWS SLIDER EOF   -->
-
-				<!-- BEGIN there are questions -->
-				@@include('./template/blocks/section_question.html')
-				<!-- there are questions EOF   -->
 			</div>
-		</div>
-		
-	</main>
-	<!-- MAIN EOF   -->
-		
-	<!-- BEGIN FOOTER -->
-	@@include('./template/_footer.html', {})
-	<!-- FOOTER EOF   -->
 
-	@@include('./template/popups/callback.html')
+		</main>
+		<!-- MAIN EOF   -->
 
-</div>
-<!-- BODY EOF   -->
-@@include('./template/_js.html', {})
+		<!-- BEGIN FOOTER -->
+		@@include('./template/_footer.html', {})
+		<!-- FOOTER EOF   -->
+
+		@@include('./template/popups/callback.html')
+
+	</div>
+	<!-- BODY EOF   -->
+	@@include('./template/_js.html', {})
 
 
 </body>
-</html> 
-	
+
+</html>

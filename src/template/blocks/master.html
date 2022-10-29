@@ -50,7 +50,9 @@
 				</div>
 
 				<div class="master__footer-buttons">
+					@@if(reviews !== '') {
 					<a href="#" class="btn btn--sm btn--default _open-comment">Отзывы (@@reviews)</a>
+					}
 					@@if(more == true) {
 					<a href="#" class="btn btn--sm btn--danger">Подробнее</a>
 					}
