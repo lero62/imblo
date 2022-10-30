@@ -50,10 +50,11 @@
 						</div>
 						<div class="search-block__info">
 							<ul class="list">
-								<li><a href="#"><strong>Добавить компанию</strong></a></li>
+								<li><a href="#"><strong>Добавить учреждение / специалитста</strong></a></li>
 								<li><a href="#"><strong>Не нашли что искали? Спросите жителей в телеграм</strong></a></li>
 							</ul>
 						</div>
+
 
 					</div>
 					<!-- SEARCH BLOCK EOF   -->
@@ -75,14 +76,14 @@
 									<li>
 										<a href="#">МРТ</a>
 									</li>
-									<li>
+									<li class="is-active ">
 										<a href="#">Аптеки</a>
 									</li>
-									<li class="is-open cf-item">
+									<li class="cf-item">
 										<a href="#">Врачи</a>
 										<ul>
 											<li><a href="#">Терапевт</a></li>
-											<li class="is-active"><a href="#">Гинеколог</a></li>
+											<li><a href="#">Гинеколог</a></li>
 											<li><a href="#">Уролог</a></li>
 											<li><a href="#">Кардиолог</a></li>
 											<li><a href="#">Дерматолог</a></li>
@@ -96,7 +97,6 @@
 										</ul>
 									</li>
 								</ul>
-
 								<a href="#" class="btn btn--danger btn--block ttu mt-4">нашли ошибку? </a>
 
 							</div>
@@ -105,88 +105,66 @@
 
 						<!-- BEGIN CONTENT -->
 						<div class="ct-content">
+
+							<div class="alert alert--sm alert--shadow mb-4">
+								<p class="font-700 mb-1">Cyprus Pharmacy is an Information website for all the Pharmacies of Cyprus and those that stay open beyond normal working hours (usually until 11 PM). The information is updated daily, however it is recommended that you double check with the individual Pharmacies through the telephone numbers provided.
+								</p>
+								<div class="text-end size-sm italic">обновлено 10.11.2022</div>
+							</div>
 							@@include('./template/blocks/master.html', {
 							img: 'img/master-img-1.jpg',
-							title: 'EVANGELISMOS PRIVATE HOSPITAL',
-							cat: 'мед центр',
-							language: 'Говорит на русском языке',
+							title: 'ΦΑΡΜΑΚΕΙΟ ΣΤΥΛΙΑΝΟΥ ΧΑΡΑΛΑΜΠΟΣ',
+							cat: 'аптека',
+							language: '',
 							tags: '',
 							country: 'Айос-Атанасиос',
 							phone: '+3 900 093-00-00',
 							reviews: '',
-							more: true,
-							schedule: '',
+							more: false,
+							schedule: true,
 							stickers: '',
 							})
 
 							@@include('./template/blocks/master.html', {
 							img: 'img/master-img-1.jpg',
-							title: 'Частный медицинский центр Blue Cross ',
-							cat: 'лаборатория',
-							language: 'Говорит на русском, греческом, английском языках',
+							title: 'Tasos Aspros Pharmacy',
+							cat: 'аптека',
+							language: '',
 							tags: ' ',
 							country: 'Айос-Атанасиос',
 							phone: '+3 900 093-00-00',
 							reviews: '',
 							more: false,
 							schedule: '',
-							stickers: '',
+							stickers: '<span class="m-sticker ms-1 mb-1">дежурная сегодня</span>',
 							})
 
 							@@include('./template/blocks/master.html', {
 							img: 'img/master-img-1.jpg',
-							title: 'Эльмира Калачева',
-							cat: 'маникюр',
-							language: 'Говорит на русском, английском языках',
-							tags: ' ',
-							country: 'Айос-Атанасиос',
-							phone: '+3 900 093-00-00',
-							reviews: '',
-							more: false,
-							schedule: '',
-							stickers: '',
-							})
-
-							@@include('./template/blocks/master.html', {
-							img: 'img/master-img-1.jpg',
-							title: 'EVANGELISMOS PRIVATE HOSPITAL',
-							cat: 'мед центр',
-							language: 'Говорит на русском языке',
+							title: 'ΦΑΡΜΑΚΕΙΟ ΣΤΥΛΙΑΝΟΥ ΧΑΡΑΛΑΜΠΟΣ',
+							cat: 'аптека',
+							language: '',
 							tags: '',
 							country: 'Айос-Атанасиос',
 							phone: '+3 900 093-00-00',
 							reviews: '',
-							more: true,
-							schedule: '',
+							more: false,
+							schedule: true,
 							stickers: '',
 							})
 
 							@@include('./template/blocks/master.html', {
 							img: 'img/master-img-1.jpg',
-							title: 'Частный медицинский центр Blue Cross ',
-							cat: 'лаборатория',
-							language: 'Говорит на русском, греческом, английском языках',
+							title: 'Tasos Aspros Pharmacy',
+							cat: 'аптека',
+							language: '',
 							tags: ' ',
 							country: 'Айос-Атанасиос',
 							phone: '+3 900 093-00-00',
 							reviews: '',
 							more: false,
 							schedule: '',
-							stickers: '',
-							})
-
-							@@include('./template/blocks/master.html', {
-							img: 'img/master-img-1.jpg',
-							title: 'Эльмира Калачева',
-							cat: 'маникюр',
-							language: 'Говорит на русском, английском языках',
-							tags: ' ',
-							country: 'Айос-Атанасиос',
-							phone: '+3 900 093-00-00',
-							reviews: '',
-							more: false,
-							schedule: '',
-							stickers: '',
+							stickers: '<span class="m-sticker ms-1 mb-1">дежурная сегодня</span>',
 							})
 
 							<div class="main__button">
@@ -216,6 +194,7 @@
 		<!-- FOOTER EOF   -->
 
 		@@include('./template/popups/callback.html')
+		@@include('./template/popups/schedule.html')
 
 	</div>
 	<!-- BODY EOF   -->

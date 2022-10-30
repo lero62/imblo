@@ -230,3 +230,50 @@
 			font-size: 2rem
 		&__description
 			font-size: 1.4rem
+
+/* Schedule  */
+/* --------------------------------------------------------------- */
+
+.schedule-list
+	max-width: 36rem
+	margin-left: auto
+	margin-right: auto
+	&__row
+		&--holiday
+			.schedule-list__weeks, .schedule-list__time
+
+				.icon
+					color: $color-danger
+			.schedule-list__time
+				color: $color-danger
+	&__weeks
+		font-size: 1.4rem
+		font-weight: 400
+		display: flex
+		align-items: center
+		width: 57%
+		.icon
+			font-size: 1.8rem
+			color: $color-info
+			margin-right: 1rem
+
+	&__time
+		font-size: 1.4rem
+		font-weight: 400
+		display: flex
+		align-items: start
+		width: 43%
+		min-height: 4rem
+		.icon
+			font-size: 1.8rem
+			color: $color-info
+			margin-right: 1rem
+
++max($iphone)
+	.schedule-list
+		&__weeks, &__time
+			font-size: 1.2rem
+			.icon
+				font-size: 1.6rem
+		&__time
+			min-height: 3.4rem

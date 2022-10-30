@@ -19,10 +19,21 @@
 			</div>
 			<div class="master__middle">
 				<div class="master__language">@@language</div>
-				@@if(tags !== '') {
+				@@if(tags != '') {
 				<div class="master__tags tags">
 					@@tags
+				</div>
+				}
 
+				@@if(schedule != '') {
+				<div class="master__schedule d-flex flex-wrap">
+					<div class="master__schedule-time me-3 mt-1">
+						<svg class="icon icon-clock">
+							<use xlink:href="img/sprite.svg#clock"></use>
+						</svg>
+						Откроется в 10:00
+					</div>
+					<a href="#popup-schedule" class="mt-1 master__schedule-link open-popup">посмотреть все расписание</a>
 				</div>
 				}
 
@@ -55,12 +66,17 @@
 					}
 					@@if(more == true) {
 					<a href="#" class="btn btn--sm btn--danger">Подробнее</a>
+
+					}
+					@@if(stickers != '') {
+					@@stickers
 					}
 				</div>
 			</div>
 
 		</div>
 	</div>
+	@@if(reviews !== '') {
 	<div class="master__reviews" style="display: none;">
 		<div class="comment-list">
 			<div class="comment-list__item">
@@ -149,4 +165,5 @@
 			</form>
 		</div>
 	</div>
+	}
 </div>

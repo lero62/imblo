@@ -543,6 +543,10 @@
 	&--sm
 		font-size: 1.4rem
 
+	&--shadow
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px #FFFFFF
+		border-width: .6rem
+
 .d-line
 	border: .3rem solid #34A1D3
 	&--danger
@@ -863,3 +867,12 @@
 		font-size: 1.4rem
 		&__title
 			font-size: 1.4rem
+		&--sm
+			font-size: 1.2rem
+
++max($iphone)
+	.alert
+		padding: 1.5rem
+
+		&--shadow
+			border-width: .3rem

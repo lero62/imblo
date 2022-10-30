@@ -101,9 +101,8 @@ $(function () {
 		return false;
 	})
 
-	$('.ct-filter-category > li').on('click', function () {
-		$('.ct-filter-category > li').not($(this)).removeClass('is-active')
-		$(this).addClass('is-active')
+	$('.cf-item > a ').on('click', function () {
+		$(this).closest('.cf-item').toggleClass('is-open')
 		return false;
 	})
 
