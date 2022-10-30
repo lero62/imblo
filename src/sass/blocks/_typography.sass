@@ -84,6 +84,8 @@ img
 
 .font-300
 	font-weight: 300
+.size-xs
+	font-size: 1rem
 .size-sm
 	font-size: 1.2rem
 .size-md
@@ -92,14 +94,20 @@ img
 .size-lg
 	font-size: 1.6rem
 
+.size-xl
+	font-size: 2rem
+
+.color-danger
+	color: $color-danger !important
+
+.color-info
+	color: $color-info !important
+
 .margin
 	+margin
 
 .mt0
 	margin-top: 0 !important
-
-.mt-2
-	margin-top: 2rem !important
 
 .inline
 	display: inline-block !important
@@ -237,6 +245,39 @@ img
 	&__item
 		margin-bottom: 2rem
 
+.table-responsive
+	overflow: hidden
+	overflow-x: auto
+.table-default
+	width: 100%
+
+	td
+		font-size: 1.6rem
+		font-weight: 600
+		padding-top: 0.7rem
+		padding-bottom: 0.7rem
+		vertical-align: top
+		&:first-child
+			padding-right: 1rem
+		&:last-child
+			padding-left: 1rem
+		&:first-child:last-child
+			padding-left: 0
+			padding-right: 0
+	th
+		font-weight: 900
+		font-size: 1.6rem
+		padding-top: 0.7rem
+		padding-bottom: 0.7rem
+		vertical-align: top
+		&:first-child
+			padding-right: 1rem
+		&:last-child
+			padding-left: 1rem
+		&:first-child:last-child
+			padding-left: 0
+			padding-right: 0
+
 +max($iphone)
 	h5,.h5
 		font-size: 1.6rem
@@ -247,3 +288,15 @@ img
 
 	.size-lg
 		font-size: 1.4rem
+
++max($iphone_sm)
+	.table-default
+		td, th
+			font-size: 1.4rem
+
+	.table-responsive
+		margin-left: -1.5rem
+		margin-right: -1.5rem
+		th, td
+			padding-left: 1.5rem !important
+			padding-right: 1.5rem !important

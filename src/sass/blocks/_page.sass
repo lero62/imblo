@@ -374,38 +374,52 @@
 		font-size: 3.2rem
 		font-weight: 900
 
-.table-responsive
-	overflow: hidden
-	overflow-x: auto
-.table-default
-	width: 100%
+/* Mobile Connection */
+/* --------------------------------------------------------------- */
+.mobile-connection
+	&__map
+		position: relative
+		height: 100%
+		min-height: 20rem
+		overflow: hidden
+		& > div, & > img
+			position: absolute
+			top: 0
+			left: 0
 
-	td
-		font-size: 1.6rem
-		font-weight: 600
-		padding-top: 0.7rem
-		padding-bottom: 0.7rem
+			object-fit: cover
+			height: 100%
+			width: 100%
+
+.mc-badge
+	background: $color-info
+	border-radius: 100px
+	color: #fff
+	font-size: 1rem
+	font-weight: 600
+	padding: .2rem .6rem
+	display: inline-block
+	vertical-align: top
+	&--danger
+		background: $color-danger
+
+.mc-table
+	min-width: 100%
+	table-layout: fixed
+	td, th
+		border: .2rem solid $color-info
 		vertical-align: top
-		&:first-child
-			padding-right: 1rem
-		&:last-child
-			padding-left: 1rem
-		&:first-child:last-child
-			padding-left: 0
-			padding-right: 0
+		padding: 1rem 1.5rem
+		font-size: 1.2rem
+		font-weight: 400
+		min-width: 14rem
+
 	th
-		font-weight: 900
-		font-size: 1.6rem
-		padding-top: 0.7rem
-		padding-bottom: 0.7rem
-		vertical-align: top
-		&:first-child
-			padding-right: 1rem
-		&:last-child
-			padding-left: 1rem
-		&:first-child:last-child
-			padding-left: 0
-			padding-right: 0
+		text-align: center
+		font-weight: 700
+
+/* Media */
+/* --------------------------------------------------------------- */
 
 +max($iphone)
 	/* Rental ========== */ 
@@ -477,13 +491,6 @@
 		&__value
 			font-size: 2.8rem
 
-	.table-responsive
-		margin-left: -1.5rem
-		margin-right: -1.5rem
-		th, td
-			padding-left: 1.5rem !important
-			padding-right: 1.5rem !important
-
 +max($iphone_sm)
 	/* Аренда жилья ========== */ 
 	.item-application
@@ -507,6 +514,8 @@
 		&__value
 			font-size: 2.2rem
 
-	.table-default
-		td, th
-			font-size: 1.4rem
+	/* Mobile Connection */
+	.mobile-connection
+		.btn
+			padding-left: 1.5rem
+			padding-right: 1.5rem
